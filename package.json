@@ -8,7 +8,8 @@
     "maycon alves",
     "mayconalves",
     "maycon b alves",
-    "maycon blog"
+    "maycon blog",
+    "maycon batista alves"
   ],
   "scripts": {
     "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
