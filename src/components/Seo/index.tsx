@@ -17,7 +17,7 @@ const SEO = ({ description, title, image }: SeoProps) => {
       meta={[
         {
           name: `google-site-verification`,
-          content: `wvyelTEymFd6wrEuf2jWVEX3Icbw1mTrEoBm4c9FkZ8`
+          content: `BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A`
         },
         {
           name: `robots`,
