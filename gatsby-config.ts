@@ -15,9 +15,9 @@ const config: GatsbyConfig = {
     author: `Maycon Alves`,
     description:
       `Site pessoal e blog de um frontend que curte muito compartilhar conhecimento,
-      principalmente sobre html, css e javascript e também tomar cerveja`,
+      principalmente sobre html, css e javascript.`,
     position: 'Desenvolvedor Frontend',
-    siteUrl: 'https://www.mayconbalves.com.br',
+    siteUrl: 'https://www.mayconalves.com',
     title: 'Maycon Alves - Desenvolvedor Frontend',
     image: 'src/images/avatar.jpg'
   },

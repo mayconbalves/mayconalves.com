@@ -2,10 +2,13 @@
   "name": "maycon-alves",
   "version": "1.0.0",
   "private": true,
-  "description": "maycon-alves",
-  "author": "mayconbalves",
+  "description": "maycon alves website",
+  "author": "maycon alves",
   "keywords": [
-    "gatsby"
+    "maycon alves",
+    "mayconalves",
+    "maycon b alves",
+    "maycon blog"
   ],
   "scripts": {
     "dev": "GATSBY_GRAPHQL_IDE=playground gatsby develop",
