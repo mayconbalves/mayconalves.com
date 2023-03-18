@@ -18,12 +18,12 @@ const GlobalStyles = createGlobalStyle`
     --primary-color: #ffffff;
     --title-color: #5c1d0f;
     --highlight-color: #121214;
-    --link-highlight: #5c1d0f;
-    --link-color: #7B3F00;
+    --link-highlight: #22d3ee;
+    --link-color: #ffffff;
     --border-color: #5c1d0f;
 
-    --footer-color: #f5f5dc;
-    --navbar-color: #f5f5dc;
+    --footer-color: #0f172a;
+    --navbar-color: #0f172a;
   }
 
   html, body, div, span, applet, object, iframe,
@@ -77,7 +77,8 @@ const GlobalStyles = createGlobalStyle`
     background-color: var(--background-color);
     line-height: 1;
     font-size: 100%;
-    font-family: 'Architects Daughter', cursive;
+    font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
   }
 
