@@ -14,8 +14,8 @@ const GlobalStyles = createGlobalStyle`
 
 
   :root {
-    --background-color: #f5f5dc;
-    --primary-color: #000;
+    --background-color: #0f172a;
+    --primary-color: #ffffff;
     --title-color: #5c1d0f;
     --highlight-color: #121214;
     --link-highlight: #5c1d0f;
