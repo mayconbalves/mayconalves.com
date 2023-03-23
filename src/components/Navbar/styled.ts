@@ -3,9 +3,10 @@ import { Link } from 'gatsby'
 
 export const Wrapper = styled.nav`
   background-color: var(--navbar-color);
+  border: 1px solid #fff;
   top: 0;
   display: flex;
-  height: 70px;
+  height: 50px;
   position: absolute;
   width: 100%;
   font-weight: 700;

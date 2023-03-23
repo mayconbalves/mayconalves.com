@@ -3,11 +3,12 @@ import styled from 'styled-components'
 export const Wrapper = styled.footer`
   align-items: center;
   background-color: var(--footer-color);
+  border: 1px solid #fff;
   bottom: 0;
   display: flex;
   justify-content: center;
   height: 50px;
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 2;
 `
