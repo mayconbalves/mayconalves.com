@@ -9,8 +9,9 @@ const Hero = () => {
         alt="Avatar"
         src="../../images/background.jpeg"
         placeholder="none"
-        width={900}
-        height={400}
+        imgStyle={{
+          objectFit: 'fill',
+        }}
       />
     </S.Hero>
   )
