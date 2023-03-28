@@ -1,73 +1,44 @@
 import React from 'react'
-import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
-import Card from '../components/Card'
-
-const Container = styled.div`
-  flex-direction: column;
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-`
-const Title = styled.h2`
-  text-align: center;
-  color: #fff;
-  font-size: 2.1rem;
-  font-weight: 800;
-  line-height: 3;
-  letter-spacing: 0.069rem;
-  padding: 0 1.4rem;
-`
-const WrapperSkill = styled.div`
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(4, minmax(30px, 1fr));
-  grid-template-rows: 300px;
-  row-gap: 1px;
-`
-
-const cardContent = [
-  {
-    percent: '90',
-    strongColor: 'orange',
-    technology: 'HTML5'
-  },
-  {
-    percent: '70',
-    strongColor: 'blue',
-    technology: 'Css3'
-  },
-  {
-    percent: '60',
-    strongColor: 'yellow',
-    technology: 'JavaScript'
-  },
-  {
-    percent: '60',
-    strongColor: 'yellow',
-    technology: 'JavaScript'
-  }
-]
+import * as S from '../styles/pages/home'
 
 const HomePage = () => (
   <Layout>
     <Seo title='Home'/>
-    <Container>
-      <Title>Skills</Title>
-      <WrapperSkill>
-        {
-          cardContent.map((card, index) => (
-            <Card
-              key={index}
-              percent={card.percent}
-              strokeColor={card.strongColor}
-              technology={card.technology}
-            />
-          ))
-        }
-      </WrapperSkill>
-    </Container>
+    <S.Container>
+      <S.Title>Bem-vindo ao meu site</S.Title>
+      <p>
+        Olá!
+        Meu nome é <S.Span>Maycon Alves.</S.Span> Trabalho como Desenvolvedor Front-end desde 2017.
+        Acredito que a disseminação de conhecimento e boas idéias podem mudar o mundo.
+        Atualmente estou trabalhando como desenvolvedor frontend na Invillia.
+      </p>
+
+      <p>
+        Gosto muito de escrever artigos sobre tecnologia, pois dessa forma eu consigo aprender e
+        ao mesmo tempo tento passar um pouco do conhecimento que eu tenho para a frente.
+      </p>
+
+      <S.Title>Ultimos artigos do meu Blog</S.Title>
+      <S.Ul>
+        <S.Li>
+          <S.NavLink to="/como-gerar-n%C3%BAmeros-aleat%C3%B3rio-com-javascript/">
+            Como gerar números aleatório com JavaScript
+          </S.NavLink>
+        </S.Li>
+        <S.Li>
+          <S.NavLink to="como-evitar-switch-case-desnecessários/">
+            Como evitar switch case desnecessários
+          </S.NavLink>
+        </S.Li>
+        <S.Li>
+          <S.NavLink to="html-tags-para-nos-ajudar-com-semântica-e-acessibilidade/">
+            HTML tags para nos ajudar com semântica e acessibilidade
+          </S.NavLink>
+        </S.Li>
+      </S.Ul>
+    </S.Container>
   </Layout>
 )
 

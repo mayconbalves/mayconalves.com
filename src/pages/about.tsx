@@ -2,15 +2,16 @@ import * as React from 'react'
 import Layout from '../components/Layout'
 import Grid from '../components/Grid'
 import Seo from '../components/Seo'
+import * as S from '../styles/pages/home'
 
 const About = () => {
   return (
     <Layout>
       <Seo title="Sobre mim" />
       <Grid>
-        <h1>
+        <S.Title>
           Um pouco mais sobre mim...
-        </h1>
+        </S.Title>
 
         <section>
           <p>

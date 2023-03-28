@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const Wrapper = styled.nav`
-  background-color: rgba(15, 23, 42, .8);
+  background-color: rgb(0, 0, 0);
   top: 0;
   display: flex;
   height: 50px;
