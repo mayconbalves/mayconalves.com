@@ -27,7 +27,7 @@ export const PostTag = styled.div<StyledProps>`
   width: 100%;
 
   svg {
-    color: #000;
+    color: #22d3ee;
     height: 100px;
   }
 `
@@ -38,9 +38,6 @@ export const Wrapper = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-style: solid;
-  border-width: 2px 10px 10px 2px;
-  border-color: #000;
 `
 
 export const PostItemInfo = styled.div`
@@ -61,7 +58,7 @@ export const PostTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.5rem 0;
-  color: var(--title-color);
+  color: #22d3ee;
 `
 
 export const PostDescription = styled.p`

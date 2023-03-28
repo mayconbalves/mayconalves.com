@@ -3,7 +3,6 @@ import { Props } from './types'
 import Footer from '../Footer'
 import Navbar from '../Navbar'
 import Pagination from '../Pagination'
-import Hero from '../HeroHomePage'
 
 import * as S from './styled'
 import GlobalStyles from '../../styles/globalStyles'
@@ -16,7 +15,6 @@ const PostItemsLayout = ({ children, currentPage, numPages }: Props) => {
   const nextPage = `/page/${currentPage + 1}`
   return (
     <S.Wrapper>
-      <Hero />
       <Navbar />
       <GlobalStyles />
       <S.Main>

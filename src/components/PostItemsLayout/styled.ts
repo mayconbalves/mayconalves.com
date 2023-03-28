@@ -2,9 +2,7 @@ import styled  from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.div`
-  margin: auto;
-  max-width: 70rem;
-  padding: 2rem 1rem;
+  max-width: 100%;
 `
 
 export const Main = styled.main`

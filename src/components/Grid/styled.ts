@@ -39,7 +39,7 @@ export const Wrapper = styled.div`
   h4,
   h5 {
     margin: 2.4rem auto 1rem;
-    color: var(--title-color);
+    color: #22d3ee;
   }
   ul,
   ol {

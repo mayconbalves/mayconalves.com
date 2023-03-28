@@ -42,6 +42,7 @@ export const Container = styled.div`
 `
 export const Title = styled.h2`
   color: #fff !important;
+  margin: 0 !important;
   font-size: 2.1rem;
   font-weight: 800;
   line-height: 3;
@@ -75,6 +76,7 @@ export const Ul = styled.ul`
   flex-direction: column;
   list-style: none;
   margin: 10px 0;
+  padding: 0 1.5rem;
 `
 
 export const Li = styled.li`
