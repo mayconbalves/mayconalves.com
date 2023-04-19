@@ -146,6 +146,12 @@ const config: GatsbyConfig = {
         publisherId: `ca-pub-4370754805788508`
       },
     },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        output: '/'
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -153,7 +159,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-transition-link',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sitemap',
     'gatsby-plugin-netlify',
     'gatsby-plugin-netlify-cms'
   ],
