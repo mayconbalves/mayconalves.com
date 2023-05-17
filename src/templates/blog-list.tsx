@@ -49,6 +49,7 @@ const BlogList = (props: Props) => {
       <PostItemLayout currentPage={currentPage} numPages={numPages}>
         <SEO
           lang="pt-br"
+          title="Blog"
         />
         {postList.map(({ node }) => {
           const { background, category, date, description, title } = node.frontmatter
