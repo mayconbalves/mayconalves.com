@@ -1,7 +1,41 @@
-# Maycon Alves - Personal website
+# Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/719c6c36-6e98-4bd3-b8e5-913e6ef2c295/deploy-status)](https://app.netlify.com/sites/mayconbalves/deploys)
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-[Access it](https://www.mayconalves.com/)
+### Installation
 
-This project uses Gatsby (React), GraphQL, Styled Components and Netlify CMS.
+```
+$ yarn
+```
+
+### Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
