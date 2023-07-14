@@ -4,4 +4,4 @@
 
 [Access it](https://www.mayconalves.com/)
 
-This project uses Gatsby (React), GraphQL, Styled Components and Netlify CMS.
+This is blog of maycon develop
