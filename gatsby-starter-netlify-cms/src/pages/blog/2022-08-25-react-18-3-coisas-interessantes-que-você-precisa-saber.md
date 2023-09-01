@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'React 18: features interessantes que você precisa conhecer'
+date: 2022-08-25T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Nesse artigo falo um pouco sobre 3 features que entraram no React 18 que podem ajudar você no dia-a-dia.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - react
+  - reactjs
+  - frontend
+  - feature
 ---
 
 >Sempre parece impossível, até que seja feito. Nelson Mandela.

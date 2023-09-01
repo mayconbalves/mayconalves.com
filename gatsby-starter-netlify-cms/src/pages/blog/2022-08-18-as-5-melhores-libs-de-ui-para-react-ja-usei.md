@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'As 5 melhores libs de UI para react que já usei'
+date: 2022-08-18T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  São as libs que eu já testei e curti bastante, pelo uso fácil e pela fácil customização que valem muito a pena para você dar um start no seu projeto.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - react
+  - reactjs
+  - library
 ---
 
 Hoje em dia o css já consegue nos entregar coisas magnificas, por isso gosto muito de usar o **styled-components** que combina muito bem com react, e é uma lib que consegue entregar tudo que preciso, porém em alguns projetos precisamos de um pouco mais de velocidade, por isso muitas vezes acabamos escolhendo alguma lib de UI que nos ajude entregar componentes de forma mais rápida sem investir muito tempo em css, por isso vou listar aqui as 5 melhores libs de UI que eu já usei e gostei bastante da experiência.

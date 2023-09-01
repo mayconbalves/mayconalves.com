@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Métodos para arrays em javascript - parte 03'
+date: 2022-10-22T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Métodos para para ajudar no nosso dia-a-dia com arrays em javascript.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - es2015
+  - es6
+  - frontend
 ---
 
 >A música tende a ser uma expressão dos nossos momentos mais obscuros. **David Gilmour.**

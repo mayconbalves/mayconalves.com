@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Meu caminho para fugir da depressão e doenças psicológicas'
+date: 2022-08-24T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Algumas coisas que eu faço para manter minha mente no lugar em um cenário complicado no mundo de desenvolvimento de software.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - psicologia
+  - depressão
+  - doenças
 ---
 
 >A imaginação é mais importante que o conhecimento. **Albert Einstein.**

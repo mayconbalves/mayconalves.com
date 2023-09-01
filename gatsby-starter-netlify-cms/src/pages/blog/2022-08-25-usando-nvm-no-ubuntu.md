@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como usar nvm no ubuntu'
+date: 2022-08-25T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Aqui nesse tutorial simples eu mostro como configurar a nvm se você está em um ambiente linux.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - nvm
+  - linux
+  - ubuntu
+  - node
 ---
 
 >Na minha opinião, a Microsoft é muito melhor em fazer dinheiro do que Sistemas Operacionais. **Linus Torvalds.**

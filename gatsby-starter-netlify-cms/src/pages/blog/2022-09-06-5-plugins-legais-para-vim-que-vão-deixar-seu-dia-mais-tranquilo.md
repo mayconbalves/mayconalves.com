@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: '5 plugins legais para customizar o seu VIM'
+date: 2022-09-06T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Gosto muito desses 5 plugins e se você usa VIM espero que curta eles também, pois vão te ajudar muito.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - vim
+  - neovim
+  - desenvolvimento
 ---
 
 >Minha definição da amizade se baseia em duas coisas. O respeito e a confiança. Esses dois fatores precisam estar presentes. E tem que ser mútuo. Você pode ter respeito por alguém, mas se não tiver confiança, a amizade vai desmoronar. **Stieg Larsson.**

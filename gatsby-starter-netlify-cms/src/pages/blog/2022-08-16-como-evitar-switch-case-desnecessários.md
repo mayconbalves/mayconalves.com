@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como evitar switch case desnecessários'
+date: 2022-08-16T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  É importante pensarmos em performance e algumas vezes podemos evitar switch cases que pesa um pouco na performace.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - es6
+  - performance
+  - js
 ---
 
 >Se o orgasmo do rock'n'roll pudesse ser vendido em saquinhos, drogas como a maconha e a heroina não valeriam um centavo. **Ozzy Osbourne.**

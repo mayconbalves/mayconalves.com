@@ -1,16 +1,17 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Automatizando e padronizando seus commits'
+date: 2023-01-04T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Uma forma bem legal para automátizarmos o processo de commits dentro do nosso projeto.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - commit
+  - commitlint
+  - commitzen
+  - git
+  - github
+  - frontend
 ---
 
 >A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy**
@@ -35,7 +36,7 @@ traduzindo para algo mais do dia-a-dia:
 ```
 feat(card): created component
 
-created structure, styles and tests 
+created structure, styles and tests
 ```
 
 Tenha em mente que isso é só um exemplo, eu prefiro criar um `commit` para cada um desses casos acima, pois na convenção temos um tipo de `commit` diferente para cada mudança no código, vamos então para a convenção:

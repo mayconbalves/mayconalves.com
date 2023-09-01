@@ -1,16 +1,13 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Http response status code'
+date: 2022-08-18T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Aprenda um pouco sobre os principais status code.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - statuscode
+  - http
 ---
 
 Estou escrevendo esse artigo enquanto minha esposa assiste o filme [O diabo veste prada](https://www.youtube.com/watch?v=2A0xhJ7RcCs&ab_channel=Telecine) (não estou prestando muita atenção, mas me parece um bom filme) estava fazendo um quiz de JavaScript e apareceu uma pergunta bem interessante, daí resolvi escrever sobre response status code não é muito complicado, mas se você consome ou cria API's precisa entender um pouco sobre alguns deles, não estou aqui para falar que você precisa conhecer todos (eu não conheço 😃) mas pelo menos os ranges e os principais você precisa conhecer e entender.
