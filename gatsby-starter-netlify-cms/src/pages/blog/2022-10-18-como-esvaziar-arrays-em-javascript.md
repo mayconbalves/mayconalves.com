@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como esvaziar um array em javascript'
+date: 2022-10-18T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Nesse artigo eu mostro algumas maneiras de como esvaziar arrays em javascript de algumas maneiras diferentes.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - array
+  - frontend
 ---
 
 ![javascript](https://miro.medium.com/max/720/1*NDojKFkqkGU86VwXm1bM9Q.jpeg)

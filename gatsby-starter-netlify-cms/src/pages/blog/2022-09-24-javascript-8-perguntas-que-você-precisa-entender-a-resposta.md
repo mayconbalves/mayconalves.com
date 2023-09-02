@@ -1,16 +1,13 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: '8 perguntas que você precisa entender sobre javascript'
+date: 2022-09-24T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Perguntas que você precisa para entender o javascript um pouco mais a fundo e subir um pouco mais de nível.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - frontend
 ---
 
 >O futuro pertence àqueles que se preparam hoje para ele. **Malcolm X.**

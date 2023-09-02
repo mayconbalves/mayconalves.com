@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como instalar e configurar a nvm no windows'
+date: 2022-09-28T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Se você trabalha em mais de um projeto e precisa trocar de versão de node essa é a solução ideal para você.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - nodejs
+  - node
+  - nvm
+  - config
 ---
 
 >Antes de fazer alguma coisa, pense, quando achar que já pode faze-la, pense novamente. **Pitágoras.**

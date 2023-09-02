@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como criar máscara de cnpj com react e regex'
+date: 2022-09-11T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Uma forma simples de criar uma máscara para seus inputs de CNPJ sem a necessidade instalar qualquer lib.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - regex
+  - es6
+  - frontend
 ---
 
 >A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy.** 

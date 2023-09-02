@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como funciona nullish no javascript'
+date: 2022-10-18T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Nesse tutorial eu mostro como funciona essa nova feature do es11 que nos ajuda em verificar alguns valores.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - es11
+  - ecmascript
+  - frontend
 ---
 
 >Eu acredito que às vezes são as pessoas que ninguém espera nada que fazem as coisas que ninguém consegue imaginar. **Alan Turing.**

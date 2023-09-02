@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: '3 algoritmos para treinar a sua lógica'
+date: 2022-09-24T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  É muito importante dentro do mundo de desenvolvimento mantermos nossa lógica afiada e para isso vamos estudar esses três algoritmos bem legais.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - algoritmo
+  - lógica
+  - frontend
 ---
 
 >A matemática, vista corretamente, possui não apenas verdade, mas também suprema beleza — uma beleza fria e austera, como a da escultura. **Bertrand Russell.**

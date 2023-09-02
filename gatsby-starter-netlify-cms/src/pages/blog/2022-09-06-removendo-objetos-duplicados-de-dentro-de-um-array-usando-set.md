@@ -1,16 +1,15 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Removendo objetos duplicados de dentro de um array'
+date: 2022-09-06T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Uma forma simples que o javascript oferece para remover objetos iguais de dentro de um array usando a API Set().
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - api
+  - es7
+  - frontend
 ---
 
 > O dinheiro não representa tal valor como os homens colocaram em cima dele. Todo o meu dinheiro foi investido nas experiências com as quais eu fiz descobertas novas permitindo a humanidade de ter uma vida um pouco mais fácil. Nikola Tesla

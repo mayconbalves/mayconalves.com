@@ -1,16 +1,13 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: '5 libs incríveis para usar com react'
+date: 2022-10-08T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Essas 5 libs podem ajudar muito o seu projeto em react a ganhar um super UP.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - react
+  - frontend
 ---
 
 >Monstros são reais e fantasmas são reais também. Vivem dentro de nós e, às vezes, vencem. **Stephen King.**

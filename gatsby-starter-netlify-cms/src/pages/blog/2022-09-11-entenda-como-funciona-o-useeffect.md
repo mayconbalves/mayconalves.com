@@ -1,16 +1,16 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+title: 'Como funciona o useEffect em componentes React'
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Entende de uma vez por todas como funciona o useEffect dentro de componentes react.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - react
+  - useEffect
+  - javascript
+  - es6
+  - frontend
 ---
 
 >Quando você tem muitas pessoas e está tentando satisfazer a contribuição de todos, você geralmente acaba com algo Tão incrivelmente genérico que não tem ponto de vista. **Rob Zombie.**

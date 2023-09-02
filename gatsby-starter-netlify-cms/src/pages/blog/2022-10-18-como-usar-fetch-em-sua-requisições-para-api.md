@@ -1,16 +1,16 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Como usar fetch em requisições ajax'
+date: 2022-10-18T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Nesse tutorial eu mostro como você pode fazer suas chamadas para APIs sem a necessidade usar uma lib externa.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - javascript
+  - es6
+  - fetch
+  - API
+  - frontend
 ---
 
 >Estamos olhando para estes campistas de rock 'n' rock, e sabemos o que está acontecendo em suas mentes porque estivemos lá. **Rob Halford.**

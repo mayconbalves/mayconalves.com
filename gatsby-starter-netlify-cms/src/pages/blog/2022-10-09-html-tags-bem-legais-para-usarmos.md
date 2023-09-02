@@ -1,16 +1,14 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
-date: 2017-01-04T15:04:10.000Z
+title: 'Tags bem legais que pouca gente usa no HTML'
+date: 2022-10-09T15:04:10.000Z
 featuredpost: true
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Pensando em semântica essas tags nos auxiliam bastante a fazer uma página de forma mais simples e organizada.
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - html
+  - semântica
+  - frontend
 ---
 
 >A imaginação é mais importante que o conhecimento. **Albert Einstein.**
