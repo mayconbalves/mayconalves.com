@@ -1,9 +1,8 @@
 import React from 'react'
 
-import { Props } from './types'
 import * as S from './styled'
 
-const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage }: Props) => {
+const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage }) => {
   return (
     <S.Wrapper>
       {!isFirst && <S.Link to={prevPage}>{`<- página anterior`}</S.Link>}

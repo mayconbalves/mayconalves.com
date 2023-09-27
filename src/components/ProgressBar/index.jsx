@@ -1,6 +1,6 @@
-import React from 'react'
-import * as S from './styled'
-import { useScroll, useSpring } from 'framer-motion'
+import { useScroll, useSpring } from 'framer-motion';
+import React from 'react';
+import * as S from './styled';
 
 const ProgressBar = () => {
   const { scrollYProgress } = useScroll()

@@ -1,9 +1,8 @@
-import styled from 'styled-components'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
 
-import { StyledProps } from './types'
 
-export const PostItemLink = styled(Link)<StyledProps>`
+export const PostItemLink = styled(Link)`
   color: var(--primary-color);
   display: grid;
   text-decoration: none;
@@ -14,7 +13,7 @@ export const PostItemLink = styled(Link)<StyledProps>`
   border-color: ${props => props.background};
 `
 
-export const PostTag = styled.div<StyledProps>`
+export const PostTag = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;

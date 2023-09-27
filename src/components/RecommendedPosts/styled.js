@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { Link as Linked } from 'gatsby'
+import styled from 'styled-components'
 import media from 'styled-media-query'
 
 export const Wrapper = styled.section`

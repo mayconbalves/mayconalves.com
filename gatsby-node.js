@@ -1,7 +1,7 @@
-import { createFilePath } from 'gatsby-source-filesystem'
-import path from 'path'
+const { createFilePath } = require('gatsby-source-filesystem')
+const path = require('path')
 
-exports.createSchemaCustomization = ({ actions, schema }: any) => {
+exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions
 
   createTypes(`
@@ -16,7 +16,7 @@ exports.createSchemaCustomization = ({ actions, schema }: any) => {
 
 // You can delete this file if you're not using it
 // To add the slug field to each post
-exports.onCreateNode = ({ node, getNode, actions }: any) => {
+exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   // Ensures we are processing only markdown files
   if (node.internal.type === "MarkdownRemark") {
@@ -37,7 +37,7 @@ exports.onCreateNode = ({ node, getNode, actions }: any) => {
 }
 
 // To create the posts pages
-exports.createPages = ({ graphql, actions }: any) => {
+exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
@@ -83,16 +83,14 @@ exports.createPages = ({ graphql, actions }: any) => {
         }
       }
     }
-  `).then((result: any) => {
+  `).then((result) => {
     const posts = result.data.allMarkdownRemark.edges
     const siteMetadata = result.data.site.siteMetadata
-    posts.forEach(({ node, next, previous }: any) => {
+    posts.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug,
-        component: path.resolve(`./src/templates/blog-post.tsx`),
+        component: path.resolve(`./src/templates/blog-post.jsx`),
         context: {
-          // Data passed to context is available
-          // in page queries as GraphQL variables.
           slug: node.fields.slug,
           previousPost: next,
           nextPost: previous
@@ -105,8 +103,8 @@ exports.createPages = ({ graphql, actions }: any) => {
 
     Array.from({ length: numPages }).forEach((_, index) => {
       createPage({
-        path: index === 0 ? `/` : `/page/${index + 1}`,
-        component: path.resolve(`./src/templates/blog-list.tsx`),
+        path: index === 0 ? `/blog` : `/page/${index + 1}`,
+        component: path.resolve(`./src/templates/blog-list.jsx`),
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,

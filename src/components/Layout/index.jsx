@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { Props } from './types'
+import React from 'react'
 import Navbar from '../Navbar'
 
-import * as S from './styled'
 import GlobalStyles from '../../styles/globalStyles'
+import * as S from './styled'
 
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }) => {
   return (
     <S.Wrapper>
       <Navbar />

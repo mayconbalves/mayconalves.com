@@ -1,7 +1,6 @@
 import React from 'react'
-import * as S from './styled'
-import { PostsProps } from './types'
 import Icons from './icons'
+import * as S from './styled'
 
 const Posts = (
   {
@@ -12,7 +11,7 @@ const Posts = (
     timeToRead,
     title,
     description
-  }: PostsProps) => {
+  }) => {
 
   const Categories = Icons[category]
   return (

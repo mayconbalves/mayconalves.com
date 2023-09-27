@@ -1,46 +1,11 @@
-import React from 'react'
 import { graphql } from 'gatsby'
+import React from 'react'
 
-import Layout from '../components/Layout'
-import RecomendedPosts from '../components/RecommendedPosts'
-import ProgressBar from '../components/ProgressBar'
-import SEO from '../components/Seo'
 import Grid from '../components/Grid'
-
-export type Props = {
-  data: {
-    markdownRemark: {
-      fields: {
-        slug: string
-      },
-      frontmatter: {
-        title: string
-        description: string
-        date: string
-        image: string
-      },
-      html: string
-    }
-  }
-  pageContext: {
-    nextPost: {
-      fields: {
-        slug: string
-      },
-      frontmatter: {
-        title: string
-      }
-    },
-    previousPost: {
-      fields: {
-        slug: string
-      },
-      frontmatter: {
-        title: string
-      }
-    }
-  }
-}
+import Layout from '../components/Layout'
+import ProgressBar from '../components/ProgressBar'
+import RecomendedPosts from '../components/RecommendedPosts'
+import SEO from '../components/Seo'
 
 export const query = graphql`
   query Post($slug: String!) {
@@ -60,7 +25,7 @@ export const query = graphql`
   }
 `
 
-const BlogPost = ({ data, pageContext }: Props) => {
+const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const next = pageContext.nextPost
   const previous = pageContext.previousPost

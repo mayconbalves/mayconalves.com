@@ -12,10 +12,8 @@ module.exports = {
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
     "plugin:react/jsx-runtime",
   ],
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -23,7 +21,7 @@ module.exports = {
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react"],
   "ignorePatterns": ["**/*.js", "gatsby-browser.tsx", "gatsby-node.ts", "gatsby-config.ts"],
   "rules": {
     "max-len": ["error", { "code": 100 }],
@@ -37,7 +35,6 @@ module.exports = {
     "quotes": ["error", "single", { "avoidEscape": true, "allowTemplateLiterals": true }],
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/prop-types": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "react/prop-types": "off"
   }
 };

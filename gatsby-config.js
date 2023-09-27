@@ -1,5 +1,4 @@
-import type { GatsbyConfig } from 'gatsby';
-import path from 'path';
+const path = require('path');
 
 const gatsbyRequiredRules = path.join(
   process.cwd(),
@@ -10,14 +9,14 @@ const gatsbyRequiredRules = path.join(
   'eslint-rules'
 )
 
-const config: GatsbyConfig = {
+const config = {
   siteMetadata: {
     author: `Maycon Alves`,
     description:
       `Site pessoal e blog de um frontend que curte muito compartilhar conhecimento,
       principalmente sobre html, css e javascript e também tomar cerveja`,
     position: 'Desenvolvedor Frontend',
-    siteUrl: 'https://www.mayconbalves.com.br',
+    siteUrl: 'https://www.mayconalves.com',
     title: 'Maycon Alves - Desenvolvedor Frontend',
     image: 'src/images/avatar.jpg'
   },
@@ -47,8 +46,8 @@ const config: GatsbyConfig = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }: any) => {
-              return allMarkdownRemark.edges.map((edge: any) => {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
@@ -152,6 +151,14 @@ const config: GatsbyConfig = {
         output: '/'
       }
     },
+    {
+    resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true,
+        jsxPragma: `React`,
+        allExtensions: true,
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
@@ -164,4 +171,4 @@ const config: GatsbyConfig = {
   ],
 };
 
-export default config
+module.exports = config

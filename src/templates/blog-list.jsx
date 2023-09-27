@@ -1,46 +1,12 @@
-import React from 'react'
 import { graphql } from 'gatsby'
+import React from 'react'
 
 import PostItemLayout from '../components/PostItemsLayout'
 import PostItem from '../components/Posts'
 import SEO from '../components/Seo'
 
-interface Props {
-  data: {
-    allMarkdownRemark: {
-      edges: {
-        map(arg0: ({ node }: { node: { fields: { slug: string }, timeToRead: string, frontmatter: {
-          background: string
-          category: string
-          date: string
-          description: string
-          title: string
-        } } }) =>
-          JSX.Element): React.ReactElement<never, string | React.JSXElementConstructor<unknown>>
-        node: {
-          frontmatter: {
-            background: string
-            category: string
-            date: string
-            description: string
-            title: string
-          }
-        }
-      }
-    }
-  },
-  pageContext: {
-    siteMetadata: {
-      title: string
-      description: string
-      image: string
-    }
-    currentPage: number
-    numPages: number
-  }
-}
 
-const BlogList = (props: Props) => {
+const BlogList = (props) => {
   const postList = props.data.allMarkdownRemark.edges
   const { currentPage, numPages, } = props.pageContext
 

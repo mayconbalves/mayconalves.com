@@ -1,9 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import useSiteMetadata from '../../hooks/site-metadata'
-import { SeoProps } from './types'
 
-const SEO = ({ description, title, image }: SeoProps) => {
+const SEO = ({ description, title, image }) => {
   const data = useSiteMetadata()
   const metaDescription = description || data.description
   const ogImage = `${image || 'https://mayconbalves.com.br/assets/img/meublogcover.png'}`

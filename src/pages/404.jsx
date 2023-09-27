@@ -1,9 +1,8 @@
-import * as React from 'react'
-import styled from 'styled-components'
 import { Link } from 'gatsby'
-import Seo from '../components/Seo'
-import Layout from '../components/Layout'
+import styled from 'styled-components'
 import Grid from '../components/Grid'
+import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 
 const Background = styled.section`
   background-image: url('https://mayconbalves.com.br/assets/img/404.gif');

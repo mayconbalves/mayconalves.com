@@ -1,9 +1,8 @@
 import React from 'react'
 
-import { Props } from  './types'
 import * as S from './styled'
 
-const RecomendedPosts = ({ next, previous }: Props) => {
+const RecomendedPosts = ({ next, previous }) => {
   return (
     <S.Wrapper>
       {previous && (
