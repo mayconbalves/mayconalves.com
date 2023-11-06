@@ -4,4 +4,4 @@
 
 [Access it](https://www.mayconalves.com/)
 
-This is blog of maycon develop
+This is blog of maycon developer
