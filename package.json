@@ -16,7 +16,10 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx --max-warnings=0",
     "lint:fix": "yarn lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "dev:next": "cd next && npx next dev",
+    "build:next": "cd next && npx next build",
+    "start:next": "cd next && npx next start"
   },
   "dependencies": {
     "framer-motion": "^7.5.3",
