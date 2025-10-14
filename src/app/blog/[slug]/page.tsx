@@ -1,14 +1,13 @@
-// src/app/blog/[slug]/page.tsx
-
 import { notFound } from "next/navigation";
 import { getPostBySlug } from "../../../../lib/posts";
 
-export default async function PostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const post = await getPostBySlug(params.slug);
+interface PostPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+export default async function PostPage({ params }: PostPageProps) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) return notFound();
 
