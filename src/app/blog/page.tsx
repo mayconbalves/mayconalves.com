@@ -1,12 +1,8 @@
-// next/pages/blog/index.tsx
 import Link from "next/link";
-import { getAllPosts, Post } from "../../lib/posts";
+import { getAllPosts } from "../../../lib/posts";
 
-type Props = {
-  posts: Post[];
-};
-
-export default function Blog({ posts }: Props) {
+export default async function Blog() {
+  const posts = await getAllPosts();
   return (
     <main>
       <h1>Blog</h1>
@@ -19,9 +15,4 @@ export default function Blog({ posts }: Props) {
       </ul>
     </main>
   );
-}
-
-export async function getStaticProps() {
-  const posts = await getAllPosts();
-  return { props: { posts } };
 }
