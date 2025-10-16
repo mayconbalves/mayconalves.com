@@ -4,7 +4,7 @@ import { getAllPosts } from "../../../lib/posts";
 export default async function Blog() {
   const posts = await getAllPosts();
   return (
-    <main>
+    <>
       <h1>Blog</h1>
       <ul>
         {posts.map(({ slug, title, date }) => (
@@ -13,6 +13,6 @@ export default async function Blog() {
           </li>
         ))}
       </ul>
-    </main>
+    </>
   );
 }
