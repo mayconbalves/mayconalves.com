@@ -1,6 +1,120 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.main {
+  margin-top: 130px;
+
+  hr {
+    margin: 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    height: 0;
+  }
+}
+
+.slider {
+  padding: 32px 0;
+  background-color: #7ac0c0;
+  position: relative;
   width: 100%;
+  z-index: -1;
+
+  .container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .container_title {
+      h1 {
+        text-align: center;
+        color: #f6edd8;
+        font-size: 4rem;
+        font-weight: 700;
+        text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .container_ribbon:before,
+    .container_ribbon:after {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: -12px;
+      border: 24px solid #ffedc8;
+      z-index: -1;
+    }
+
+    .container_ribbon:before {
+      left: -37px;
+      border-right-width: 33px;
+      border-left-color: rgba(0, 0, 0, 0);
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 1px -1px;
+    }
+
+    .container_ribbon:after {
+      right: -37px;
+      border-left-width: 33px;
+      border-right-color: rgba(0, 0, 0, 0);
+      box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 1px -1px;
+    }
+
+    .container_ribbon {
+      min-width: 280px;
+      max-width: 360px;
+      position: relative;
+      text-align: center;
+      font-size: 22px;
+      line-height: 1.2;
+      background: #fff0ce;
+      box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      margin: 30px auto;
+
+      h2 {
+        color: #4b4d4e !important;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        margin: 0px;
+        padding: 12px 10px 11px 10px;
+        font-size: 22px;
+      }
+
+      span:before {
+        content: "";
+        display: block;
+        margin-top: 2px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      span:after {
+        margin-bottom: 2px;
+        border-top: 1px dashed rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+        content: "";
+        display: block;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+      }
+    }
+
+    .container_image {
+      border: 6px solid #f6edd8;
+      display: flex;
+      justify-content: center;
+      margin: 40px auto;
+      border-width: 20px 20px 50px 20px;
+      border-style: solid;
+      box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
 }
