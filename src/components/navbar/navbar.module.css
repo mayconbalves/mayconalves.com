@@ -1,5 +1,5 @@
 .nav {
-  background-color: #7ac0c0;
+  background-color: #477b6e;
   color: black;
   display: flex;
   gap: 32px;
@@ -27,10 +27,6 @@
       font-weight: 600;
       text-transform: uppercase;
       text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-
-      a {
-        color: #f6edd8;
-      }
     }
 
     .logo_image {

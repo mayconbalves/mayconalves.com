@@ -16,7 +16,7 @@
 
 .slider {
   padding: 32px 0;
-  background-color: #7ac0c0;
+  background-color: #477b6e;
   position: relative;
   width: 100%;
   z-index: -1;
@@ -31,7 +31,6 @@
     .container_title {
       h1 {
         text-align: center;
-        color: #f6edd8;
         font-size: 4rem;
         font-weight: 700;
         text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -71,11 +70,10 @@
       line-height: 1.2;
       background: #fff0ce;
       box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
       margin: 30px auto;
 
       h2 {
-        color: #4b4d4e !important;
+        color: #4b4d4e;
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
         margin: 0px;
         padding: 12px 10px 11px 10px;
@@ -115,6 +113,20 @@
       border-width: 20px 20px 50px 20px;
       border-style: solid;
       box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 1.65rem;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
     }
   }
 }

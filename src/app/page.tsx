@@ -25,6 +25,8 @@ export default function Home(): JSX.Element {
                 height={500}
               />
             </div>
+            <h2>&quot;Olá eu sou o, Maycon Alves.</h2>
+            <h3>Seja bem-vindo ao meu blog.&quot;</h3>
           </div>
         </div>
       </section>
