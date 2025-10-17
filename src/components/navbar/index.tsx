@@ -12,7 +12,7 @@ const Navbar = (): JSX.Element => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/book">Livros</Link>
           </li>
 
           <li className={styles.logo_image}>
@@ -26,7 +26,7 @@ const Navbar = (): JSX.Element => {
           </li>
 
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/video">Vídeos</Link>
           </li>
           <li>
             <Link href="/blog">Blog</Link>

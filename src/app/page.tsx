@@ -1,6 +1,6 @@
-import styles from "./page.module.css";
 import { JSX } from "react";
-import Image from "next/image";
+import PostCard from "../components/card";
+import styles from "./page.module.css";
 
 export default function Home(): JSX.Element {
   return (
@@ -10,23 +10,31 @@ export default function Home(): JSX.Element {
           <hr />
           <div className={styles.container}>
             <div className={styles.container_title}>
-              <h1>Maycon Alves</h1>
+              <div>
+                <h1>Olá,</h1>
+                <p>
+                  Seja bem-vindo ao meu blog. Eu sou <span>Maycon Alves.</span>{" "}
+                  Trabalho como desenvolvedor front-end desde 2017.
+                </p>
+                <p>
+                  Aqui você pode encontrar artigos sobre programação,
+                  desenvolvimento web e desenvolvimento pessoal, espero que
+                  achem interessantes.
+                </p>
+
+                <p>
+                  Atualmente trabalho na <span>fronta162</span> como
+                  desenvolvedor front-end sênior, em projetos usando como
+                  principal stack: React, TypeScript, GraphQl, Sass e Php.
+                </p>
+              </div>
             </div>
-            <div className={styles.container_ribbon}>
-              <h2>
-                <span>Desenvolvedor Front-End</span>
-              </h2>
+
+            <div className={styles.container_blog}>
+              <h2>Últimos posts</h2>
+
+              <PostCard />
             </div>
-            <div className={styles.container_image}>
-              <Image
-                src="https://picsum.photos/200/300"
-                alt="Maycon Alves"
-                width={500}
-                height={500}
-              />
-            </div>
-            <h2>&quot;Olá eu sou o, Maycon Alves.</h2>
-            <h3>Seja bem-vindo ao meu blog.&quot;</h3>
           </div>
         </div>
       </section>

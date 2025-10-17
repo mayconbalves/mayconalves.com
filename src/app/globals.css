@@ -56,6 +56,10 @@ a {
   color: #ffedc8;
 }
 
+p {
+  font-family: "Roboto Slab", sans-serif;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

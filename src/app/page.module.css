@@ -17,7 +17,7 @@
 .slider {
   padding: 32px 0;
   background-color: #477b6e;
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: -1;
 
@@ -30,103 +30,28 @@
 
     .container_title {
       h1 {
-        text-align: center;
-        font-size: 4rem;
+        text-align: justify;
+        font-size: 2rem;
         font-weight: 700;
         text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 1.5rem;
+        text-align: justify;
+        margin: 1rem 0;
       }
     }
 
-    .container_ribbon:before,
-    .container_ribbon:after {
-      content: "";
-      position: absolute;
-      display: block;
-      bottom: -12px;
-      border: 24px solid #ffedc8;
-      z-index: -1;
-    }
-
-    .container_ribbon:before {
-      left: -37px;
-      border-right-width: 33px;
-      border-left-color: rgba(0, 0, 0, 0);
-      box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 1px -1px;
-    }
-
-    .container_ribbon:after {
-      right: -37px;
-      border-left-width: 33px;
-      border-right-color: rgba(0, 0, 0, 0);
-      box-shadow: rgba(0, 0, 0, 0.3) -2px 2px 1px -1px;
-    }
-
-    .container_ribbon {
-      min-width: 280px;
-      max-width: 360px;
-      position: relative;
-      text-align: center;
-      font-size: 22px;
-      line-height: 1.2;
-      background: #fff0ce;
-      box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
-      margin: 30px auto;
-
+    .container_blog {
       h2 {
-        color: #4b4d4e;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        margin: 0px;
-        padding: 12px 10px 11px 10px;
-        font-size: 22px;
+        text-align: justify;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
+        margin: 1rem 0;
       }
-
-      span:before {
-        content: "";
-        display: block;
-        margin-top: 2px;
-        border-top: 1px dashed rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-      }
-
-      span:after {
-        margin-bottom: 2px;
-        border-top: 1px dashed rgba(0, 0, 0, 0.2);
-        box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
-        content: "";
-        display: block;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-      }
-    }
-
-    .container_image {
-      border: 6px solid #f6edd8;
-      display: flex;
-      justify-content: center;
-      margin: 40px auto;
-      border-width: 20px 20px 50px 20px;
-      border-style: solid;
-      box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      text-transform: uppercase;
-      margin-bottom: 0.4rem;
-    }
-
-    h3 {
-      text-align: center;
-      font-size: 1.65rem;
-      text-transform: uppercase;
-      margin-bottom: 0.4rem;
     }
   }
 }
