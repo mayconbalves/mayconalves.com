@@ -1,5 +1,5 @@
 ---
-title: Métodos para arrays em javascript—parte-02
+title: Métodos para arrays em javascript parte 02
 description: segunda parte sobre métodos auxiliares de arrays
 date: 2022-09-14 11:31:52
 image: https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png

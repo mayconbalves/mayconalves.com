@@ -12,6 +12,8 @@ export type Post = {
   title: string;
   date: string; // já formatada
   contentHtml: string;
+  description: string;
+  readingTime: number;
 };
 
 export async function getPostSlugs(): Promise<string[]> {
@@ -38,11 +40,16 @@ export async function getPostBySlug(slug: string): Promise<Post> {
       ? format(new Date(data.date), "dd/MM/yyyy")
       : format(data.date, "dd/MM/yyyy");
 
+  const words = content.trim().split(/\s+/).length;
+  const readingTime = Math.ceil(words / 200);
+
   return {
     slug: realSlug,
     title: data.title || "Sem título",
     date: formattedDate,
+    description: data.description || "",
     contentHtml,
+    readingTime,
   };
 }
 
