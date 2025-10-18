@@ -12,7 +12,10 @@ const Navbar = (): JSX.Element => {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/book">Livros</Link>
+            <Link href="/about">Sobre</Link>
+          </li>
+          <li>
+            <Link href="/blog">Blog</Link>
           </li>
 
           <li className={styles.logo_image}>
@@ -29,7 +32,10 @@ const Navbar = (): JSX.Element => {
             <Link href="/video">Vídeos</Link>
           </li>
           <li>
-            <Link href="/blog">Blog</Link>
+            <Link href="/book">Livros</Link>
+          </li>
+          <li>
+            <Link href="/tutorial">Tutoriais</Link>
           </li>
         </ul>
       </div>

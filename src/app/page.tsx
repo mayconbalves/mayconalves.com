@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
             </div>
 
             <div className={styles.container_blog}>
-              <h2>Últimos posts</h2>
+              <h2 className={styles.container_blog_title}>Últimos posts</h2>
 
               <PostCard />
             </div>

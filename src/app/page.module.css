@@ -3,7 +3,7 @@
 
   hr {
     margin: 0;
-    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    border-top: 1px dashed rgb(35, 43, 57);
     border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
     position: absolute;
     top: 10px;
@@ -16,13 +16,15 @@
 
 .slider {
   padding: 32px 0;
-  background-color: #477b6e;
+  background-color: #f1ece0;
   position: absolute;
   width: 100%;
   z-index: -1;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 
   .container {
-    max-width: 960px;
+    max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
     padding-left: 10px;
@@ -33,7 +35,6 @@
         text-align: justify;
         font-size: 2rem;
         font-weight: 700;
-        text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
         margin: 1rem 0;
       }
 
@@ -45,11 +46,10 @@
     }
 
     .container_blog {
-      h2 {
+      .container_blog_title {
         text-align: justify;
         font-size: 2rem;
         font-weight: 700;
-        text-shadow: 2px 5px 0px rgba(0, 0, 0, 0.5);
         margin: 1rem 0;
       }
     }

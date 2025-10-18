@@ -1,5 +1,5 @@
 .nav {
-  background-color: #477b6e;
+  background-color: #232b39;
   color: black;
   display: flex;
   gap: 32px;
@@ -26,7 +26,10 @@
       font-size: 2rem;
       font-weight: 600;
       text-transform: uppercase;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+      a {
+        color: #f1ece0;
+      }
     }
 
     .logo_image {
@@ -38,7 +41,7 @@
 
   hr {
     margin: 0;
-    border-top: 1px dashed rgba(0, 0, 0, 0.25);
+    border-top: 1px dashed rgb(241, 236, 224);
     border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
     position: absolute;
     bottom: 10px;
