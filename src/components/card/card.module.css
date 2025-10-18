@@ -1,0 +1,40 @@
+.card {
+  background: transparent;
+  border: 4px solid #232b39;
+  padding: 30px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card:hover {
+  border: 4px solid #cb9f61;
+}
+
+.card_header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 12px;
+}
+
+.card_header h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.card_header time {
+  font-size: 1rem;
+}
+
+.card_body h1 {
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin: 1rem 0;
+}
+
+.card_body h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: rgba(0, 0, 0, 0.5);
+}
