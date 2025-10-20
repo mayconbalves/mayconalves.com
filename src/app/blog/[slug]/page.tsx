@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPostBySlug } from "../../../../lib/posts";
+import styles from "./slug.module.css";
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -12,10 +13,19 @@ export default async function PostPage({ params }: PostPageProps) {
   if (!post) return notFound();
 
   return (
-    <article className="prose mx-auto p-4">
-      <h1>{post.title}</h1>
-      <p className="text-sm text-gray-500">{post.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
-    </article>
+    <div className={styles.main}>
+      <div className={styles.container}>
+        <article>
+          <div className={styles.container_date}>
+            <p>
+              <time>{post.date}</time> -{" "}
+              <span>{post.readingTime} minutos de leitura</span>
+            </p>
+          </div>
+          <h1>{post.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+        </article>
+      </div>
+    </div>
   );
 }

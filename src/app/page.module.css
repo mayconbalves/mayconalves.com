@@ -1,5 +1,6 @@
 .main {
   margin-top: 130px;
+  margin-bottom: 30px;
 
   hr {
     margin: 0;
@@ -17,11 +18,7 @@
 .slider {
   padding: 32px 0;
   background-color: #f1ece0;
-  position: absolute;
   width: 100%;
-  z-index: -1;
-  padding-left: 2.4rem;
-  padding-right: 2.4rem;
 
   .container {
     max-width: 50rem;
@@ -52,6 +49,17 @@
         font-weight: 700;
         margin: 1rem 0;
       }
+    }
+  }
+
+  .container_copyright {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2rem 0;
+
+    a:hover {
+      color: #cb9f61;
+      text-decoration: underline;
     }
   }
 }

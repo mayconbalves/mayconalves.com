@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { JSX } from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -21,6 +22,9 @@ export default function RootLayout({
           <Navbar />
         </header>
         <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import PostCard from "../components/card";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home(): JSX.Element {
   return (
@@ -24,8 +25,8 @@ export default function Home(): JSX.Element {
 
                 <p>
                   Atualmente trabalho na <span>fronta162</span> como
-                  desenvolvedor front-end sênior, em projetos usando como
-                  principal stack: React, TypeScript, GraphQl, Sass e Php.
+                  desenvolvedor front sênior, em projetos usando como principal
+                  stack: React, TypeScript, GraphQl, Sass e Php.
                 </p>
               </div>
             </div>
@@ -34,6 +35,13 @@ export default function Home(): JSX.Element {
               <h2 className={styles.container_blog_title}>Últimos posts</h2>
 
               <PostCard />
+            </div>
+
+            <div className={styles.container_copyright}>
+              <p>
+                © 2025 Maycon Alves -
+                <Link href="/polices"> Políticas de Privacidade</Link>
+              </p>
             </div>
           </div>
         </div>

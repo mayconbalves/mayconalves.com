@@ -10,6 +10,7 @@
   position: fixed;
   justify-content: center;
   top: 0;
+  z-index: 1000;
 
   ul {
     width: 100%;
@@ -29,6 +30,10 @@
 
       a {
         color: #f1ece0;
+      }
+
+      a:hover {
+        color: #cb9f61;
       }
     }
 
