@@ -2,14 +2,14 @@
 title: Métodos para arrays em javascript parte 03
 description: Última parte sobre métodos auxiliares de arrays
 date: 2022-10-22 11:36:26
-image: https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png
+image: /images/metodos-para-arrays-em-javascript-parte-03.png
 category: js
 background: "#D6BA32"
 ---
 
 > A música tende a ser uma expressão dos nossos momentos mais obscuros. **David Gilmour.**
 
-![arrays](https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png)
+![arrays](/images/metodos-para-arrays-em-javascript-parte-03.png)
 
 Essa é a terceira e última parte sobre alguns métodos que podem nos dar aquela “forcinha” no nosso dia-a-dia. Se ainda leu os dois primeiros artigos, vou deixar ambos aqui!! [Parte 01](https://mayconbalves.com.br/m%C3%A9todos-para-arrays-em-javascript-%E2%80%94-parte-01/) e [Parte 02.](https://mayconbalves.com.br/m%C3%A9todos-para-arrays-em-javascript-%E2%80%94-parte-02/)
 

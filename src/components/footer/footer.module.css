@@ -1,16 +1,26 @@
 .container {
   background-color: #232b39;
-  color: black;
   display: flex;
-  gap: 32px;
-  height: 40px;
-  align-items: center;
+  height: 75px;
+  align-items: self-start;
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   justify-content: space-around;
   position: fixed;
   bottom: 0;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
+
+  hr {
+    margin: 0;
+    border-top: 1px dashed rgb(241, 236, 224);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.25);
+    position: absolute;
+    bottom: 60px;
+    background-color: transparent;
+    z-index: 10;
+    width: 100%;
+    height: 0;
+  }
 
   .container_title {
     display: flex;

@@ -1,9 +1,11 @@
-import { JSX } from "react";
-import PostCard from "../components/card";
-import styles from "./page.module.css";
 import Link from "next/link";
+import { JSX } from "react";
+import { getAllPosts } from "../../lib/posts";
+import Card from "../components/card";
+import styles from "./page.module.css";
 
-export default function Home(): JSX.Element {
+export default async function Home(): Promise<JSX.Element> {
+  const posts = await getAllPosts();
   return (
     <div className={styles.main}>
       <section>
@@ -34,7 +36,7 @@ export default function Home(): JSX.Element {
             <div className={styles.container_blog}>
               <h2 className={styles.container_blog_title}>Últimos posts</h2>
 
-              <PostCard />
+              <Card cardType="horizontal" posts={posts} />
             </div>
 
             <div className={styles.container_copyright}>
@@ -44,6 +46,7 @@ export default function Home(): JSX.Element {
               </p>
             </div>
           </div>
+          <hr />
         </div>
       </section>
     </div>

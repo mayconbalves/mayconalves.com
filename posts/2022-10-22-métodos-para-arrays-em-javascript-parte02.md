@@ -2,14 +2,14 @@
 title: Métodos para arrays em javascript parte 02
 description: segunda parte sobre métodos auxiliares de arrays
 date: 2022-09-14 11:31:52
-image: https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png
+image: /images/metodos-para-arrays-em-javascript-parte-02.png
 category: js
 background: "#D6BA32"
 ---
 
 > Se eu vi mais longe, foi por estar sobre ombros de gigantes. **Isaac Newton**
 
-![javascript cheet set](https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png)
+![javascript cheet set](/images/metodos-para-arrays-em-javascript-parte-02.png)
 
 No último artigo escrevi alguns métodos para nos dar aquele help quando se trata de arrays em javascript, agora mais alguns métodos que podem ser bem úteis no nosso dia-a-dia. Se não leu o primeiro artigo [clique aqui para ler.](https://mayconbalves.com.br/m%C3%A9todos-para-arrays-em-javascript-%E2%80%94-parte-01/) Agora sem mais delongas vamos nessa.
 

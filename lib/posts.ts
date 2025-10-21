@@ -14,6 +14,7 @@ export type Post = {
   contentHtml: string;
   description: string;
   readingTime: number;
+  image: string;
 };
 
 export async function getPostSlugs(): Promise<string[]> {
@@ -50,6 +51,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     description: data.description || "",
     contentHtml,
     readingTime,
+    image: data.image || "",
   };
 }
 

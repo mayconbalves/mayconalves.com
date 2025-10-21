@@ -6,6 +6,7 @@ import Image from "next/image";
 const Footer = (): JSX.Element => {
   return (
     <div className={styles.container}>
+      <hr />
       <div className={styles.container_title}>
         <Link href="/">
           <h1>Maycon Alves</h1>
