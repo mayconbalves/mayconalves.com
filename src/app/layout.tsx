@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 import { JSX } from "react";
-import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Navbar from "../components/navbar";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -83,6 +83,12 @@ export default function RootLayout({
 }>): JSX.Element {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
+      <head>
+        <meta
+          name="google-site-verification"
+          content="hbk7VP_BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A"
+        />
+      </head>
       <body>
         <header>
           <Navbar />
