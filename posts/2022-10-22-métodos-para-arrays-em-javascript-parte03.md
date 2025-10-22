@@ -3,7 +3,7 @@ title: Métodos para arrays em javascript parte 03
 description: Última parte sobre métodos auxiliares de arrays
 date: 2022-10-22
 image: /images/metodos-para-arrays-em-javascript-parte-03.png
-category: js
+tags: [js]
 background: "#D6BA32"
 ---
 

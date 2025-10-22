@@ -154,6 +154,7 @@ export default async function PostPage({ params }: PostPageProps) {
       <BreadcrumbJsonLd post={post} slug={slug} />
 
       <div className={styles.main}>
+        <hr />
         <div className={styles.container}>
           <article itemScope itemType="https://schema.org/BlogPosting">
             <header>
@@ -187,6 +188,7 @@ export default async function PostPage({ params }: PostPageProps) {
             />
           </article>
         </div>
+        <hr />
       </div>
     </>
   );

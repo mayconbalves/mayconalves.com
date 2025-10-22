@@ -14,6 +14,7 @@ export default async function Blog(): Promise<JSX.Element> {
             <Card posts={posts} cardType="vertical" />
           </div>
         </div>
+        <hr />
       </div>
     </>
   );

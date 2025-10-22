@@ -43,12 +43,6 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                   <div
                     className={`${styles["corner-ornament"]} ${styles["top-right"]}`}
                   ></div>
-                  <div
-                    className={`${styles["corner-ornament"]} ${styles["bottom-left"]}`}
-                  ></div>
-                  <div
-                    className={`${styles["corner-ornament"]} ${styles["bottom-right"]}`}
-                  ></div>
 
                   <div className={styles["card-border"]}>
                     <div className={styles.ornament}>❦</div>
@@ -65,14 +59,10 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                     <div className={styles["card-divider"]}></div>
 
                     <div className={styles["card-content"]}>{description}</div>
-
-                    <div className={styles["card-footer"]}>
-                      • Handcrafted with care •
-                    </div>
                   </div>
                 </div>
               </Link>
-            )
+            ),
           )}
         </>
       ) : (
@@ -81,7 +71,7 @@ const Card = ({ cardType = "", posts }: CardProps) => {
             .sort(
               (a, b) =>
                 new Date(b.slug.slice(0, 10)).getTime() -
-                new Date(a.slug.slice(0, 10)).getTime()
+                new Date(a.slug.slice(0, 10)).getTime(),
             )
             .slice(0, 3)
             .map(
@@ -127,7 +117,7 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                     </div>
                   </div>
                 </Link>
-              )
+              ),
             )}
         </>
       )}
