@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "../../../../lib/posts";
+import { getAllPosts, getPostBySlug, Post } from "../../../../lib/posts";
 import styles from "./slug.module.css";
 
 interface PostPageProps {
@@ -63,13 +63,13 @@ export async function generateMetadata({
 export async function generateStaticParams() {
   const posts = await getAllPosts();
 
-  return posts.map((post) => ({
+  return posts.map((post: Post): { slug: string } => ({
     slug: post.slug,
   }));
 }
 
 // Componente JSON-LD para Rich Snippets
-function BlogPostJsonLd({ post, slug }: { post: any; slug: string }) {
+function BlogPostJsonLd({ post, slug }: { post: Post; slug: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -108,7 +108,7 @@ function BlogPostJsonLd({ post, slug }: { post: any; slug: string }) {
 }
 
 // Componente BreadcrumbList para navegação
-function BreadcrumbJsonLd({ post, slug }: { post: any; slug: string }) {
+function BreadcrumbJsonLd({ post, slug }: { post: Post; slug: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

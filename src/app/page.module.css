@@ -21,8 +21,8 @@
     max-width: 50rem;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     .container_title {
       h1 {
@@ -36,6 +36,12 @@
         font-size: 1.5rem;
         text-align: justify;
         margin: 1rem 0;
+      }
+
+      @media (max-width: 576px) {
+        p {
+          font-size: 1.25rem;
+        }
       }
     }
 

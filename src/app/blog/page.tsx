@@ -1,8 +1,9 @@
-import Link from "next/link";
+import { JSX } from "react";
 import { getAllPosts } from "../../../lib/posts";
+import Card from "../../components/card";
 import styles from "./blog.module.css";
 
-export default async function Blog() {
+export default async function Blog(): Promise<JSX.Element> {
   const posts = await getAllPosts();
   return (
     <>
@@ -10,14 +11,7 @@ export default async function Blog() {
         <hr />
         <div className={styles.slider}>
           <div className={styles.container}>
-            <ul>
-              {posts.map(({ slug, title, date }) => (
-                <li key={slug}>
-                  <Link href={`/blog/${slug}`}>{title}</Link> -{" "}
-                  <time>{date}</time>
-                </li>
-              ))}
-            </ul>
+            <Card posts={posts} cardType="vertical" />
           </div>
         </div>
       </div>

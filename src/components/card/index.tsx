@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
 import styles from "./card.module.css";
-import Image from "next/image";
 
 type Posts = {
   slug: string;
@@ -22,68 +22,58 @@ const Card = ({ cardType = "", posts }: CardProps) => {
     <>
       {cardType === "vertical" ? (
         <>
-          {posts
-            .sort(
-              (a, b) =>
-                new Date(b.slug.slice(0, 10)).getTime() -
-                new Date(a.slug.slice(0, 10)).getTime(),
-            )
-            .slice(0, 3)
-            .map(
-              ({
-                slug,
-                title,
-                date,
-                description,
-                readingTime,
-                image,
-              }: Posts): JSX.Element => (
-                <Link href={`/blog/${slug}`} key={slug}>
-                  <div className={`${styles["vintage-card"]} ${styles.ornate}`}>
-                    <div
-                      className={`${styles["corner-ornament"]} ${styles["top-left"]}`}
-                    ></div>
-                    <div
-                      className={`${styles["corner-ornament"]} ${styles["top-right"]}`}
-                    ></div>
-                    <div
-                      className={`${styles["corner-ornament"]} ${styles["bottom-left"]}`}
-                    ></div>
-                    <div
-                      className={`${styles["corner-ornament"]} ${styles["bottom-right"]}`}
-                    ></div>
+          {posts.map(
+            ({
+              slug,
+              title,
+              date,
+              description,
+              readingTime,
+              image,
+            }: Posts): JSX.Element => (
+              <Link
+                href={`/blog/${slug}`}
+                key={slug}
+                className={styles.cardLink}
+              >
+                <div className={`${styles["vintage-card"]} ${styles.ornate}`}>
+                  <div
+                    className={`${styles["corner-ornament"]} ${styles["top-left"]}`}
+                  ></div>
+                  <div
+                    className={`${styles["corner-ornament"]} ${styles["top-right"]}`}
+                  ></div>
+                  <div
+                    className={`${styles["corner-ornament"]} ${styles["bottom-left"]}`}
+                  ></div>
+                  <div
+                    className={`${styles["corner-ornament"]} ${styles["bottom-right"]}`}
+                  ></div>
 
-                    <div className={styles["card-border"]}>
-                      <div className={styles.ornament}>❦</div>
+                  <div className={styles["card-border"]}>
+                    <div className={styles.ornament}>❦</div>
 
-                      <div className={styles["card-image"]}>
-                        <Image
-                          src={image}
-                          alt={title}
-                          width={300}
-                          height={300}
-                        />
-                      </div>
+                    <div className={styles["card-image"]}>
+                      <Image src={image} alt={title} width={220} height={180} />
+                    </div>
 
-                      <div className={styles["card-title"]}>{title}</div>
-                      <div className={styles["card-subtitle"]}>
-                        {date} - tempo de leitura {readingTime}
-                      </div>
+                    <div className={styles["card-title"]}>{title}</div>
+                    <div className={styles["card-subtitle"]}>
+                      {date} - tempo de leitura {readingTime}
+                    </div>
 
-                      <div className={styles["card-divider"]}></div>
+                    <div className={styles["card-divider"]}></div>
 
-                      <div className={styles["card-content"]}>
-                        {description}
-                      </div>
+                    <div className={styles["card-content"]}>{description}</div>
 
-                      <div className={styles["card-footer"]}>
-                        • Handcrafted with care •
-                      </div>
+                    <div className={styles["card-footer"]}>
+                      • Handcrafted with care •
                     </div>
                   </div>
-                </Link>
-              ),
-            )}
+                </div>
+              </Link>
+            )
+          )}
         </>
       ) : (
         <>
@@ -91,7 +81,7 @@ const Card = ({ cardType = "", posts }: CardProps) => {
             .sort(
               (a, b) =>
                 new Date(b.slug.slice(0, 10)).getTime() -
-                new Date(a.slug.slice(0, 10)).getTime(),
+                new Date(a.slug.slice(0, 10)).getTime()
             )
             .slice(0, 3)
             .map(
@@ -102,7 +92,11 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                 description,
                 image,
               }: Posts): JSX.Element => (
-                <Link href={`/blog/${slug}`} key={slug}>
+                <Link
+                  href={`/blog/${slug}`}
+                  key={slug}
+                  className={styles.cardLink}
+                >
                   <div className={`${styles["vintage-card"]} ${styles.rustic}`}>
                     <div className={styles["left-side"]}>
                       <div className={styles["rustic-image"]}>
@@ -133,7 +127,7 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                     </div>
                   </div>
                 </Link>
-              ),
+              )
             )}
         </>
       )}

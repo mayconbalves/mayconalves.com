@@ -2,14 +2,14 @@
 title: Métodos para arrays em javascript - parte 01
 description: Alguns métodos que vão ajudar no seu dia a dia
 date: 2022-08-23 07:24:27
-image: https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png
+image: /images/metodos-para-arrays-em-javascript-parte-01.png
 category: js
 background: "#D6BA32"
 ---
 
 > Nossas virtudes e nossos defeitos são inseparáveis, assim como a força e a matéria. Quando se separam, o homem deixa de existir. **Nikola Tesla.**
 
-![metodos arrays](https://miro.medium.com/max/1400/1*nN5WFcCTIsGdlBHdUGzt7w.png)
+![metodos arrays](/images/metodos-para-arrays-em-javascript-parte-01.png)
 
 ## pop()
 
