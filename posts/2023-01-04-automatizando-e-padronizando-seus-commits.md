@@ -1,7 +1,7 @@
 ---
 title: Automatizando e padronizando seus commits
 description: Vamos padronizar nossos commits com commitizen e commitlint
-date: 2023-01-04 08:11:59
+date: 2023-01-04
 image: /images/automatizando-e-padronizando-seus-commits.png
 category: git
 background: "#e94e31"

@@ -1,7 +1,7 @@
 ---
 title: Métodos para arrays em javascript - parte 01
 description: Alguns métodos que vão ajudar no seu dia a dia
-date: 2022-08-23 07:24:27
+date: 2022-08-23
 image: /images/metodos-para-arrays-em-javascript-parte-01.png
 category: js
 background: "#D6BA32"
