@@ -39,4 +39,4 @@ Essa é a tela do nosso repositório, basta clicarmos em clone or download e esc
 
 É claro que essa não é maneira mais elegante, mas mostrarei para vocês em outro artigo como nós que conhecemos o git, um pouco mais e tenho certeza que vocês também chegaram lá, usamos o Github.
 
-Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa postem nos comentários. Abraços quentinhos para vocês !!
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

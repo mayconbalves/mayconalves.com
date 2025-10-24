@@ -41,6 +41,4 @@ Agora vamos configurar nosso editor para commits e coisas afins. Digite `git con
 
 Por ultimo para saber se nossa configuração está certinha digitamos no terminal `git config --list` vai mostrar todas suas configs locais (logo menos vou postar a imagem do terminal).
 
-## Parando por aqui
-
-Evidente que não, na segunda parte, aprenderemos os comandos mais comandos, criar nosso primeiro projeto e iremos fazer integração com o tão famoso **github**. Obrigado vejo vocês por aí…
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

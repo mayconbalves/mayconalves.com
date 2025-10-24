@@ -67,4 +67,4 @@ Linha 8: é a resposta da requisição (lembrando que o fetch retorna uma promis
 
 Linha 9: já com a promise resolvida, só é necessário olhar a resposta que recebemos da nossa requisição.
 
-Bem simples 😃. É claro que quando falamos em requisições temos muita coisa para explorar, mas isso fica para outro post… Espero que tenham gostado amigos… Um forte abraço.
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

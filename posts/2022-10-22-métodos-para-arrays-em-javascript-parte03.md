@@ -218,4 +218,4 @@ numbers.some((num) => num < 10); // true
 numbers.some((num) => num > 10); // false
 ```
 
-Chegamos ao fim de mais um artigo, espero que tenham gostado, lembrando que aqui mostrei os métodos e uma forma simples de aplica-los, cada um deles pode ser muito e deve ser muitooooooooooooo explorado por vocês. Espero ter ajudado pelo menos um pouco. Até a próxima um abraço quentinho para vocês ….
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

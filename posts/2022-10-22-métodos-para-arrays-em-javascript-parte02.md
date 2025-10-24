@@ -69,4 +69,4 @@ const numbers = [0, 1, 2, 3, 5];
 console.log(numbers.slice(0, 3)); // [0, 1, 2]
 ```
 
-Bom galera, chegamos ao fim de mais um artigo, mas a minha ideia é realmente fazer artigos pequenos. Espero que gostem e que ajude vocês. Até a próxima abraços quentinhos para vocês….
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

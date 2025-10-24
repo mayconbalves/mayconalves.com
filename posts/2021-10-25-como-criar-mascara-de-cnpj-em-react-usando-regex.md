@@ -72,4 +72,4 @@ describe("cnpjMask helper", () => {
 });
 ```
 
-Espero que tenham gostado, lembrem, qualquer dúvida, feedback ou comentário só entrar em contato, boa semana a todos, abraços quentinhos para vocês !!
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

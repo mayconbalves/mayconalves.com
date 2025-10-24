@@ -45,4 +45,4 @@ Depois comece a editar pequenos textos ou blocos de código usando o vim, com os
 
 Jogue [Vim adventure](https://vim-adventures.com/) é um jogo bem interessante, que ensina muitos comandos desse editor fantástico.
 
-Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa postem nos comentários. Se esse artigo foi útil e puder me pagar um café ficarei feliz. Abraços quentinhos para vocês !!
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

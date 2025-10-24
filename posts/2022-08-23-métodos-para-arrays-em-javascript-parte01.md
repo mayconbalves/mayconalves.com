@@ -76,4 +76,4 @@ const numbers = [0, 2, 1, 6, 7, 5, 4];
 console.log(numbers.sort()); // [0, 1, 2, 4, 5, 6, 7]
 ```
 
-Tentei ser o mais breve possível, e ser o mais claro possível com exemplos tranquilos de serem entendidos, espero que tenham gostado, e nos vemos no próximo artigo, abraços quentinhos para vocês !!!
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!
