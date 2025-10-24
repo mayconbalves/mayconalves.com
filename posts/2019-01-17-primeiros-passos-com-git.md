@@ -2,14 +2,14 @@
 date: 2019-01-17
 title: Primeiros Passos com git
 description: Aprenda de forma fácil como usar o git de maneira fácil
-image: /images/primeiros-passos-com-git.gif
+image: /images/primeiros-passos-com-git-parte-01.webp
 tags: [git]
 background: "#e94e31"
 ---
 
 > Nunca fui para a cama com uma garota feia, mas acordei com algumas delas. **Lemmy Kilmister.**
 
-![when I git push -f](/images/primeiros-passos-com-git.gif)
+![when I git push -f](/images/primeiros-passos-com-git-parte-01.webp)
 
 ## Controle de versão
 

@@ -2,14 +2,14 @@
 title: Como criar máscara de CNPJ em react usando Regex
 description: Forma simples para criar uma mascara de cpcnpjf para seu formulário
 date: 2021-10-25
-image: /images/como-criar-mascara-de-cnpj-usando-react-e-regex.gif
+image: /images/como-criar-mascara-de-cnpj-usando-react-e-regex.webp
 tags: [react, regex, cnpj]
 background: "#5ED3F3"
 ---
 
 > A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy.**
 
-![background de javascript](/images/como-criar-mascara-de-cnpj-usando-react-e-regex.gif)
+![background de javascript](/images/como-criar-mascara-de-cnpj-usando-react-e-regex.webp)
 
 Vamos usar o nosso create-react-app para sermos rápidos e práticos (lembrando que estou supondo que você já conheça como funcionam props, state e exportações do módulos em React).
 

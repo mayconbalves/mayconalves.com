@@ -2,14 +2,14 @@
 title: Primeiros passos com git parte 03
 description: 7 comandos essenciais para quem está aprendendo git
 date: 2019-07-09
-image: /images/primeiros-passos-com-git-parte-03.gif
+image: /images/primeiros-passos-com-git-parte-03.webp
 tags: [git]
 background: "#5ED3F3"
 ---
 
 > O otimismo é a fé em ação. Nada se pode levar a efeito sem otimismo. **Helen Keller**.
 
-![git commit e git push gif](/images/primeiros-passos-com-git-parte-03.gif)
+![git commit e git push gif](/images/primeiros-passos-com-git-parte-03.webp)
 
 Esse é o terceiro post da minha série sobre git, se você não viu nenhum e não sabe nada sobre git eu recomendo eles para que você dê os primeiros passos com essa ferramenta fantástica. [Parte 1](/blog/2019-01-17-primeiros-passos-com-git), [Parte 2.](/blog/2019-06-27-primeiros-passos-com-git-parte-02)
 

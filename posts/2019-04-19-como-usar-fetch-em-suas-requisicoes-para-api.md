@@ -2,14 +2,14 @@
 title: Como usar FETCH em suas requisições para API.
 description: Usando FETCH API nativa para buscar nossos recursos
 date: 2019-04-19
-image: /images/como-usar-fetch-em-suas-requisicoes-para-api.gif
+image: /images/como-usar-fetch-em-suas-requisicoes-para-api.webp
 tags: [dev, javascript]
 background: "#637a91"
 ---
 
 > Estamos olhando para estes campistas de rock 'n' rock, e sabemos o que está acontecendo em suas mentes porque estivemos lá. **Rob Halford.**
 
-![background](/images/como-usar-fetch-em-suas-requisicoes-para-api.gif)
+![background](/images/como-usar-fetch-em-suas-requisicoes-para-api.webp)
 
 ## O que é uma requisição ajax ?
 

@@ -28,7 +28,7 @@ Download e instalação do plugin: [Ag](https://vimawesome.com/plugin/ag-vim)
 ## Ale
 
 Talvez um dos mais importantes plugins para quem trabalha com javascript, ou algum frameworks javascript (react, angular, vue…). Ale é a abreviação de asynchronous lint engine hoje em dia é bem comum os projetos em javascript ter um lint para algumas regras no código (espaçamento, ponto e virgula, aspas simples). Com esse plugin essa checagem é feita automaticamente, facilitando nosso trabalho na hora de corrigir algum erro antes de fazermos nossos commits.
-![ale](/images/ale.gif)
+![ale](/images/ale.webp)
 
 Download e instalação do plugin [Ale](https://vimawesome.com/plugin/ale)
 

@@ -2,12 +2,12 @@
 title: Primeiros passos com git parte 02
 description: Integração com o Github. Começando a entender as como tudo funciona.
 date: 2019-06-27
-image: /images/primeiros-passos-com-git-parte-02.gif
+image: /images/primeiros-passos-com-git-parte-02.webp
 tags: [git, github]
 background: "#5ED3F3"
 ---
 
-![Gif de humor harry potter](/images/primeiros-passos-com-git-parte-02.gif)
+![Gif de humor harry potter](/images/primeiros-passos-com-git-parte-02.webp)
 No primeiro tutorial, fizemos coisas básicas, aprendemos instalar o git na nossa máquina e fazer as primeiras configurações, se você não leu ainda é só [clicar aqui.](blog/2019-01-17-primeiros-passos-com-git) Bora lá…
 
 # Criando o nosso primeiro repositório
