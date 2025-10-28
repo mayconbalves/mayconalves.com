@@ -1,7 +1,0 @@
-import React from 'react'
-
-export interface Props {
-  children: React.ReactElement | React.ReactElement[]
-  currentPage: number
-  numPages: number
-}

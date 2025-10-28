@@ -1,15 +1,15 @@
 ---
 title: Automatizando e padronizando seus commits
 description: Vamos padronizar nossos commits com commitizen e commitlint
-date: 2023-01-04 08:11:59
-image: assets/img/commitlint-and.png
-category: git
+date: 2023-01-04
+image: /images/automatizando-e-padronizando-seus-commits.png
+tags: [git]
 background: "#e94e31"
 ---
->A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy**
 
+> A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy**
 
-![background](assets/img/commitlint-and.png)
+![background](/images/automatizando-e-padronizando-seus-commits.png)
 
 Tem algum tempo que não escrevo artigos infelizmente, mas hoje eu estou voltando com um artigo bem simples sobre automatização do seus commits, parece algo que não importa muito, mas é muito importante manter um histórico legal na sua árvore do git, pois é o roadmap do seu projeto.
 
@@ -24,11 +24,13 @@ Antes de falarmos sobre a instalação e configuração do `commitizen` e `commi
 
 [optional footer(s)]
 ```
+
 traduzindo para algo mais do dia-a-dia:
+
 ```
 feat(card): created component
 
-created structure, styles and tests 
+created structure, styles and tests
 ```
 
 Tenha em mente que isso é só um exemplo, eu prefiro criar um `commit` para cada um desses casos acima, pois na convenção temos um tipo de `commit` diferente para cada mudança no código, vamos então para a convenção:
@@ -112,10 +114,10 @@ Fica um resultado bem legal, basta digitar `git log` para ver o seu resultado:
 
 ![Screenshot do terminal](https://user-images.githubusercontent.com/14244623/210810190-318db18a-468b-4d9d-9d60-b0b371055fdd.png)
 
-
 Bem é isso espero que tenham gostado, e eu espero que tenha ajudado, lembrando que qualquer feedback é muito bem vindo, abraços quentinhos para vocês !!!
 
-### Links de referência:
+### Links de referência
+
 - [Commitizen](https://commitizen-tools.github.io/commitizen/)
 - [Commitlint](https://commitlint.js.org/#/)
 - [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
