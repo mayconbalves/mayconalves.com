@@ -69,9 +69,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo-192x192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/logo-192x192.png",
   },
   manifest: "/site.webmanifest",
 };
@@ -88,6 +91,10 @@ export default function RootLayout({
           name="google-site-verification"
           content="hbk7VP_BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A"
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-4370754805788508"
+        ></meta>
       </head>
       <body>
         <header>
