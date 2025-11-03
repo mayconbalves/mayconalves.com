@@ -9,7 +9,7 @@ background: "#D6BA32"
 
 > Estou sempre disposto a aprender, mas nem sempre gosto que me ensinem. **Winston Churchill**.
 
-![redux persist](/images/3-tricks-legais-que-o-javascript-oferece.webp)
+![javascript](/images/3-tricks-legais-que-o-javascript-oferece.webp)
 
 Galera prometi que escreveria um artigo por semana, mas já tem quase duas semanas (essa semana não acabou ainda 😃 ) então resolvi escrever um artigo com 3 tricks do JavaScript que podem te ajudar, sem mais delongas bora lá.
 
