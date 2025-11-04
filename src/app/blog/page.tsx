@@ -14,8 +14,8 @@ export default async function Blog(): Promise<JSX.Element> {
           <div className={styles.container}>
             <Card posts={posts} cardType="vertical" />
           </div>
-          <div style={{ margin: "2rem 0" }}>
-            <AdBanner dataAdSlot="1234567890" dataAdFormat="horizontal" />
+          <div className="ad-wrapper">
+            <AdBanner dataAdSlot="8282304065" dataAdFormat="auto" />
           </div>
         </div>
         <hr />

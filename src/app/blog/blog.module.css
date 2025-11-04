@@ -1,6 +1,5 @@
 .main {
   margin-top: 140px;
-  margin-bottom: 80px;
 
   hr {
     margin: 0;
@@ -38,6 +37,20 @@
       @media (max-width: 768px) {
         gap: 20px;
       }
+    }
+
+    .ad-wrapper {
+      margin: 3rem auto;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    .ad-label {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      color: #777;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
     }
   }
 }

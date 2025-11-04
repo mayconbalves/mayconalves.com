@@ -28,14 +28,30 @@ const AdBanner = ({
   }, []);
 
   return (
-    <ins
-      className={`adsbygoogle ${className}`}
-      style={style}
-      data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-      data-ad-slot={dataAdSlot}
-      data-ad-format={dataAdFormat}
-      data-full-width-responsive={dataFullWidthResponsive.toString()}
-    />
+    <div
+      className={`ad-wrapper ${className}`}
+      style={{ textAlign: "center", margin: "2rem 0" }}
+    >
+      <p
+        className="ad-label"
+        style={{
+          textTransform: "uppercase",
+          fontSize: "0.75rem",
+          color: "#777",
+          marginBottom: "0.5rem",
+        }}
+      >
+        Publicidade
+      </p>
+      <ins
+        className="adsbygoogle"
+        style={style}
+        data-ad-client="ca-pub-4370754805788508"
+        data-ad-slot={dataAdSlot}
+        data-ad-format={dataAdFormat}
+        data-full-width-responsive={dataFullWidthResponsive.toString()}
+      />
+    </div>
   );
 };
 
