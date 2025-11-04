@@ -9,7 +9,7 @@ background: "#e94e31"
 
 > Nunca fui para a cama com uma garota feia, mas acordei com algumas delas. **Lemmy Kilmister.**
 
-![when I git push -f](/images/primeiros-passos-com-git-parte-01.webp)
+![primeiros passos com git](/images/primeiros-passos-com-git-parte-01.webp)
 
 ## Controle de versão
 
