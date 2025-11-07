@@ -2,14 +2,14 @@
 title: Como configurar enzyme e jest em projetos react.
 description: Configuração para você adicionar testes unitários no seu projeto.
 date: 2019-07-24
-image: /images/configurar-jest-enzyme.gif
+image: /images/configurar-jest-enzyme.webp
 tags: [jest, react, setup, enzyme]
 background: "#5ED3F3"
 ---
 
 > O pessimismo, depois de você se acostumar a ele, é tão agradável quanto o otimismo. **Arnold Bennett**.
 
-![gif engraçado homem destruindo o pc](/images/configurar-jest-enzyme.gif)
+![configurar jest e enzyme](/images/configurar-jest-enzyme.webp)
 
 Vamos parar de quebrar tanto a cabeça e vamos entender o que estamos testando. Mas antes de tudo vamos começar pelo começo, bora configurar esse parada.
 

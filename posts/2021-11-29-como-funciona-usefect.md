@@ -1,7 +1,7 @@
 ---
 title: Como funciona useEffect.
 description: Entenda como funciona useEffect de uma maneira bem simples.
-date: 2022-11-29
+date: 2021-11-29
 image: /images/entenda-como-funciona-o-useEffect.webp
 tags: [react, useEffect]
 background: "#D6BA32"
@@ -20,75 +20,77 @@ Primeiro ponto dele é que se você está acostumado a trabalhar com class e usa
 Agora vou compartilhar alguns exemplos simples, para entendermos como esse hook funciona. Vamos lá. Vou usar a API do github para listar alguns repositórios, no primeiro caso, quero que o useEffect seja chamado apenas uma vez, quando o componente é montado em tela.
 
 ```javascript
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-
-  const [repos, setRepos] = useState([])
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     const fetchRepos = async () => {
-      const repos = await fetch('https://api.github.com/users/mayconbalves/repos?per_page=50')
-      const data = await repos.json()
-      setRepos(data)
-    }
+      const repos = await fetch(
+        "https://api.github.com/users/mayconbalves/repos?per_page=50"
+      );
+      const data = await repos.json();
+      setRepos(data);
+    };
 
-    fetchRepos()
-  })
+    fetchRepos();
+  });
 
   return (
     <div className="App">
       <h1>Repos github</h1>
       <ul>
-        {repos.map(repo => {
+        {repos.map((repo) => {
           return (
             <li key={repo.id}>
               <p>{repo.name}</p>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
   );
 }
 
-export default App
+export default App;
 ```
 
 Agora se quisermos que a função seja chamada de novo, podemos “mandar” ela ficar observando uma variável repository na linha 11 assim que ela mudar o `useEffect` será executado mais uma vez. Percebam que no exemplo abaixo diferente do exemplo acima, eu passo um user através do que o usuário digitar no input, e assim que ele apertar o botão eu chamo o `handleSubmit` chamando a função `fetchRepos` mais uma vez.
 
 ```jsx
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-
-  const [repos, setRepos] = useState([])
-  const [values, setValues] = useState({ repository: '' })
+  const [repos, setRepos] = useState([]);
+  const [values, setValues] = useState({ repository: "" });
 
   useEffect(() => {
-    fetchRepos()
-  }, [values.repository])
+    fetchRepos();
+  }, [values.repository]);
 
-  const fetchRepos = async (user = 'mayconbalves') => {
-    const repos = await fetch(`https://api.github.com/users/${user}/repos?per_page=50`)
-    const data = await repos.json()
-    setRepos(data)
-  }
+  const fetchRepos = async (user = "mayconbalves") => {
+    const repos = await fetch(
+      `https://api.github.com/users/${user}/repos?per_page=50`
+    );
+    const data = await repos.json();
+    setRepos(data);
+  };
 
   const handleSubmit = () => {
-    fetchRepos(values.repository)
-  }
+    fetchRepos(values.repository);
+  };
 
   const inputChange = (e) => {
-    const { name, value } = e.target
+    const { name, value } = e.target;
 
     setValues({
       ...values,
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   return (
     <div className="App">
@@ -100,62 +102,64 @@ function App() {
         value={values.repository}
       />
 
-      <button type="button" onClick={handleSubmit}>Buscar</button>
+      <button type="button" onClick={handleSubmit}>
+        Buscar
+      </button>
       <ul>
-        {repos.map(repo => {
+        {repos.map((repo) => {
           return (
             <li key={repo.id}>
               <p>{repo.name}</p>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
   );
 }
 
-export default App
+export default App;
 ```
-
 
 E por último, podemos passar como segundo parâmetro um array vazio, que significa que o seu useEffect será executado apenas uma vez.
 
 ```jsx
-import { useEffect, useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
-
-  const [repos, setRepos] = useState([])
+  const [repos, setRepos] = useState([]);
 
   useEffect(() => {
     const fetchRepos = async (user) => {
-      const repos = await fetch(`https://api.github.com/users/${user}/repos?per_page=50`)
-      const data = await repos.json()
-      setRepos(data)
-    }
+      const repos = await fetch(
+        `https://api.github.com/users/${user}/repos?per_page=50`
+      );
+      const data = await repos.json();
+      setRepos(data);
+    };
 
-    fetchRepos('mayconbalves')
-  }, [])
+    fetchRepos("mayconbalves");
+  }, []);
 
   return (
     <div className="App">
       <h1>Repos github</h1>
       <ul>
-        {repos.map(repo => {
+        {repos.map((repo) => {
           return (
             <li key={repo.id}>
               <p>{repo.name}</p>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
   );
 }
 
-export default App
+export default App;
 ```
 
 Nota: A diferença desse para o primeiro exemplo é que a função fetchRepos nesse caso espera um parâmetro.
