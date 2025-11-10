@@ -7,7 +7,9 @@ tags: [git, github]
 background: "#5ED3F3"
 ---
 
-![Gif de humor harry potter](/images/primeiros-passos-com-git-parte-02.webp)
+> Os lobos agora são seus senhores, sem esperança seus lobos devoram a terra. **Gojira**.
+
+![primeiros passos com git parte 02](/images/primeiros-passos-com-git-parte-02.webp)
 No primeiro tutorial, fizemos coisas básicas, aprendemos instalar o git na nossa máquina e fazer as primeiras configurações, se você não leu ainda é só [clicar aqui.](blog/2019-01-17-primeiros-passos-com-git) Bora lá…
 
 # Criando o nosso primeiro repositório

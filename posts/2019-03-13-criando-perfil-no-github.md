@@ -2,14 +2,14 @@
 date: 2019-03-13
 title: Criando um perfíl no github
 description: Crie seu perfíl no github e comoce seu portifólio
-image: /images/criando-um-perfil-github.gif
-tags: [git]
+image: /images/criando-um-perfil-github.webp
+tags: [git, github]
 background: "#e94e31"
 ---
 
 > Acredite em si e chegará um dia em que os outros não terão outra escolha senão acreditar com você. **Cynthia Kersey**
 
-![GitHub](/images/criando-um-perfil-github.gif)
+![GitHub](/images/criando-um-perfil-github.webp)
 
 Para quem está começando no mundo da programação, as vezes fica um pouco iludido pelo que a faculdade oferece (comigo foi assim) e quando caí no mundo real percebe que o buraco é muito mais fundo (sempre que quis falar isso rsrs). Por isso se você está aprendendo git, vou mostrar como criar uma conta no GitHub (uma plataforma de hospedagem de código versionado que usa o git como ferramenta de versionamento) em alguns passos. Escrevi um artigo [Primeiros passos com git](https://mayconbalves.com.br/primeiros-passos-com-git/) sobre o assunto recomendo que leia, vai ajudar um pouco !! Bom chega de enrolação borá lá…
 
