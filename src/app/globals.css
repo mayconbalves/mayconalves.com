@@ -81,3 +81,47 @@ p {
     color-scheme: dark;
   }
 }
+
+/* Acessibilidade: Skip link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 1rem 1.5rem;
+  background-color: #232b39;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0 0 4px 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  outline: 3px solid #4a9eff;
+  outline-offset: 2px;
+}
+
+/* Melhor foco visível para elementos interativos */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #4a9eff;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Remove outline padrão mas mantém para teclado */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Melhora contraste para texto */
+::selection {
+  background-color: #4a9eff;
+  color: #ffffff;
+}

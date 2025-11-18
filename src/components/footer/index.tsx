@@ -8,17 +8,22 @@ const Footer = (): JSX.Element => {
     <div className={styles.container}>
       <hr />
       <div className={styles.container_title}>
-        <Link href="/">
+        <Link href="/" aria-label="Ir para página inicial">
           <h1>Maycon Alves</h1>
         </Link>
       </div>
-      <div className={styles.container_list}>
+      <nav className={styles.container_list} aria-label="Redes sociais">
         <ul>
           <li>
-            <Link href="https://github.com/mayconbalves" target="_blank">
+            <Link
+              href="https://github.com/mayconbalves"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar perfil no GitHub (abre em nova aba)"
+            >
               <Image
                 src="/icons/github.svg"
-                alt="logo"
+                alt="GitHub"
                 width={40}
                 height={40}
                 priority
@@ -26,10 +31,15 @@ const Footer = (): JSX.Element => {
             </Link>
           </li>
           <li>
-            <Link href="https://linkedin.com/in/mayconbalves" target="_blank">
+            <Link
+              href="https://linkedin.com/in/mayconbalves"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar perfil no LinkedIn (abre em nova aba)"
+            >
               <Image
                 src="/icons/linkedin.svg"
-                alt="logo"
+                alt="LinkedIn"
                 width={40}
                 height={40}
                 priority
@@ -37,10 +47,15 @@ const Footer = (): JSX.Element => {
             </Link>
           </li>
           <li>
-            <Link href="https://twitter.com/mayconbalves" target="_blank">
+            <Link
+              href="https://twitter.com/mayconbalves"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visitar perfil no Twitter (abre em nova aba)"
+            >
               <Image
                 src="/icons/twitter.svg"
-                alt="logo"
+                alt="Twitter"
                 width={40}
                 height={40}
                 priority
@@ -48,7 +63,7 @@ const Footer = (): JSX.Element => {
             </Link>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   );
 };

@@ -4,6 +4,10 @@ import Script from "next/script";
 import { JSX } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import {
+  WebsiteStructuredData,
+  PersonStructuredData,
+} from "../components/structured-data";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -98,12 +102,36 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4370754805788508"
           crossOrigin="anonymous"
         />
+        <WebsiteStructuredData
+          url="https://mayconalves.com"
+          name="Maycon Alves - Desenvolvedor Front-end"
+          description="Blog sobre desenvolvimento web, JavaScript, React, Next.js e tecnologias front-end. Compartilhando conhecimento e experiências."
+          author={{
+            name: "Maycon Alves",
+            url: "https://mayconalves.com",
+          }}
+        />
+        <PersonStructuredData
+          name="Maycon Alves"
+          url="https://mayconalves.com"
+          jobTitle="Desenvolvedor Front-end"
+          description="Desenvolvedor Front-end especializado em JavaScript, React e Next.js. Compartilho conhecimento sobre desenvolvimento web através de artigos e tutoriais."
+          sameAs={[
+            "https://github.com/mayconbalves",
+            "https://www.linkedin.com/in/mayconbalves/",
+            "https://twitter.com/Mayconbalves",
+          ]}
+        />
       </head>
       <body>
+        {/* Link de pulo para conteúdo principal (acessibilidade) */}
+        <a href="#main-content" className="skip-to-content">
+          Pular para o conteúdo principal
+        </a>
         <header>
           <Navbar />
         </header>
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <footer>
           <Footer />
         </footer>

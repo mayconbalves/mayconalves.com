@@ -28,20 +28,32 @@ const AdBanner = ({
   }, []);
 
   return (
-    <div
+    <aside
       className={`ad-wrapper ${className}`}
-      style={{ textAlign: "center", margin: "2rem 0" }}
+      role="complementary"
+      aria-label="Anúncio publicitário"
+      style={{
+        textAlign: "center",
+        padding: "2rem",
+        maxWidth: "100%",
+        backgroundColor: "#fafafa",
+        borderRadius: "8px",
+        border: "1px solid #e5e5e5",
+      }}
     >
       <p
         className="ad-label"
         style={{
           textTransform: "uppercase",
-          fontSize: "0.75rem",
-          color: "#777",
-          marginBottom: "0.5rem",
+          fontSize: "0.875rem",
+          fontWeight: 600,
+          color: "#666",
+          letterSpacing: "0.1em",
+          marginBottom: "1rem",
+          fontFamily: "system-ui, -apple-system, sans-serif",
         }}
       >
-        Publicidade
+        — PUBLICIDADE —
       </p>
       <ins
         className="adsbygoogle"
@@ -51,7 +63,7 @@ const AdBanner = ({
         data-ad-format={dataAdFormat}
         data-full-width-responsive={dataFullWidthResponsive.toString()}
       />
-    </div>
+    </aside>
   );
 };
 

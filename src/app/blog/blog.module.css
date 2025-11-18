@@ -10,6 +10,50 @@
     height: 0;
   }
 
+  /* Breadcrumb navegacional */
+  .breadcrumb {
+    padding: 1rem 20px;
+    background-color: #f1ece0;
+
+    ol {
+      list-style: none;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      font-size: 0.875rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        color: #666;
+
+        &:not(:last-child)::after {
+          content: "/";
+          margin-left: 0.5rem;
+          color: #999;
+        }
+
+        a {
+          color: #4a9eff;
+          text-decoration: none;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #232b39;
+            text-decoration: underline;
+          }
+        }
+
+        &[aria-current="page"] {
+          color: #232b39;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
   .slider {
     padding: 32px 0;
     background-color: #f1ece0;
@@ -38,19 +82,27 @@
         gap: 20px;
       }
     }
+  }
 
-    .ad-wrapper {
-      margin: 3rem auto;
-      text-align: center;
-      background-color: transparent;
-    }
+  /* Seção de anúncio completamente separada do conteúdo */
+  .adSection {
+    padding: 4rem 20px;
+    margin: 3rem 0;
+    background-color: #ffffff;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    max-width: 100%;
 
-    .ad-label {
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      color: #777;
-      letter-spacing: 0.05em;
-      margin-bottom: 0.5rem;
+    /* Garante que o anúncio nunca fica próximo da navegação fixa */
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      padding: 3rem 15px;
+      margin: 2rem 0;
+      min-height: 250px;
     }
   }
 }
