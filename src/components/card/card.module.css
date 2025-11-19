@@ -20,7 +20,8 @@
     inset 0 0 0 1px rgba(139, 115, 85, 0.3);
   overflow: hidden;
   position: relative;
-  height: -webkit-fill-available;
+  height: auto;
+  min-height: 400px;
 }
 
 .vintage-card.ornate::before {
@@ -45,7 +46,7 @@
   margin: 15px;
   padding: 20px;
   border-radius: 4px;
-  height: -webkit-fill-available;
+  height: auto;
 }
 
 .vintage-card.ornate .ornament {
@@ -127,6 +128,89 @@
   right: 20px;
   border-left: none;
   border-bottom: none;
+}
+
+/* ===== RESPONSIVIDADE ORNATE CARD (MOBILE) ===== */
+@media (max-width: 768px) {
+  .vintage-card.ornate {
+    width: 100%;
+    max-width: 320px;
+    min-height: auto;
+  }
+
+  .vintage-card.ornate .card-border {
+    margin: 12px;
+    padding: 15px;
+  }
+
+  .vintage-card.ornate .card-image {
+    height: 150px;
+    margin-bottom: 15px;
+  }
+
+  .vintage-card.ornate .card-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .vintage-card.ornate .card-subtitle {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .vintage-card.ornate .card-content {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .vintage-card.ornate .ornament {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .corner-ornament {
+    width: 30px;
+    height: 30px;
+  }
+
+  .corner-ornament.top-left {
+    top: 15px;
+    left: 15px;
+  }
+
+  .corner-ornament.top-right {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vintage-card.ornate {
+    max-width: 100%;
+  }
+
+  .vintage-card.ornate .card-border {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  .vintage-card.ornate .card-image {
+    height: 120px;
+    margin-bottom: 12px;
+  }
+
+  .vintage-card.ornate .card-title {
+    font-size: 18px;
+  }
+
+  .vintage-card.ornate .card-subtitle {
+    font-size: 11px;
+  }
+
+  .vintage-card.ornate .card-content {
+    font-size: 13px;
+  }
 }
 
 /* ===== CARD TIPO 2: RUSTIC HORIZONTAL (SIMPLIFICADO) ===== */
