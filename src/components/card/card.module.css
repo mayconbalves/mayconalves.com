@@ -242,6 +242,23 @@
   transform: translateY(-4px);
 }
 
+.vintage-card.rustic .right-side {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.vintage-card.rustic .title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vintage-card.rustic .card-label {
+  display: flex;
+  align-items: center;
+}
+
 .vintage-card.rustic .badge {
   display: inline-block;
   background: #8b4513;
