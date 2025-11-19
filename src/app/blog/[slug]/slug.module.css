@@ -27,6 +27,7 @@
   .sidebarRight {
     display: none; /* Oculto por padrão (mobile/tablet) */
     width: 160px;
+    max-width: 160px;
     flex-shrink: 0;
   }
 
@@ -44,6 +45,8 @@
     top: 180px; /* Abaixo do header fixo */
     max-height: calc(100vh - 200px);
     overflow: hidden;
+    width: 160px;
+    max-width: 160px;
   }
 
   /* Estilo customizado para os ads laterais */
@@ -51,11 +54,18 @@
     background-color: transparent;
     border: none;
     padding: 0;
+    max-width: 160px;
   }
 
   .stickyAd :global(.ad-label) {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
+  }
+
+  /* Forçar tamanho máximo nos ads */
+  .stickyAd :global(.adsbygoogle) {
+    max-width: 160px !important;
+    width: 160px !important;
   }
 
   .container {

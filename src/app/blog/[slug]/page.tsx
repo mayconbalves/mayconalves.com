@@ -161,10 +161,10 @@ export default async function PostPage({ params }: PostPageProps) {
           <aside className={styles.sidebarLeft}>
             <div className={styles.stickyAd}>
               <AdBanner
-                dataAdSlot="1234567890"
-                dataAdFormat="vertical"
-                dataFullWidthResponsive={false}
-                style={{ display: "block", width: "160px", height: "600px" }}
+                dataAdSlot="7450950929"
+                dataAdFormat="auto"
+                dataFullWidthResponsive={true}
+                style={{ display: "block" }}
                 className={styles.sideAd}
               />
             </div>
@@ -209,10 +209,10 @@ export default async function PostPage({ params }: PostPageProps) {
           <aside className={styles.sidebarRight}>
             <div className={styles.stickyAd}>
               <AdBanner
-                dataAdSlot="0987654321"
-                dataAdFormat="vertical"
-                dataFullWidthResponsive={false}
-                style={{ display: "block", width: "160px", height: "600px" }}
+                dataAdSlot="7450950929"
+                dataAdFormat="auto"
+                dataFullWidthResponsive={true}
+                style={{ display: "block" }}
                 className={styles.sideAd}
               />
             </div>
