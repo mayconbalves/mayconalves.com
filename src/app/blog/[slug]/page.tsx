@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getAllPosts, getPostBySlug, Post } from "../../../../lib/posts";
+import AdBanner from "../../../components/adsense";
 import styles from "./slug.module.css";
 
 interface PostPageProps {
@@ -155,38 +156,67 @@ export default async function PostPage({ params }: PostPageProps) {
 
       <div className={styles.main}>
         <hr />
-        <div className={styles.container}>
-          <article itemScope itemType="https://schema.org/BlogPosting">
-            <header>
-              <div className={styles.container_date}>
-                <p>
-                  <time dateTime={post.dateISO} itemProp="datePublished">
-                    {post.date}
-                  </time>{" "}
-                  -{" "}
-                  <span itemProp="timeRequired">
-                    {post.readingTime} minutos de leitura
-                  </span>
-                </p>
-              </div>
-              <h1 itemProp="headline">{post.title}</h1>
+        <div className={styles.layoutWrapper}>
+          {/* Ad lateral esquerdo - apenas desktop */}
+          <aside className={styles.sidebarLeft}>
+            <div className={styles.stickyAd}>
+              <AdBanner
+                dataAdSlot="1234567890"
+                dataAdFormat="vertical"
+                dataFullWidthResponsive={false}
+                style={{ display: "block", width: "160px", height: "600px" }}
+                className={styles.sideAd}
+              />
+            </div>
+          </aside>
 
-              {/* Meta informações ocultas para SEO */}
-              <meta itemProp="author" content="Maycon Alves" />
-              <meta itemProp="dateModified" content={post.dateISO} />
-              {post.description && (
-                <meta itemProp="description" content={post.description} />
-              )}
-              {post.coverImage && (
-                <meta itemProp="image" content={post.coverImage} />
-              )}
-            </header>
+          {/* Conteúdo principal do artigo */}
+          <div className={styles.container}>
+            <article itemScope itemType="https://schema.org/BlogPosting">
+              <header>
+                <div className={styles.container_date}>
+                  <p>
+                    <time dateTime={post.dateISO} itemProp="datePublished">
+                      {post.date}
+                    </time>{" "}
+                    -{" "}
+                    <span itemProp="timeRequired">
+                      {post.readingTime} minutos de leitura
+                    </span>
+                  </p>
+                </div>
+                <h1 itemProp="headline">{post.title}</h1>
 
-            <div
-              itemProp="articleBody"
-              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-            />
-          </article>
+                {/* Meta informações ocultas para SEO */}
+                <meta itemProp="author" content="Maycon Alves" />
+                <meta itemProp="dateModified" content={post.dateISO} />
+                {post.description && (
+                  <meta itemProp="description" content={post.description} />
+                )}
+                {post.coverImage && (
+                  <meta itemProp="image" content={post.coverImage} />
+                )}
+              </header>
+
+              <div
+                itemProp="articleBody"
+                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+              />
+            </article>
+          </div>
+
+          {/* Ad lateral direito - apenas desktop */}
+          <aside className={styles.sidebarRight}>
+            <div className={styles.stickyAd}>
+              <AdBanner
+                dataAdSlot="0987654321"
+                dataAdFormat="vertical"
+                dataFullWidthResponsive={false}
+                style={{ display: "block", width: "160px", height: "600px" }}
+                className={styles.sideAd}
+              />
+            </div>
+          </aside>
         </div>
         <hr />
       </div>
