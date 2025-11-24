@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { JSX } from "react";
 import styles from "./card.module.css";
@@ -46,10 +45,6 @@ const Card = ({ cardType = "", posts }: CardProps) => {
 
                   <div className={styles["card-border"]}>
                     <div className={styles.ornament}>❦</div>
-
-                    <div className={styles["card-image"]}>
-                      <Image src={image} alt={title} width={220} height={180} />
-                    </div>
 
                     <div className={styles["card-title"]}>{title}</div>
                     <div className={styles["card-subtitle"]}>

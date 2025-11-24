@@ -13,6 +13,23 @@
     "Helvetica Neue", Arial;
 }
 
+/* Tema retro (padrão) */
+html[data-theme="retro"],
+:root {
+  --body-bg: #f1ece0;
+  --text-primary: #232b39;
+  --text-secondary: #8b7355;
+  --accent: #cb9f61;
+}
+
+/* Tema futurista */
+html[data-theme="futuristic"] {
+  --body-bg: #0a0e27;
+  --text-primary: #00ffff;
+  --text-secondary: #66d9ff;
+  --accent: #00aaff;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -27,11 +44,53 @@ body {
 }
 
 body {
-  background-color: #f1ece0;
+  background-color: var(--body-bg);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--font-bazar);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Fundo futurista com gradiente animado */
+[data-theme="futuristic"] body {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+  position: relative;
+}
+
+[data-theme="futuristic"] body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(0, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(0, 170, 255, 0.1) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
@@ -69,11 +128,27 @@ h5,
 h6,
 p,
 a {
-  color: #232b39;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
 }
 
 p {
   font-family: "Roboto Slab", sans-serif;
+}
+
+[data-theme="futuristic"] h1,
+[data-theme="futuristic"] h2,
+[data-theme="futuristic"] h3,
+[data-theme="futuristic"] h4,
+[data-theme="futuristic"] h5,
+[data-theme="futuristic"] h6 {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+[data-theme="futuristic"] p,
+[data-theme="futuristic"] a {
+  color: #b3e6ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -103,6 +178,12 @@ p {
   outline-offset: 2px;
 }
 
+[data-theme="futuristic"] .skip-to-content {
+  background-color: #00ffff;
+  color: #0a0e27;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
 /* Melhor foco visível para elementos interativos */
 a:focus-visible,
 button:focus-visible,
@@ -112,6 +193,15 @@ select:focus-visible {
   outline: 3px solid #4a9eff;
   outline-offset: 2px;
   border-radius: 2px;
+}
+
+[data-theme="futuristic"] a:focus-visible,
+[data-theme="futuristic"] button:focus-visible,
+[data-theme="futuristic"] input:focus-visible,
+[data-theme="futuristic"] textarea:focus-visible,
+[data-theme="futuristic"] select:focus-visible {
+  outline: 3px solid #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 /* Remove outline padrão mas mantém para teclado */
@@ -124,4 +214,9 @@ button:focus:not(:focus-visible) {
 ::selection {
   background-color: #4a9eff;
   color: #ffffff;
+}
+
+[data-theme="futuristic"] ::selection {
+  background-color: #00ffff;
+  color: #0a0e27;
 }

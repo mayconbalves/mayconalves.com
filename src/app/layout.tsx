@@ -8,6 +8,7 @@ import {
   WebsiteStructuredData,
   PersonStructuredData,
 } from "../components/structured-data";
+import { ThemeProvider } from "../contexts/ThemeContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -124,17 +125,19 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {/* Link de pulo para conteúdo principal (acessibilidade) */}
-        <a href="#main-content" className="skip-to-content">
-          Pular para o conteúdo principal
-        </a>
-        <header>
-          <Navbar />
-        </header>
-        <main id="main-content">{children}</main>
-        <footer>
-          <Footer />
-        </footer>
+        <ThemeProvider>
+          {/* Link de pulo para conteúdo principal (acessibilidade) */}
+          <a href="#main-content" className="skip-to-content">
+            Pular para o conteúdo principal
+          </a>
+          <header>
+            <Navbar />
+          </header>
+          <main id="main-content">{children}</main>
+          <footer>
+            <Footer />
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );
