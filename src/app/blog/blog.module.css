@@ -8,12 +8,14 @@
     background-color: transparent;
     width: 100%;
     height: 0;
+    transition: border-color 0.3s ease;
   }
 
   /* Breadcrumb navegacional */
   .breadcrumb {
     padding: 1rem 20px;
     background-color: #f1ece0;
+    transition: background-color 0.3s ease;
 
     ol {
       list-style: none;
@@ -58,6 +60,7 @@
     padding: 32px 0;
     background-color: #f1ece0;
     width: 100%;
+    transition: background-color 0.3s ease;
 
     .container {
       max-width: 1200px;
@@ -106,6 +109,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 
     @media (max-width: 768px) {
       padding: 3rem 15px;
@@ -113,4 +117,48 @@
       min-height: 250px;
     }
   }
+}
+
+/* ===== TEMA FUTURISTA ===== */
+[data-theme="futuristic"] .main hr {
+  border-top: 1px solid rgba(0, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+[data-theme="futuristic"] .main .breadcrumb {
+  background: rgba(15, 23, 41, 0.5);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+[data-theme="futuristic"] .main .breadcrumb ol li {
+  color: #99e6ff;
+}
+
+[data-theme="futuristic"] .main .breadcrumb ol li::after {
+  color: #66d9ff;
+}
+
+[data-theme="futuristic"] .main .breadcrumb ol li a {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+[data-theme="futuristic"] .main .breadcrumb ol li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+[data-theme="futuristic"] .main .breadcrumb ol li[aria-current="page"] {
+  color: #ffffff;
+}
+
+[data-theme="futuristic"] .main .slider {
+  background: transparent;
+}
+
+[data-theme="futuristic"] .main .adSection {
+  background: rgba(15, 23, 41, 0.3);
+  border-top: 1px solid rgba(0, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
 }

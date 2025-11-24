@@ -8,13 +8,21 @@
     background-color: transparent;
     width: 100%;
     height: 0;
+    transition: border-color 0.3s ease;
   }
+}
+
+[data-theme="futuristic"] .main hr {
+  border-top: 1px solid rgba(0, 255, 255, 0.4);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .slider {
   padding: 32px 0 0;
   background-color: #f1ece0;
   width: 100%;
+  transition: background-color 0.3s ease;
 
   .container {
     max-width: 50rem;
@@ -64,4 +72,13 @@
       text-decoration: underline;
     }
   }
+}
+
+[data-theme="futuristic"] .slider {
+  background: transparent;
+}
+
+[data-theme="futuristic"] .slider .container_copyright a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
 }
