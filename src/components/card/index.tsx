@@ -28,7 +28,6 @@ const Card = ({ cardType = "", posts }: CardProps) => {
               date,
               description,
               readingTime,
-              image,
             }: Posts): JSX.Element => (
               <Link
                 href={`/blog/${slug}`}

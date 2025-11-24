@@ -7,6 +7,7 @@ type Theme = "retro" | "futuristic";
 interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
+  mounted: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -31,12 +32,8 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     document.documentElement.setAttribute("data-theme", newTheme);
   };
 
-  if (!mounted) {
-    return <>{children}</>;
-  }
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, mounted }}>
       {children}
     </ThemeContext.Provider>
   );
@@ -45,6 +42,14 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 export const useTheme = () => {
   const context = useContext(ThemeContext);
   if (context === undefined) {
+    // Durante SSR, retorna valores padrão ao invés de lançar erro
+    if (typeof window === "undefined") {
+      return {
+        theme: "retro" as Theme,
+        toggleTheme: () => {},
+        mounted: false,
+      };
+    }
     throw new Error("useTheme must be used within a ThemeProvider");
   }
   return context;
