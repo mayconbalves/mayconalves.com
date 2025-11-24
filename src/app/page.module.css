@@ -13,9 +13,9 @@
 }
 
 [data-theme="futuristic"] .main hr {
-  border-top: 1px solid rgba(0, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  border-top: 1px solid #27272a;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .slider {
@@ -79,6 +79,7 @@
 }
 
 [data-theme="futuristic"] .slider .container_copyright a:hover {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  color: #a78bfa;
+  text-shadow: none;
+  text-decoration: underline;
 }
