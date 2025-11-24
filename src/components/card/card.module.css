@@ -138,76 +138,74 @@
 
 /* ===== TEMA FUTURISTA ===== */
 [data-theme="futuristic"] .vintage-card.ornate {
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-  border: 1px solid rgba(0, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2),
-    0 0 0 1px rgba(0, 255, 255, 0.1),
-    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  background: linear-gradient(145deg, #0f1729 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.3),
+    0 0 60px rgba(0, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="futuristic"] .vintage-card.ornate::before {
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 255, 255, 0.03) 2px,
-    rgba(0, 255, 255, 0.03) 4px
-  );
+  background: none;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .card-border {
-  border: 2px solid rgba(0, 255, 255, 0.4);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 255, 255, 0.05) 0%,
-    transparent 100%
-  );
+  border: none;
+  background: transparent;
+  margin: 20px;
+  padding: 20px;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .ornament {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  display: none;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .card-title {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  background: linear-gradient(90deg, #00ffff, #00aaff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .card-subtitle {
-  color: #66d9ff;
-  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  color: #99e6ff;
+  text-shadow: none;
+  font-style: normal;
+  letter-spacing: 0.5px;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .card-divider {
   background: linear-gradient(
     to right,
     transparent,
-    #00ffff 20%,
-    #00ffff 80%,
+    rgba(0, 255, 255, 0.6) 20%,
+    rgba(0, 255, 255, 0.6) 80%,
     transparent
   );
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  height: 2px;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .card-content {
-  color: #b3e6ff;
+  color: #e0f7ff;
+  text-align: left;
 }
 
 [data-theme="futuristic"] .vintage-card.ornate .corner-ornament {
-  border-color: #00ffff;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  display: none;
 }
 
 [data-theme="futuristic"] .cardLink:hover .vintage-card.ornate {
-  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.4),
-    0 0 0 1px rgba(0, 255, 255, 0.2),
-    inset 0 0 30px rgba(0, 255, 255, 0.1);
-  transform: translateY(-5px);
+  box-shadow: 0 12px 48px rgba(0, 255, 255, 0.5),
+    0 0 80px rgba(0, 255, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 255, 255, 0.8);
 }
 
 /* ===== RESPONSIVIDADE ORNATE CARD (MOBILE) ===== */
@@ -379,46 +377,53 @@
 
 /* ===== TEMA FUTURISTA - RUSTIC ===== */
 [data-theme="futuristic"] .vintage-card.rustic {
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
-  border: 2px solid rgba(0, 255, 255, 0.4);
-  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2),
-    inset 0 0 20px rgba(0, 255, 255, 0.05);
+  background: linear-gradient(145deg, #0f1729 0%, #1a2332 100%);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 255, 255, 0.3),
+    0 0 60px rgba(0, 255, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="futuristic"] .vintage-card.rustic .badge {
   background: linear-gradient(90deg, #00ffff, #00aaff);
   color: #0a0e27;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+  font-weight: 700;
 }
 
 [data-theme="futuristic"] .vintage-card.rustic .card-title {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  background: linear-gradient(90deg, #00ffff, #00aaff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+  font-weight: 700;
 }
 
 [data-theme="futuristic"] .vintage-card.rustic .card-description {
-  color: #b3e6ff;
+  color: #e0f7ff;
 }
 
 [data-theme="futuristic"] .vintage-card.rustic .bottom-info {
-  border-top: 1px solid rgba(0, 255, 255, 0.3);
+  border-top: 1px solid rgba(0, 255, 255, 0.4);
 }
 
 [data-theme="futuristic"] .vintage-card.rustic .year {
-  color: #66d9ff;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .signature {
   color: #99e6ff;
 }
 
+[data-theme="futuristic"] .vintage-card.rustic .signature {
+  color: #b3e6ff;
+}
+
 [data-theme="futuristic"] .cardLink:hover .vintage-card.rustic {
-  box-shadow: 0 12px 40px rgba(0, 255, 255, 0.4),
-    inset 0 0 30px rgba(0, 255, 255, 0.1);
+  box-shadow: 0 12px 48px rgba(0, 255, 255, 0.5),
+    0 0 80px rgba(0, 255, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(0, 255, 255, 0.8);
 }
 
 /* ===== RESPONSIVIDADE ===== */

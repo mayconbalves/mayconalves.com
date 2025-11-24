@@ -25,9 +25,9 @@ html[data-theme="retro"],
 /* Tema futurista */
 html[data-theme="futuristic"] {
   --body-bg: #0a0e27;
-  --text-primary: #00ffff;
-  --text-secondary: #66d9ff;
-  --accent: #00aaff;
+  --text-primary: #ffffff;
+  --text-secondary: #b3e6ff;
+  --accent: #00ffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -142,13 +142,13 @@ p {
 [data-theme="futuristic"] h4,
 [data-theme="futuristic"] h5,
 [data-theme="futuristic"] h6 {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 10px rgba(0, 255, 255, 0.4);
 }
 
 [data-theme="futuristic"] p,
 [data-theme="futuristic"] a {
-  color: #b3e6ff;
+  color: #e0f7ff;
 }
 
 @media (prefers-color-scheme: dark) {
