@@ -1,0 +1,22 @@
+# robots.txt para mayconalves.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://mayconalves.com/sitemap.xml
+
+# Crawl-delay para bots mais agressivos
+User-agent: *
+Crawl-delay: 1
+
+# Bloquear acesso a arquivos sensíveis
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Permitir acesso ao conteúdo principal
+Allow: /blog/
+Allow: /about/
+Allow: /polices/
+Allow: /contact/

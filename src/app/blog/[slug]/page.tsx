@@ -156,67 +156,62 @@ export default async function PostPage({ params }: PostPageProps) {
 
       <div className={styles.main}>
         <hr />
-        <div className={styles.layoutWrapper}>
-          {/* Ad lateral esquerdo - apenas desktop */}
-          <aside className={styles.sidebarLeft}>
-            <div className={styles.stickyAd}>
+        <div className={styles.container}>
+          <article itemScope itemType="https://schema.org/BlogPosting">
+            <header>
+              <div className={styles.container_date}>
+                <p>
+                  <time dateTime={post.dateISO} itemProp="datePublished">
+                    {post.date}
+                  </time>{" "}
+                  -{" "}
+                  <span itemProp="timeRequired">
+                    {post.readingTime} minutos de leitura
+                  </span>
+                </p>
+              </div>
+              <h1 itemProp="headline">{post.title}</h1>
+
+              {/* Meta informações ocultas para SEO */}
+              <meta itemProp="author" content="Maycon Alves" />
+              <meta itemProp="dateModified" content={post.dateISO} />
+              {post.description && (
+                <meta itemProp="description" content={post.description} />
+              )}
+              {post.coverImage && (
+                <meta itemProp="image" content={post.coverImage} />
+              )}
+            </header>
+
+            <div
+              itemProp="articleBody"
+              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+            />
+
+            {/* Nota sobre conteúdo original */}
+            <footer className={styles.articleFooter}>
+              <p className={styles.originalContent}>
+                ✍️ Este é um conteúdo original escrito por{" "}
+                <strong>Maycon Alves</strong>. Se você encontrou este artigo em
+                outra plataforma, saiba que{" "}
+                <a href="https://mayconalves.com">mayconalves.com</a> é a fonte
+                original.
+              </p>
+            </footer>
+
+            {/* Anúncio único no final do artigo */}
+            <section
+              className={styles.adSection}
+              aria-label="Publicidade"
+              style={{ marginTop: "2rem", textAlign: "center" }}
+            >
               <AdBanner
-                dataAdSlot="7450950929"
+                dataAdSlot="8282304065"
                 dataAdFormat="auto"
                 dataFullWidthResponsive={true}
-                style={{ display: "block" }}
-                className={styles.sideAd}
               />
-            </div>
-          </aside>
-
-          {/* Conteúdo principal do artigo */}
-          <div className={styles.container}>
-            <article itemScope itemType="https://schema.org/BlogPosting">
-              <header>
-                <div className={styles.container_date}>
-                  <p>
-                    <time dateTime={post.dateISO} itemProp="datePublished">
-                      {post.date}
-                    </time>{" "}
-                    -{" "}
-                    <span itemProp="timeRequired">
-                      {post.readingTime} minutos de leitura
-                    </span>
-                  </p>
-                </div>
-                <h1 itemProp="headline">{post.title}</h1>
-
-                {/* Meta informações ocultas para SEO */}
-                <meta itemProp="author" content="Maycon Alves" />
-                <meta itemProp="dateModified" content={post.dateISO} />
-                {post.description && (
-                  <meta itemProp="description" content={post.description} />
-                )}
-                {post.coverImage && (
-                  <meta itemProp="image" content={post.coverImage} />
-                )}
-              </header>
-
-              <div
-                itemProp="articleBody"
-                dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-              />
-            </article>
-          </div>
-
-          {/* Ad lateral direito - apenas desktop */}
-          <aside className={styles.sidebarRight}>
-            <div className={styles.stickyAd}>
-              <AdBanner
-                dataAdSlot="7450950929"
-                dataAdFormat="auto"
-                dataFullWidthResponsive={true}
-                style={{ display: "block" }}
-                className={styles.sideAd}
-              />
-            </div>
-          </aside>
+            </section>
+          </article>
         </div>
         <hr />
       </div>

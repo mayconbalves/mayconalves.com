@@ -2,7 +2,6 @@ import { JSX } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts } from "../../../lib/posts";
-import AdBanner from "../../components/adsense";
 import Card from "../../components/card";
 import { BreadcrumbStructuredData } from "../../components/structured-data";
 import styles from "./blog.module.css";
@@ -64,11 +63,6 @@ export default async function Blog(): Promise<JSX.Element> {
             <Card posts={posts} cardType="vertical" />
           </div>
         </div>
-        <hr />
-        {/* Seção de anúncio isolada do conteúdo principal */}
-        <section className={styles.adSection} aria-label="Publicidade">
-          <AdBanner dataAdSlot="8282304065" dataAdFormat="auto" />
-        </section>
         <hr />
       </div>
     </>

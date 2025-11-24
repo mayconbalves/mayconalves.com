@@ -24,7 +24,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
 
     const BASE_URL = "https://mayconalves.com";
-    const routes = ["", "/blog", "/polices"].map((route) => ({
+    const routes = [
+      "",
+      "/blog",
+      "/about",
+      "/contact",
+      "/polices",
+      "/disclaimer",
+    ].map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
