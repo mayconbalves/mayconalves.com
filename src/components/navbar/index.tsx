@@ -2,10 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { JSX, useState } from "react";
+import { useTheme } from "../../contexts/ThemeContext";
 import styles from "./navbar.module.css";
 
 const Navbar = (): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { theme, toggleTheme, mounted } = useTheme();
 
   return (
     <nav className={styles.nav} aria-label="Navegação principal">
@@ -22,6 +24,17 @@ const Navbar = (): JSX.Element => {
             />
           </Link>
         </div>
+
+        {/* Theme Toggle Button */}
+        {mounted && (
+          <button
+            className={styles.themeToggle}
+            onClick={toggleTheme}
+            aria-label={`Alternar para tema ${theme === "retro" ? "futurista" : "retro"}`}
+          >
+            {theme === "retro" ? "🚀" : "📜"}
+          </button>
+        )}
 
         {/* Hamburger Menu */}
         <button

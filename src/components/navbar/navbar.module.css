@@ -11,6 +11,7 @@
   justify-content: center;
   top: 0;
   z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav_container {
@@ -55,6 +56,29 @@
 
 .logo_mobile {
   display: none;
+}
+
+/* Theme Toggle Button */
+.themeToggle {
+  position: absolute;
+  left: 1.5rem;
+  background: rgba(241, 236, 224, 0.1);
+  border: 2px solid #cb9f61;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.themeToggle:hover {
+  background: rgba(241, 236, 224, 0.2);
+  transform: scale(1.1) rotate(15deg);
 }
 
 .hamburger {
@@ -102,6 +126,46 @@
   height: 0;
 }
 
+/* ===== TEMA FUTURISTA ===== */
+[data-theme="futuristic"] .nav {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+  border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(0, 255, 255, 0.2);
+}
+
+[data-theme="futuristic"] .nav_list li a {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+[data-theme="futuristic"] .nav_list li a:hover {
+  color: #66d9ff;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+[data-theme="futuristic"] .themeToggle {
+  background: rgba(0, 255, 255, 0.1);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+[data-theme="futuristic"] .themeToggle:hover {
+  background: rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+[data-theme="futuristic"] .hamburger span {
+  background: #00ffff;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+[data-theme="futuristic"] .nav hr {
+  border-top: 1px solid rgba(0, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
 /* Responsivo */
 @media (max-width: 1024px) {
   .nav {
@@ -124,6 +188,12 @@
   .nav_list {
     gap: 1.5rem;
   }
+
+  .themeToggle {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -138,7 +208,15 @@
   .logo_mobile {
     display: block;
     position: absolute;
-    left: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .themeToggle {
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 
   .logo_image {
@@ -156,10 +234,16 @@
     height: auto;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, background-color 0.3s ease;
     padding: 0;
     margin: 0;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  [data-theme="futuristic"] .nav_list {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+    border-top: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
   }
 
   .nav_list.mobile_active {
@@ -173,6 +257,10 @@
     padding: 1rem 0;
     font-size: 1.3rem;
     border-bottom: 1px solid rgba(241, 236, 224, 0.1);
+  }
+
+  [data-theme="futuristic"] .nav_list li {
+    border-bottom: 1px solid rgba(0, 255, 255, 0.1);
   }
 
   .nav_list li:last-child {
@@ -203,7 +291,10 @@
     right: 1rem;
   }
 
-  .logo_mobile {
-    left: 1rem;
+  .themeToggle {
+    left: 0.75rem;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
   }
 }
