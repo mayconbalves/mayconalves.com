@@ -119,38 +119,38 @@
   }
 }
 
-/* ===== TEMA FUTURISTA ===== */
+/* ===== TEMA FUTURISTA (Estilo Moderno) ===== */
 [data-theme="futuristic"] .main hr {
-  border-top: 1px solid rgba(0, 255, 255, 0.4);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  border-top: 1px solid #27272a;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 [data-theme="futuristic"] .main .breadcrumb {
-  background: rgba(15, 23, 41, 0.5);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  background: #18181b;
+  border-bottom: 1px solid #27272a;
 }
 
 [data-theme="futuristic"] .main .breadcrumb ol li {
-  color: #99e6ff;
+  color: #a1a1aa;
 }
 
 [data-theme="futuristic"] .main .breadcrumb ol li::after {
-  color: #66d9ff;
+  color: #71717a;
 }
 
 [data-theme="futuristic"] .main .breadcrumb ol li a {
-  color: #00ffff;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+  color: #a78bfa;
+  text-shadow: none;
 }
 
 [data-theme="futuristic"] .main .breadcrumb ol li a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  color: #c4b5fd;
+  text-shadow: none;
 }
 
 [data-theme="futuristic"] .main .breadcrumb ol li[aria-current="page"] {
-  color: #ffffff;
+  color: #fafafa;
 }
 
 [data-theme="futuristic"] .main .slider {
@@ -158,7 +158,7 @@
 }
 
 [data-theme="futuristic"] .main .adSection {
-  background: rgba(15, 23, 41, 0.3);
-  border-top: 1px solid rgba(0, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  background: #18181b;
+  border-top: 1px solid #27272a;
+  border-bottom: 1px solid #27272a;
 }

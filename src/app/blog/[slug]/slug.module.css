@@ -8,6 +8,7 @@
     background-color: transparent;
     width: 100%;
     height: 0;
+    transition: border-color 0.3s ease;
   }
 
   /* Layout wrapper para ads laterais */
@@ -25,13 +26,12 @@
   /* Sidebars laterais - apenas desktop */
   .sidebarLeft,
   .sidebarRight {
-    display: none; /* Oculto por padrão (mobile/tablet) */
+    display: none;
     width: 160px;
     max-width: 160px;
     flex-shrink: 0;
   }
 
-  /* Mostrar sidebars apenas em telas grandes */
   @media (min-width: 1200px) {
     .sidebarLeft,
     .sidebarRight {
@@ -39,17 +39,15 @@
     }
   }
 
-  /* Ads fixos que acompanham o scroll */
   .stickyAd {
     position: sticky;
-    top: 180px; /* Abaixo do header fixo */
+    top: 180px;
     max-height: calc(100vh - 200px);
     overflow: hidden;
     width: 160px;
     max-width: 160px;
   }
 
-  /* Estilo customizado para os ads laterais */
   .stickyAd :global(.ad-wrapper) {
     background-color: transparent;
     border: none;
@@ -62,7 +60,6 @@
     margin-bottom: 0.5rem;
   }
 
-  /* Forçar tamanho máximo nos ads */
   .stickyAd :global(.adsbygoogle) {
     max-width: 160px !important;
     width: 160px !important;
@@ -234,6 +231,90 @@
         margin: 1rem 0;
         font-family: "Roboto Slab", sans-serif;
       }
+    }
+  }
+}
+
+/* ===== TEMA FUTURISTA - ARTIGOS ===== */
+[data-theme="futuristic"] .main hr {
+  border-top: 1px solid rgba(63, 63, 70, 0.4);
+  border-bottom: 1px solid rgba(63, 63, 70, 0.2);
+}
+
+[data-theme="futuristic"] .main .container {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  ul,
+  ol,
+  .tags,
+  .button-post {
+    color: #fafafa;
+  }
+
+  li {
+    color: #e4e4e7;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  h3,
+  h4 {
+    color: #fafafa;
+    font-weight: 600;
+  }
+
+  p a {
+    color: #a78bfa;
+    border-bottom: 1px solid rgba(167, 139, 250, 0.4);
+    transition: all 0.2s ease;
+  }
+
+  p a:hover {
+    color: #c4b5fd;
+    border-bottom: 1px solid #c4b5fd;
+  }
+
+  pre {
+    background-color: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  pre code {
+    background-color: #18181b;
+    color: #e4e4e7;
+    border-left: 3px solid #a78bfa;
+    box-shadow: none;
+    background-image: none;
+  }
+
+  p code,
+  li code {
+    background-color: #27272a;
+    color: #a78bfa;
+    border: 1px solid #3f3f46;
+  }
+
+  blockquote {
+    color: #e4e4e7;
+    border-left: 0.3rem solid #a78bfa;
+    background: rgba(167, 139, 250, 0.05);
+    border-radius: 4px;
+
+    p {
+      color: #fafafa;
     }
   }
 }
