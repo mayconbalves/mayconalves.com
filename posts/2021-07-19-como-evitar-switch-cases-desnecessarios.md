@@ -2,14 +2,10 @@
 title: Como evitar switch cases desnecessários.
 description: Vou mostrar uma alternativa legal ao switch case.
 date: 2022-08-16
-image: /images/como-evitar-switch-cases-desnecessarios.webp
 tags: [js, switch-case]
-background: "#D6BA32"
 ---
 
 > Se o orgasmo do rock'n'roll pudesse ser vendido em saquinhos, drogas como a maconha e a heroina não valeriam um centavo. **Ozzy Osbourne.**
-
-![switch case](/images/como-evitar-switch-cases-desnecessarios.webp)
 
 Já faz um tempo que não escrevo nada, mas é que a correria está bem grande, por isso hoje vou trazer um artigo “leve e rápido” mas que espero ajudar a galera e gerar um movimento de refactor 😃.
 

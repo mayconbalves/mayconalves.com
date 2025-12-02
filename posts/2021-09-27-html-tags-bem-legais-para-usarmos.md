@@ -2,14 +2,10 @@
 title: "HTML: tags bem legais que você talvez não conheça."
 description: Sempre esquecemos que o HTML tem tags legais e é uma parte bem importante do nosso código.
 date: 2021-09-27
-image: /images/algumas-tags-bem-legais-que-voce-precisa-conhecer-em-html.webp
 tags: [html]
-background: "#EB7728"
 ---
 
->A imaginação é mais importante que o conhecimento. **Albert Einstein.**
-
-![background](/images/algumas-tags-bem-legais-que-voce-precisa-conhecer-em-html.webp)
+> A imaginação é mais importante que o conhecimento. **Albert Einstein.**
 
 Nosso tão querido html que por muitas vezes é deixado de lado, pois quando começamos a fazer coisas mais avançadas, usamos mais css e javascript. Mas voltei com um artigo de HTML para mostrar algumas tags bem legais que pouca gente usa.
 
@@ -19,7 +15,9 @@ Essa tag é serve para uma espécie de títulos ou legenda para a tabela, ela de
 
 ```html
 <table>
-  <caption>Gastos com cartão de crédito</caption>
+  <caption>
+    Gastos com cartão de crédito
+  </caption>
   <tr>
     <th>Mês</th>
     <th>Valor</th>
@@ -37,7 +35,7 @@ Essa tag é serve para uma espécie de títulos ou legenda para a tabela, ela de
 
 ## Cite
 
-Acredito que pouca gente conheça essa tag, ela serve para darmos ênfase  em algum livro, poema, música, filme e afins.
+Acredito que pouca gente conheça essa tag, ela serve para darmos ênfase em algum livro, poema, música, filme e afins.
 
 ```html
 <p><cite>Under the dome</cite> por Stephen King.</p>
@@ -49,15 +47,15 @@ Essa é bem legal, ela pré define alguns valores para um elemento `<input />` e
 
 ```html
 <label for="browser">Choose your browser from the list:</label>
-  <input list="browsers" name="browser" id="browser">
-  <datalist id="browsers">
-    <option value="Edge">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-  ```
+<input list="browsers" name="browser" id="browser" />
+<datalist id="browsers">
+  <option value="Edge"></option>
+  <option value="Firefox"></option>
+  <option value="Chrome"></option>
+  <option value="Opera"></option>
+  <option value="Safari"></option>
+</datalist>
+```
 
 ## Details
 
@@ -66,7 +64,11 @@ Essa serve para fazermos accordions mais simples de maneira bem fácil a tag `<s
 ```html
 <details>
   <summary>Epcot Center</summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+  <p>
+    Epcot is a theme park at Walt Disney World Resort featuring exciting
+    attractions, international pavilions, award-winning fireworks and seasonal
+    special events.
+  </p>
 </details>
 ```
 

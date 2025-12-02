@@ -2,14 +2,10 @@
 title: Javascript - removendo valores duplicados de um array.
 description: Vamos usar uma forma simples de remover objetos duplicados.
 date: 2020-03-20
-image: /images/javascript-remove-objetos-duplicados.webp
 tags: [javascript, es2015, set]
-background: "#637a91"
 ---
 
 > Para os crentes, Deus está no princípio das coisas. Para os cientistas, no final de toda reflexão. **Max Planck**.
-
-![code](/images/javascript-remove-objetos-duplicados.webp)
 
 Resolvi escrever esse mini-artigo, pois recentimente precisei remover valores duplicados dentro de um array, que viam da store (redux) para que eu precisa que fossem únicos. Bom vamos lá.
 

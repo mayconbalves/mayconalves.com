@@ -2,14 +2,10 @@
 title: Como funciona useEffect.
 description: Entenda como funciona useEffect de uma maneira bem simples.
 date: 2021-11-29
-image: /images/entenda-como-funciona-o-useEffect.webp
 tags: [react, useEffect]
-background: "#D6BA32"
 ---
 
 > A imaginação é mais importante que o conhecimento. **Albert Einstein**.
-
-![useEffect](/images/entenda-como-funciona-o-useEffect.webp)
 
 Se você não conhece nada sobre hooks do react, eles foram introduzidos a partir da versão 16.8 e basta você [clicar aqui no link da doc dos hooks](https://pt-br.legacy.reactjs.org/docs/hooks-intro.html). A documentação do react é muito bem feita e está em português 😃
 

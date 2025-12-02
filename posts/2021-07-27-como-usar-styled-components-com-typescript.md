@@ -2,14 +2,10 @@
 title: Como usar styled-components com typescript.
 description: Uma introdução ao styled-components com typescript.
 date: 2021-07-27
-image: /images/typescript-com-styled-components.webp
 tags: [typescript, styled-components]
-background: "#D6BA32"
 ---
 
 > Otimismo é esperar pelo melhor. Confiança é saber lidar com o pior. **Roberto Simonsen**.
-
-![styled-components com typescript](/images/typescript-com-styled-components.webp)
 
 Não é de hoje que a galera vem adotando o typescript no front. Não sou nenhum especialista no assunto (na verdade tem uma semana que estou estudando ts 😏). Por isso hoje vou mostrar como (eu uso) ts para criar componentes em react e styled-components. Chega de enrolação bora lá galera…
 
@@ -25,29 +21,23 @@ yarn add @types/styled-components -D com a flag -D mostra que nossa dependência
 Vamos criar um componente bem simples, vou usar de exemplo um simples botão, que recebe algumas `props`
 
 ```tsx
+import React from "react";
+import * as S from "./styles";
+import { ButtonProps } from "./interfaces";
 
-import React from 'react'
-import * as S from './styles'
-import { ButtonProps } from './interfaces'
-
-const Button = (
-  {
-    backgroundColor,
-    children,
-    onClick
-  }: ButtonProps): JSX.Element => {
+const Button = ({
+  backgroundColor,
+  children,
+  onClick,
+}: ButtonProps): JSX.Element => {
   return (
-    <S.Button
-      backgroundColor={backgroundColor}
-      onClick={onClick}
-    >
+    <S.Button backgroundColor={backgroundColor} onClick={onClick}>
       {children}
     </S.Button>
-  )
-}
+  );
+};
 
-export default Button
-
+export default Button;
 ```
 
 Como podem notar no código acima é bem simples como eu havia dito. O que nos interessa aqui são as linhas 3 e 10.
@@ -57,22 +47,21 @@ Na linha 3, eu importo a minha interface, ou seja, todos as propriedades que o b
 Agora vamos passar para a inteface do botão:
 
 ```tsx
-
 export interface ButtonProps {
   backgroundColor?: string;
   children: React.ReactNode;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
 }
-
 ```
+
 É uma interface bem simples, na propriedade `backgroundColor` reparem que declarei com `?:` por não ser obrigatório. E agora vamos para os estilos do nosso botão.
 
 ```tsx
-import styled from 'styled-components'
-import { ButtonProps } from './interfaces'
+import styled from "styled-components";
+import { ButtonProps } from "./interfaces";
 
 export const Button = styled.button<ButtonProps>`
-  background-color: ${(props) => props.backgroundColor || '#000'};
+  background-color: ${(props) => props.backgroundColor || "#000"};
   border: none;
   height: 40px;
   font-size: 1.1111111111em;
@@ -86,8 +75,7 @@ export const Button = styled.button<ButtonProps>`
   padding: 0 10px;
   position: relative;
   bottom: 50px;
-`
-
+`;
 ```
 
 Criei um estilo bem básico reparem na linha 4 que declaro que o botão recebe de a checagem da nossa interface de `ButtonProps` para codar esse botão estou usando o vscode com uma a extensão (javascript and typescript nightly)[https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next] se quiserem usar, ele nós ajuda bastante, olha que interessante acontece se eu remover o `ButtonProps`

@@ -2,14 +2,10 @@
 title: Automatizando e padronizando seus commits
 description: Vamos padronizar nossos commits com commitizen e commitlint
 date: 2023-01-04
-image: /images/automatizando-e-padronizando-seus-commits.png
 tags: [git]
-background: "#e94e31"
 ---
 
 > A mudança é a lei da vida. E aqueles que apenas olham para o passado ou para o presente irão com certeza perder o futuro. **John Kennedy**
-
-![background](/images/automatizando-e-padronizando-seus-commits.png)
 
 Tem algum tempo que não escrevo artigos infelizmente, mas hoje eu estou voltando com um artigo bem simples sobre automatização do seus commits, parece algo que não importa muito, mas é muito importante manter um histórico legal na sua árvore do git, pois é o roadmap do seu projeto.
 

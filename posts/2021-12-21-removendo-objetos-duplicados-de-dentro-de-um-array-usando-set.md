@@ -2,22 +2,22 @@
 title: Removendo objetos duplicados de dentro de um array usando Set()
 description: Uma forma simples de remover objetos iguais dentro de um array
 date: 2021-12-21
-image: /images/removendo-objetos-duplicados-de-dentro-de-um-array-usando-set.webp
 tags: [js]
-background: "#D6BA32"
 ---
 
 > O dinheiro não representa tal valor como os homens colocaram em cima dele. Todo o meu dinheiro foi investido nas experiências com as quais eu fiz descobertas novas permitindo a humanidade de ter uma vida um pouco mais fácil. Nikola Tesla
-
-![set](/images/removendo-objetos-duplicados-de-dentro-de-um-array-usando-set.webp)
 
 É bem comum em aplicações da vida real ou até mesmo projetos pessoais, trabalharmos com arrays e objetos. Normalmente o frontend trabalha consumimos [APIs](https://www.redhat.com/pt-br/topics/api/what-are-application-programming-interfaces) e muitas vezes as respostas que recebemos são arrays de objetos.
 
 Por exemplo podemos consumir a API do github para obtermos o seguinte resultado:
 
 ```javascript
-const data = fetch(`https://api.github.com/users/mayconbalves/repos?per_page=50`).then(res => res.json()).then(resp => resp)
-console.log(data) // Array(43)
+const data = fetch(
+  `https://api.github.com/users/mayconbalves/repos?per_page=50`
+)
+  .then((res) => res.json())
+  .then((resp) => resp);
+console.log(data); // Array(43)
 ```
 
 Obs: você pode colar esse código no console do seu navegador, note que ele devolve um array com 43 objetos.
@@ -29,8 +29,8 @@ const persons = [
   { id: 1, name: "maycon", lastName: "alves" },
   { id: 2, name: "michael", lastName: "jackson" },
   { id: 3, name: "michael", lastName: "jordan" },
-  { id: 1, name: "maycon", lastName: "alves" }
-]
+  { id: 1, name: "maycon", lastName: "alves" },
+];
 ```
 
 Podemos sim ter nomes repetidos porém, o primeiro e o último id são iguais, por tanto são a mesma entidade, e temos a regra de não mostrar em tela objetos iguais. Para remover objetos iguais iremos usar o objeto Set()
@@ -48,7 +48,7 @@ export default function App() {
     { id: "1", name: "maycon", lastName: "alves" },
     { id: "2", name: "michael", lastName: "jackson" },
     { id: "3", name: "michael", lastName: "jordan" },
-    { id: "1", name: "maycon", lastName: "alves" }
+    { id: "1", name: "maycon", lastName: "alves" },
   ];
 
   const filterPerson = persons.filter((person) => {

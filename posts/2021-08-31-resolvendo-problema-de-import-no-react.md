@@ -2,14 +2,11 @@
 title: Resolvendo problema de import no react.
 description: Chega de importar componentes com o path absoluto.
 date: 2021-08-31
-image: /images/resolvendo-problema-de-import-react.webp
 tags: [javascript, react]
 background: "#5ED3F3"
 ---
 
 > Lute. Acredite. Conquiste. Perca. Deseje. Espere. Alcance. Invada. Caia. Seja tudo o quiser ser, mas, acima de tudo, seja você sempre. **Tumblr**.
-
-![background](/images/resolvendo-problema-de-import-react.webp)
 
 Em muitos projetos react, acabamos encontrando esses tipos de import de componentes e afins dessa forma, isso acaba poluindo seu código e confundindo quem está começando a conhecer o projeto, pois ainda não conhece a arquitetura.
 

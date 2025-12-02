@@ -2,14 +2,10 @@
 title: 5 plugins legais para VIM.
 description: Plugins que vão deixar seus dias mais produtivos.
 date: 2020-02-12
-image: /images/5-plugins-legais-para-vim.webp
 tags: [vim, bash, plugins]
-background: "#637a91"
 ---
 
 > Minha definição da amizade se baseia em duas coisas. O respeito e a confiança. Esses dois fatores precisam estar presentes. E tem que ser mútuo. Você pode ter respeito por alguém, mas se não tiver confiança, a amizade vai desmoronar. **Stieg Larsson**.
-
-![vimawesome](/images/5-plugins-legais-para-vim.webp)
 
 ## Nerdtree
 

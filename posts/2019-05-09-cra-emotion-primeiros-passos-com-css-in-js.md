@@ -2,14 +2,10 @@
 title: CRA + emotion primeiros passos com css in js.
 description: De seus primeiros passos com css in js e react.
 date: 2019-05-09
-image: /images/cra-emotion-primeiros-passos-com-css-in-js.webp
 tags: [react, emotionjs]
-background: "#5ED3F3"
 ---
 
 > Não existem inocentes, apenas diferentes graus de responsabilidade. **Stieg Larsson.**
-
-![gif](/images/cra-emotion-primeiros-passos-com-css-in-js.webp)
 
 # Importante
 

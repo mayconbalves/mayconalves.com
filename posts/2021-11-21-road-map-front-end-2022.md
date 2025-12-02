@@ -2,14 +2,10 @@
 title: Road map front-end 2022
 description: Alguns métodos que vão ajudar no seu dia a dia
 date: 2021-11-21
-image: /images/road-map-front-end-2022.webp
 tags: [front-end, js, html, css]
-background: "#D6BA32"
 ---
 
 > Há um ditado popular que diz que um computador seguro é aquele que está desligado. Isso é inteligente, mas é falso: O hacker convencerá alguém a entrar no escritório e ligar aquele computador. Tudo é uma questão de tempo, paciência, personalidade e persistência. **Kevin David Mitnick**.
-
-![road-map-front-end](/images/road-map-front-end-2022.webp)
 
 Inspirado pelo repositório [developer roadmap](https://github.com/mayconbalves/developer-roadmap) e pelo post do [Trey Huffini](https://levelup.gitconnected.com/the-2020-web-developer-roadmap-76503ddfb327) falando sobre desenvolvimento web de uma forma mais completa e robusta, e é claro peguei emprestado o design do [YJDev](https://yjdev.medium.com/front-end-web-developer-roadmap-2021-8f133f7e6c23) que desenhou e falou um pouco sobre esse roadmap de frontend.
 

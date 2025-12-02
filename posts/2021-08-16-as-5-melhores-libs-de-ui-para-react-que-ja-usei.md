@@ -2,17 +2,12 @@
 title: As 5 melhores libs de UI para React ja usei.
 description: Baseado na minha experiência em projetos que já trabalhei e em projetos pessoais.
 date: 2022-08-18
-image: /images/5-melhores-libs-de-ui-para-react-que-usei.webp
 tags: [react, ui]
-background: "#5ED3F3"
 ---
 
 > Se atreva a ser corajoso, lute pelos seus sonhos e desfrute de cada conquista.
 
-![background](/images/5-melhores-libs-de-ui-para-react-que-usei.webp)
-
 Hoje em dia o css já consegue nos entregar coisas magnificas, por isso gosto muito de usar o **styled-components** que combina muito bem com react, e é uma lib que consegue entregar tudo que preciso, porém em alguns projetos precisamos de um pouco mais de velocidade, por isso muitas vezes acabamos escolhendo alguma lib de UI que nos ajude entregar componentes de forma mais rápida sem investir muito tempo em css, por isso vou listar aqui as 5 melhores libs de UI que eu já usei e gostei bastante da experiência.
-
 
 ## [React Bootstrap](https://react-bootstrap.github.io/)
 
@@ -71,8 +66,8 @@ Bem é isso, espero que tenham gostado, lembrem que qualquer informação que de
 
 ## Links úteis
 
-* [React Bootstrap](https://react-bootstrap.github.io/)
-* [Ant design](https://ant.design/)
-* [Chakra UI](https://chakra-ui.com/)
-* [Semantic UI](https://react.semantic-ui.com/)
-* [Material UI](https://mui.com/pt/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [Ant design](https://ant.design/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Semantic UI](https://react.semantic-ui.com/)
+- [Material UI](https://mui.com/pt/)

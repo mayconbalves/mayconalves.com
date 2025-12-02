@@ -2,14 +2,10 @@
 title: Como reutilizar componentes no react.
 description: Aprenda fazer componentes que podem ser usados mais de uma vez.
 date: 2020-02-10
-image: /images/como-reutilizar-componentes-no-react.webp
 tags: [javascript, js, react]
-background: "#5ED3F3"
 ---
 
 > Somente quando encontramos o amor é que descobrimos o que nos faltava na vida. **John Ruskin**.
-
-![como reutilizar componentes no react](/images/como-reutilizar-componentes-no-react.webp)
 
 Junto com tecnologias novas vem grandes responsabilidades (sempre quis escrever isso haha) falando especificamente de React.js temos grandes poderes. Podemos criar nossa própria arquitetura e criarmos componentes para serem reultilizaveis, isso é muito bom, porém temos que tomar um pouco de cuidado quando formos escrever nossos componentes, felizmente já trabalhei em ótimos projetos react, porém já trabalhei com alguns bem mal escritos. Para tentar evitar um pouco disso, vou tentar mostrar uma boa forma de escrever um componente que possa ser utilizado mais de uma vez.
 

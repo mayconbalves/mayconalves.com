@@ -2,14 +2,10 @@
 title: Meu caminho para fugir da depressão e doenças psicológicas.
 description: Espero que algum desses habítos possa te ajudar.
 date: 2022-08-24
-image: /images/meu-caminho-para-fugir-da-depressao-e-doencas-psicologicas.webp
 tags: [cotidiano, psicologia]
-background: "#7AAB13"
 ---
 
 > A imaginação é mais importante que o conhecimento. **Albert Einstein.**
-
-![pessoa com dor de cabeça](/images/meu-caminho-para-fugir-da-depressao-e-doencas-psicologicas.webp)
 
 Infelizmente doenças psicológicas são cada vez mais comuns entre as pessoas e muitas vezes ainda é tratada como besteira e como fingimento. Segundo um relatório divulgado pelo [OPAS Brasil de 2017](https://www.paho.org/pt/search/r?keys=aumenta%20o%20numero%20de%20pessoas%20com%20depressao%20no%20mundo%20Brasil#gsc.tab=0&gsc.q=aumenta%20o%20numero%20de%20pessoas%20com%20depressao%20no%20mundo%20Brasil) feito por “Depression and other common mental disorders: global health estimates” apontou que cerca de 322 milhões de pessoas no mundo sofrem de [depressão](https://drauziovarella.uol.com.br/doencas-e-sintomas/depressao/). Isso sem contar outros tipos de distúrbios mentais que acabam sendo bem comuns, crises de ansiedade, insônia, T.O.C entre outros. Infelizmente conheço muitos _devs_ que sofrem de algum tipo de problema psicológico, eu sofro de [insônia](https://drauziovarella.uol.com.br/doencas-e-sintomas/insonia/). Por isso decidi escrever esse artigo para tentar ajudar algumas pessoas que sofrem de alguma doença psicológica.
 

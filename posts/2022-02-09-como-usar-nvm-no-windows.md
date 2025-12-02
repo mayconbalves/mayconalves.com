@@ -2,14 +2,10 @@
 title: Como usar nvm no windows.
 description: Aprenda a configurar o nvm para usar no windows.
 date: 2022-02-09
-image: /images/como-usar-nvm-no-windows.webp
 tags: [javascript, html, css]
-background: "#D6BA32"
 ---
 
 > Antes de fazer alguma coisa , pense , quando achar que já pode faze-la , pense novamente . **Pitágoras**.
-
-![relógio](/images/como-usar-nvm-no-windows.webp)
 
 Atualmente estou trabalhando com Windows (me surpreendeu positivamente, mas na minha opinião, ainda precisa caminhar muito para chegar no linux ou macOs para desenvolvimento de software) pelo fato de poder atuar em projetos com possíveis diferentes versões de node, no lugar de instalar a última versão estável do node + npm, preferi essa alternativa, pois no meu ambiente de estudo e pessoal, já trabalho com o nvm (node version manage). Então vou mostrar como instalar, é bem simples e prático, mas pouca gente acaba não conhecendo essa alternativa. Vamos lá.
 
@@ -23,6 +19,6 @@ Temos a nossa disposição o comando: `nvm list` que irá listar todas as versõ
 
 ![terminal com nvm list](/images/nvm-list.webp)
 
-Notem que tenho duas versões na minha máquina, a versão que estou usando é marcada com um * (asterisco). Quando preciso mudar de versão é bem simples, basta eu olhar as versões que tenho na máquina e rodar o comando: `nvm use 14.16.1` (dei um exemplo de versão da imagem acima) sempre colocamos o número da versão para mudarmos para qual precisamos.
+Notem que tenho duas versões na minha máquina, a versão que estou usando é marcada com um \* (asterisco). Quando preciso mudar de versão é bem simples, basta eu olhar as versões que tenho na máquina e rodar o comando: `nvm use 14.16.1` (dei um exemplo de versão da imagem acima) sempre colocamos o número da versão para mudarmos para qual precisamos.
 
 Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

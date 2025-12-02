@@ -2,14 +2,10 @@
 title: Configurando variáveis de ambiente com React.
 description: Aprenda a configurar suas variáveis de ambiente em projetos React.
 date: 2022-02-23
-image: /images/configurando-variaveis-de-ambiente-com-reactjs.webp
 tags: [react, env]
-background: "#D6BA32"
 ---
 
 > Como nenhum político acredita no que diz, fica sempre surpreso ao ver que os outros acreditam nele. **Charles de Gaulle**.
-
-![configurando variáveis de ambiente com react](/images/configurando-variaveis-de-ambiente-com-reactjs.webp)
 
 Hoje em dia é bem comum trabalharmos com mais de um ambiente, podemos ter desenvolvimento, homologação e produção, mas isso acaba variando um pouco, já teve lugares em que eu trabalhei que tinha um ambiente chamado pré-prod, em outro lugar, só tinha desenvolvimento e produção. Isso acontece, por que em muitos casos só podemos ter coisas em ambiente de produção, por exemplo uma `key` do banco de dados, ou uma `api` de galeria que só pode ser vista em produção dependendo do `id` de um usuário.
 
@@ -37,7 +33,7 @@ REACT_APP_API=https://site.com.br/api/
 Reparem que as chaves estão em caixa alta e que não tem nenhum espaço entre o sinal de = (igual) e a url desejada, se tratando de ReactJs, sempre precisamos colocar o prefixo `REACT_APP_` daí basta “concatenar” o que mais você precisa, lembrando que precisa ser um nome bem descritivo `REACT_APP_NOMEDASUAVARIAVEL` para verificar se o que fizemos está funcionando dentro do arquivo `app.js` basta colocar um console log assim:
 
 ```javascript
-console.log(`${process.env.REACT_APP_API}`, 'env')
+console.log(`${process.env.REACT_APP_API}`, "env");
 ```
 
 Quando abrir o navegador da aplicação vai poder ver o log da sua chave funcionando.
@@ -56,6 +52,5 @@ REACT_APP_API=urlProd
 ```
 
 Normalmente as empresas tem um doc com as variáveis que tu consegue usar, então basta renomear esse arquivo como `.env` removendo o `.exemple` e completa-lo com as urls necessárias 😃.
-
 
 Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!

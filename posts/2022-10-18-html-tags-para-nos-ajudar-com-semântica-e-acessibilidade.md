@@ -2,13 +2,10 @@
 title: "HTML: tags para nos ajudar com semântica e acessibilidade"
 description: deixe seu markup mais acessível
 date: 2022-10-18
-image: /images/tags-para-nos-ajudar-com-semantica-e-acessibilidade.webp
 tags: [html]
-background: "#EB7728"
 ---
-> Eu sempre fui o tipo de pessoa que, se há alguma coisa que pode me matar, eu quero saber algo sobre isso. **Ray Charles**.
 
-![acessibilidade](/images/tags-para-nos-ajudar-com-semantica-e-acessibilidade.webp)
+> Eu sempre fui o tipo de pessoa que, se há alguma coisa que pode me matar, eu quero saber algo sobre isso. **Ray Charles**.
 
 ## Por que acessibilidade é importante ?
 
@@ -31,7 +28,9 @@ As diferença entre as tags de negrito é que o `strong` o texto é carregado co
 Utilizamos muitas siglas e muitas abreviações no nosso dia a dia, pelo menos para mim é bem comum, até pouco tempo atrás eu acabava usando uma tag `span` que não tem nenhum valor semântico, e simplesmente estilizar da melhor forma possível. Agora sempre que preciso de alguma sigla eu uso a `abbr` com o atributo title para explicar o que significa a sigla. Vamos para um exemplo:
 
 ```html
-<p>Eu possuo um <abbr title="Cadastro Nacional da Pessoa Jurídica">CNPJ</abbr></p>
+<p>
+  Eu possuo um <abbr title="Cadastro Nacional da Pessoa Jurídica">CNPJ</abbr>
+</p>
 ```
 
 ## Para cadastros e endereços

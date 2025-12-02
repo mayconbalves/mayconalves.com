@@ -2,14 +2,10 @@
 title: Criando um relógio digital com javascript.
 description: Uma forma divertidade para exercitar um pouco de javascript.
 date: 2022-02-22
-image: /images/criando-um-relogio-digital-com-javascript.webp
 tags: [javascript, html, css]
-background: "#D6BA32"
 ---
 
 > A alegria que se tem em pensar e aprender faz-nos pensar e aprender ainda mais. **Aristóteles**.
-
-![relógio](/images/criando-um-relogio-digital-com-javascript.webp)
 
 Estou escrevendo esse artigo pouco tempo depois que eu e minha esposa recebemos o diagnóstico de COVID-19, felizmente estamos bem. Daí hoje resolvi escrever um artigo de como criar um relógio digital com javascript. Fiz isso pois queria relembrar algumas coisas e também acredito que esse seja um dos muitos projetos que podem ajudar quem está começando na carreira como frontend.
 
@@ -27,11 +23,11 @@ Primeiro vamos começar com a parte do html que é bem simples.
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Digital Clock</title>
-    <link href="./styles.css" type="text/css" rel="stylesheet">
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <div class="container">
@@ -42,8 +38,6 @@ Primeiro vamos começar com a parte do html que é bem simples.
   </body>
 </html>
 ```
-
-
 
 Criei uma estrutura básica, é legal notar algumas linhas.
 
@@ -91,9 +85,7 @@ body {
   height: 100px;
   width: 250px;
 }
-
 ```
-
 
 Como eu disse nesse caso, você pode estilizar da melhor forma que quiser, uma coisa que acho legal comentar é sobre a linha 13 que deixo o background em `radial-gradient` que é um efeito bem legal.
 
@@ -103,23 +95,21 @@ Por último vamos ao nosso script que é bem simples também.
 
 ```javascript
 const getHours = () => {
-  const clock = document.getElementsByClassName('clock')[0]
-  const date = new Date()
-  const hours = date.getHours()
-  const minutes = date.getMinutes()
-  const seconds = date.getSeconds()
-  const hour = hours < 10 ? `0${hours}` : hours
-  const minute = minutes < 10 ? `0${minutes}` : minutes
-  const second = seconds < 10 ? `0${seconds}` : seconds
-  clock.innerHTML = `${hour}:${minute}:${second}`
-}
+  const clock = document.getElementsByClassName("clock")[0];
+  const date = new Date();
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+  const seconds = date.getSeconds();
+  const hour = hours < 10 ? `0${hours}` : hours;
+  const minute = minutes < 10 ? `0${minutes}` : minutes;
+  const second = seconds < 10 ? `0${seconds}` : seconds;
+  clock.innerHTML = `${hour}:${minute}:${second}`;
+};
 
 setInterval(() => {
-  getHours()
-}, 1000)
-
+  getHours();
+}, 1000);
 ```
-
 
 Criei uma função chamada `getHours` que faz todo o trabalho necessário, mas você também pode separar em várias funções menores e deixar o código melhor ainda.
 

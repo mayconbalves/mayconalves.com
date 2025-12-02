@@ -2,14 +2,10 @@
 title: Primeiros passos com VIM
 description: Alguns dicas de como começar a usar VIM
 date: 2019-01-07
-image: /images/primeiros-passos-com-vim.webp
 tags: [vim]
-background: "#D6BA32"
 ---
 
 > Não espere por uma crise para descobrir o que é importante em sua vida. **Platão.**
-
-![primeiros passos com VIM](/images/primeiros-passos-com-vim.webp)
 
 Se você já “teve” de usar o vim, para editar alguma coisa sabe o quanto é assustador editar um simples arquivo, ou até mesmo fazer um simples `commit`.
 

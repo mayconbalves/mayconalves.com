@@ -2,14 +2,10 @@
 title: 3 algoritimos para vocé treinar sua logica.
 description: Treine seu cérebro com esses algoritimos.
 date: 2022-04-22
-image: /images/3-algoritmos-para-treinar-sua-logica.webp
 tags: [algoritimo]
-background: "#D6BA32"
 ---
 
 > A matemática, vista corretamente, possui não apenas verdade, mas também suprema beleza — uma beleza fria e austera, como a da escultura. **Bertrand Russell**.
-
-![algoritmos](/images/3-algoritmos-para-treinar-sua-logica.webp)
 
 É bem comum no nosso dia-a-dia corrido, que muitas vezes deixamos de estudar algumas coisas legais e fundamentais para nós desenvolvedores, eu digo isso, pois sempre tenho coisas para estudar, novas coisas no JavaScript, aprender um pouco mais de css, entender como funciona graphql e assim por diante, sempre temos coisas novas não tem jeito, mas acho bem importante estudarmos algoritmos, pois com isso melhoramos nossa logica tão fundamental para desenvolvermos aplicações.
 
@@ -34,7 +30,31 @@ Com essa formula e esse breve descrição você conseguirá resolver de maneira 
 Esse é complexo e simples ao mesmo tempo, ele é divisível apenas por dois números, por 1 e por ele mesmo. Vou deixar os números primos de 0 até 100 para ajudar vocês a resolver esse exercício
 
 ```javascript
-2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97
+2,
+  3,
+  5,
+  7,
+  11,
+  13,
+  17,
+  19,
+  23,
+  29,
+  31,
+  37,
+  41,
+  43,
+  47,
+  53,
+  59,
+  61,
+  67,
+  71,
+  73,
+  79,
+  83,
+  89,
+  97;
 ```
 
 ## Fibonacci

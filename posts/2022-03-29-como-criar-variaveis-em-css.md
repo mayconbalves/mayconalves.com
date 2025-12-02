@@ -2,14 +2,10 @@
 title: Como criar variaveis em CSS.
 description: Uma dica para vocês optimizarem o seu css.
 date: 2022-03-29
-image: /images/como-criar-variaveis-em-css.webp
 tags: [css]
-background: "#D6BA32"
 ---
 
 > Chorar sobre as desgraças passadas é a maneira mais segura de atrair outras. **William Shakespeare**.
-
-![css](/images/como-criar-variaveis-em-css.webp)
 
 Em meus posts eu falo bastante sobre, javascript, git e alguns tipos de setup mas é bem difícil eu falar sobre css, por dois motivos, 1) eu estudo pouco 😢 2) não conheço profundamente, mas…. Isso está mudando essa semana (sim desde segunda-feira) voltei estudar, pois css é fantástico e merece mais atenção, por isso resolvi escrever sobre variáveis em css, e no próximo post de css pretendo falar sobre mais coisas bem legais.
 

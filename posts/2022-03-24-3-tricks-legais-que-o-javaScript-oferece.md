@@ -2,14 +2,10 @@
 title: 3 Tricks legais que o JavaScript oferece.
 description: Bora para algumas coisas que javascript oferece.
 date: 2022-03-24
-image: /images/3-tricks-legais-que-o-javascript-oferece.webp
 tags: [javascript]
-background: "#D6BA32"
 ---
 
 > Estou sempre disposto a aprender, mas nem sempre gosto que me ensinem. **Winston Churchill**.
-
-![javascript](/images/3-tricks-legais-que-o-javascript-oferece.webp)
 
 Galera prometi que escreveria um artigo por semana, mas já tem quase duas semanas (essa semana não acabou ainda 😃 ) então resolvi escrever um artigo com 3 tricks do JavaScript que podem te ajudar, sem mais delongas bora lá.
 

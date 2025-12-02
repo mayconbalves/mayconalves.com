@@ -2,14 +2,10 @@
 title: Sites gratuitos para ajudar sua vida como desenvolvedor.
 description: Dicas para facilitar sua vida como desenvolvedor.
 date: 2021-07-22
-image: /images/sites-gratis-para-ajudar-no-seu-dia-como-desenvolvedor.webp
 tags: [js, front-end]
-background: "#D6BA32"
 ---
 
 > Se a sua vida for a melhor coisa que já te aconteceu, acredite, você tem mais sorte do que pode imaginar. **Daniel Godri**.
-
-![background](/images/sites-gratis-para-ajudar-no-seu-dia-como-desenvolvedor.webp)
 
 Esses sites me ajudaram (ainda ajudam) a aprender muita coisa, se você não tem dinheiro para pagar alguma plataforma de curso, tais como Pluralsight, Frontend Masters, Egghead ou as plataformas brazucas, Alura, Treinaweb ou Cod3r, então vou listar alguns aqui, basta você ter um dispositivo eletrônico (celular, tablet, seria se tiver um notebook para praticar). Então chega de enrolar e bora para lista.
 

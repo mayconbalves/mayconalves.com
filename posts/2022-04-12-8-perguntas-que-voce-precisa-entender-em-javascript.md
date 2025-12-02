@@ -2,14 +2,10 @@
 title: 8 perguntas que vocé precisa entender em javascript.
 description: Perguntas para se preparar para uma entrevista.
 date: 2022-04-12
-image: /images/perguntas-que-voce-precisa-entender-em-javascript.webp
 tags: [js]
-background: "#D6BA32"
 ---
 
 > O futuro pertence àqueles que se preparam hoje para ele. **Malcolm X**.
-
-![perguntas em javascript](/images/perguntas-que-voce-precisa-entender-em-javascript.webp)
 
 Estou escrevendo esse artigo, logo depois de assistir o filme [A queda](https://www.youtube.com/watch?v=_ps_zWQqyZs) (recomendo fortemente para quem gosta de história da guerra, principalmente, aqueles que gostam de estudar sobre a segunda guerra mundial). Sempre queremos evoluir, mas como fazemos isso ? Existem várias formas para evoluirmos, nas últimas duas ou três semanas, estou estudando muitas coisas que eu tinha parado de estudar (por falta de motivação, estou me sentindo um pouco cansado 😪) css, html, javascript, react, redux, graphql, jest e afins…
 

@@ -2,14 +2,10 @@
 title: HTTP response status code
 description: Os principais status code HTTP que sua aplicação pode receber.
 date: 2022-04-19
-image: /images/http-status-code.webp
 tags: [http, https, web]
-background: "#D6BA32"
 ---
 
 > Aprendi uma coisa: só se conhece realmente uma pessoa depois de uma discussão. Só nessa altura se pode avaliar o seu verdadeiro carácter. **Anne Frank**.
-
-![http response status code](/images/http-status-code.webp)
 
 Estou escrevendo esse artigo enquanto minha esposa assiste o filme O diabo veste prada (não estou prestando muita atenção, mas me parece um bom filme) estava fazendo um quiz de JavaScript e apareceu uma pergunta bem interessante, daí resolvi escrever sobre response status code não é muito complicado, mas se você consome ou cria API's precisa entender um pouco sobre alguns deles, não estou aqui para falar que você precisa conhecer todos (eu não conheço 😃) mas pelo menos os ranges e os principais você precisa conhecer e entender.
 

@@ -2,14 +2,10 @@
 title: Como criar máscara de CPF em React usando Regex
 description: Forma simples para criar uma mascara de cpf para seu formulário
 date: 2019-06-02
-image: /images/como-criar-mascara-de-cpf-usando-react-e-regex.webp
 tags: [react, cpf, regex, javascript]
-background: "#5ED3F3"
 ---
 
 > Pessimismo leva à fraqueza, otimismo ao poder. **William James.**
-
-![background-image](/images/como-criar-mascara-de-cpf-usando-react-e-regex.webp)
 
 > Esse tutorial foi inspirado pelo vídeo muito bom do [Fernando Daciuk](https://www.youtube.com/watch?v=r-8isv_TnVA) que mostra como fazer máscaras para campos de CPF, CEP, PIS, telefone e CNPJ em Javascript puro. Aqui, vou mostrar a implementação junto com React.
 

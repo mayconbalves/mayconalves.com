@@ -2,14 +2,10 @@
 title: 5 dicas para vocé começar a escrever seus artigos.
 description: Espero que esse artigo possa te ajudar a começar a escrever seus artigos.
 date: 2022-04-01
-image: /images/5-dicas-para-voce-comecar-a-escrever-seus-artigos.webp
 tags: [dica]
-background: "#D6BA32"
 ---
 
 > A única coisa que devemos temer é o próprio medo. **Franklin Roosevelt**.
-
-![escrevendo](/images/5-dicas-para-voce-comecar-a-escrever-seus-arigos.webp)
 
 Minha meta de escrita é de pelo menos um artigo por semana, como mês passado eu só consegui escrever três, essa semana resolvi escrever um a mais para tentar compensar. Por isso esse segundo artigo é mais leve e espero poder ajudar algumas pessoas começarem a escrever também, então vamos as cinco dicas que podem lhe ajudar, pois foram as coisas que eu pesei bem antes de começar a escrever, bora lá.
 

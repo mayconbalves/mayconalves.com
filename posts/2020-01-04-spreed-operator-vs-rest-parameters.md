@@ -2,14 +2,10 @@
 title: Spreed operator vs rest parameters.
 description: Entenda essa bagaça de vez e comece usar de formaa certa.
 date: 2020-01-04
-image: /images/spreed-operator-vs-rest-parameters.webp
 tags: [javascript, js, es2015]
-background: "#5ED3F3"
 ---
 
 > Esteja presente em cada momento da sua vida, antes que estes momentos se tornem apenas lembranças.
-
-![spreed operator e rest parameters](/images/spreed-operator-vs-rest-parameters.webp)
 
 Por muito tempo, achei que os `...` fossem usados da mesma forma, mas tem uma pequena diferença que pode deixar sua vida muito menos complicada =)
 
