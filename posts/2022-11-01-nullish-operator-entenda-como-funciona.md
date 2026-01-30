@@ -38,6 +38,4 @@ Lembrando que você pode consultar em quais browsers e em quais versões o [null
 
 Se você está no `NodeJS`, ele é suportado a partir da versão 14.
 
-Bom galera, o artigo de hoje foi bem curtinho, pois estou escrevendo esse artigo na hora do almoço (comendo um pedaço de costelinha 😃) e ouvindo um episódio do flow. Espero que tenham gostado, não esqueçam de que qualquer feedback, é muito bem vindo.
-
-É isso galera, boa semana, abraços quentinhos para vocês !!
+Bem é isso, espero que tenham gostado, lembrem que qualquer informação que deixei passar, ou se quiserem adicionar qualquer coisa me mandem mensagem. Se esse artigo foi útil ficarei feliz. Abraços quentinhos para vocês!!
