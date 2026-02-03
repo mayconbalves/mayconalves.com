@@ -58,18 +58,15 @@ export default async function Blog(): Promise<JSX.Element> {
             <li aria-current="page">Blog</li>
           </ol>
         </nav>
-        <hr />
         <div className={styles.slider}>
           <div className={styles.container}>
-            <Card posts={posts} cardType="vertical" />
+            <Card posts={posts} />
           </div>
         </div>
-        <hr />
         {/* Seção de anúncio isolada do conteúdo principal */}
         <section className={styles.adSection} aria-label="Publicidade">
           <AdBanner dataAdSlot="8282304065" dataAdFormat="auto" />
         </section>
-        <hr />
       </div>
     </>
   );
