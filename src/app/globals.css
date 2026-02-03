@@ -16,7 +16,7 @@
 /* Tema retro (padrão) */
 html[data-theme="retro"],
 :root {
-  --body-bg: #f1ece0;
+  --body-bg: #fff;
   --text-primary: #232b39;
   --text-secondary: #8b7355;
   --accent: #cb9f61;
