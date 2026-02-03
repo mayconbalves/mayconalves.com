@@ -44,38 +44,29 @@
 }
 
 /* ===== CARD TIPO 1: ORNATE VERTICAL ===== */
-.vintage-card.ornate {
+.vintage-card {
   width: 320px;
-  background: #f4e8d8;
+  background: #fff;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
     inset 0 0 0 1px rgba(139, 115, 85, 0.3);
   overflow: hidden;
   position: relative;
-  height: 420px; /* Altura fixa para todos os cards */
+  height: 420px;
   display: flex;
   flex-direction: column;
+  border: 3px solid #000;
+
+  &:hover {
+    border-radius: 0px;
+    box-shadow: -10px 10px 10px 0px #000;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
 }
 
-.vintage-card.ornate::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(139, 115, 85, 0.03) 2px,
-    rgba(139, 115, 85, 0.03) 4px
-  );
-  pointer-events: none;
-}
 
 .vintage-card.ornate .card-border {
-  border: 3px double #8b7355;
   margin: 15px;
   padding: 20px;
   border-radius: 4px;
@@ -85,17 +76,9 @@
   overflow: hidden;
 }
 
-.vintage-card.ornate .ornament {
-  text-align: center;
-  color: #8b7355;
-  font-size: 24px;
-  margin-bottom: 15px;
-  flex-shrink: 0;
-}
-
 .vintage-card.ornate .card-title {
   font-size: 22px;
-  color: #4a3f2f;
+  color: #000;
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
@@ -104,7 +87,7 @@
   flex-shrink: 0;
   /* Limita título a 3 linhas */
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -113,7 +96,7 @@
 
 .vintage-card.ornate .card-subtitle {
   font-size: 14px;
-  color: #8b7355;
+  color: #000;
   text-align: center;
   margin-bottom: 15px;
   font-style: italic;
@@ -126,8 +109,8 @@
   background: linear-gradient(
     to right,
     transparent,
-    #8b7355 20%,
-    #8b7355 80%,
+    #000 20%,
+    #000 80%,
     transparent
   );
   margin: 15px 0;
@@ -135,37 +118,16 @@
 }
 
 .vintage-card.ornate .card-content {
-  color: #4a3f2f;
+  color: #000;
   font-size: 15px;
   line-height: 1.6;
   text-align: justify;
   flex: 1;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5;
+  line-clamp: 5;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
-}
-
-.vintage-card.ornate .corner-ornament {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  border: 2px solid #8b7355;
-}
-
-.corner-ornament.top-left {
-  top: 20px;
-  left: 20px;
-  border-right: none;
-  border-bottom: none;
-}
-
-.corner-ornament.top-right {
-  top: 20px;
-  right: 20px;
-  border-left: none;
-  border-bottom: none;
 }
 
 /* ===== TEMA FUTURISTA - Estilo Moderno ===== */
@@ -322,7 +284,7 @@
   .vintage-card.ornate .card-content {
     font-size: 14px;
     line-height: 1.5;
-    -webkit-line-clamp: 4;
+    line-clamp: 4;
   }
 
   .vintage-card.ornate .ornament {
@@ -368,7 +330,7 @@
 
   .vintage-card.ornate .card-content {
     font-size: 13px;
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }
 
@@ -421,7 +383,7 @@
   line-height: 1.2;
   margin-bottom: 0.75rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -433,7 +395,7 @@
   line-height: 1.6;
   flex-grow: 1;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -624,6 +586,6 @@
 
   .vintage-card.rustic .card-description {
     font-size: 0.95rem;
-    -webkit-line-clamp: 3;
+    line-clamp: 3;
   }
 }

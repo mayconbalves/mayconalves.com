@@ -35,24 +35,20 @@ const Card = ({ cardType = "", posts }: CardProps) => {
                 className={styles.cardLink}
               >
                 <div className={`${styles["vintage-card"]} ${styles.ornate}`}>
-                  <div
-                    className={`${styles["corner-ornament"]} ${styles["top-left"]}`}
-                  ></div>
-                  <div
-                    className={`${styles["corner-ornament"]} ${styles["top-right"]}`}
-                  ></div>
 
                   <div className={styles["card-border"]}>
-                    <div className={styles.ornament}>❦</div>
 
                     <div className={styles["card-title"]}>{title}</div>
-                    <div className={styles["card-subtitle"]}>
-                      {date} - tempo de leitura {readingTime}
-                    </div>
 
                     <div className={styles["card-divider"]}></div>
 
                     <div className={styles["card-content"]}>{description}</div>
+                    <div className={styles["card-subtitle"]}>
+                      {date}
+                    </div>
+                    <div className={styles["card-subtitle"]}>
+                      tempo de leitura {readingTime}
+                    </div>
                   </div>
                 </div>
               </Link>

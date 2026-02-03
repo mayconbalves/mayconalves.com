@@ -100,7 +100,6 @@ const Navbar = (): JSX.Element => {
           </li>
         </ul>
       </div>
-      <hr />
     </nav>
   );
 };

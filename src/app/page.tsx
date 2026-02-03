@@ -10,7 +10,6 @@ export default async function Home(): Promise<JSX.Element> {
     <div className={styles.main}>
       <section>
         <div className={styles.slider}>
-          <hr />
           <div className={styles.container}>
             <div className={styles.container_title}>
               <div>
@@ -46,7 +45,6 @@ export default async function Home(): Promise<JSX.Element> {
               </p>
             </div>
           </div>
-          <hr />
         </div>
       </section>
     </div>
