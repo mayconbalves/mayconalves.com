@@ -114,6 +114,13 @@
   border: 3px solid #9D00FF;
   background: #232b39;
   color: #fff;
+
+  &:hover {
+    border-radius: 0px;
+    box-shadow: -5px 5px 5px 0px #9D00FF;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+  }
 }
 
 .exp_panel {
@@ -133,6 +140,7 @@
 
 .exp_role {
   margin: 0;
+  color: #9D00FF;
 }
 
 .exp_company,
@@ -140,6 +148,7 @@
 .exp_location {
   margin: 0.25rem 0 0;
   font-size: 1rem;
+  color: #9D00FF;
 }
 
 .exp_period {

@@ -34,7 +34,8 @@ export default function ExperienceTabs() {
         company: "Frota 162",
         employmentType: "Full-time",
         period: "Oct 2025 - Present",
-        location: "Brazil · Remote",
+        summary: `Estou trabalhando em um projeto legado com PHP e React. Minha missão é desativar o projeto legado
+          e implementar um novo projeto moderno usando arquitetura de microfrontends, GraphQL e consumindo componentes do DS interno.`,
         skills: ["Front-End Development", "React.js", "JavaScript", "PHP", "GraphQL"],
       },
       {
@@ -42,6 +43,10 @@ export default function ExperienceTabs() {
         role: "Senior Frontend Developer",
         company: "B3 Digitas",
         period: "Jan 2025 - Oct 2025",
+        summary: `Eu trabalhava com sistemas de câmbio. E com sistemas administrativos. Usávamos React e Apollo Client nos dois sistemas,
+          porém usávamos a arquitetura de micro-frontend para cada um deles, para orquestrar os front-ends usávamos module federation do webpack.
+          Também mantínhamos um DS próprio para ter consistência nos componentes de cada tela. Para testes usávamos RTL e jest.`,
+        skills: ["Redux Thunk", "React.js", "Git", "JavaScript", "styled-components", "Controle de versão", "API REST", "react"],
       },
       {
         key: "invillia",
@@ -49,7 +54,8 @@ export default function ExperienceTabs() {
         company: "Invillia",
         employmentType: "Full-time",
         period: "Jun 2022 - Dec 2024",
-        location: "Brasil",
+        summary: `Pelo fato de a Invillia ser uma consultoria, tive oportunidade de trabalhar em vários projetos diferentes,
+          na grande maioria deles trabalhei usando React, Redux, styled-components e jest com RTL para testes unitários e de UI.`,
         skills: [
           "Redux Thunk",
           "React.js",
@@ -67,19 +73,28 @@ export default function ExperienceTabs() {
       },
       {
         key: "avanade",
-        role: "Frontend Developer",
+        role: "Senior Frontend Developer",
         company: "Avanade",
         employmentType: "Full-time",
         period: "Apr 2021 - Jun 2022",
+        summary: `Pelo fato de a Avanade ser uma consultoria, tive oportunidade de trabalhar em vários projetos diferentes,
+          na grande maioria deles trabalhei usando React, Redux, styled-components e jest com RTL para testes unitários e de UI.`,
         skills: ["Git", "Redux.js", "JavaScript", "TypeScript", "Controle de versão", "API REST", "react"],
       },
       {
         key: "gympass",
-        role: "Frontend Developer",
+        role: "Mid Frontend Developer",
         company: "Gympass",
         employmentType: "Full-time",
         period: "Dec 2019 - Feb 2021",
-        location: "São Paulo Area, Brazil",
+        summary: `Eu trabalhei na nova plataforma web que estava sendo desenvolvida. A plataforma mais nova foi
+          feita em React junto com Redux para controlar o estado global da aplicação e usava styled-components para o visual,
+          além de RTL para os testes de UI.
+
+          A plataforma legada era feita em Ruby on Rails e tínhamos features de sustentação enquanto acontecei a migração
+          dessa plataforma antiga.
+
+          Tive a oportunidade de trabalhar no app feito em RN e o consumo de dados era feito via GraphQL.`,
         skills: [
           "GraphQL da Apollo",
           "GraphQL",
@@ -96,33 +111,33 @@ export default function ExperienceTabs() {
       },
       {
         key: "acesso",
-        role: "Frontend Developer",
+        role: "Mid Frontend Developer",
         company: "Acesso Soluções de Pagamentos",
         employmentType: "Full-time",
         period: "May 2019 - Dec 2019",
-        location: "São Paulo",
-        summary: "I working actually in development the backoffice system with react and apollo client",
+        summary: `Eu trabalhei na criação de um sistema de backoffice voltado para os clientes finais,
+          usamos para criação dessa aplicação React e Apollo Client para manipulação dos dados,
+          além disso usamos styled-componentes para criar os estilos do app e jest com enzyme para os testes unitários.`,
         skills: ["GraphQL da Apollo", "Webpack", "GraphQL", "Git", "JavaScript", "Controle de versão", "API REST", "react"],
       },
       {
         key: "printi",
-        role: "Frontend Web Developer",
+        role: "Mid Frontend Developer",
         company: "Printi",
         employmentType: "Full-time",
         period: "Nov 2018 - May 2019",
-        location: "São Paulo e Região, Brasil",
-        summary: "I working with react, redux and nodejs for building e-commerce",
+        summary: `Trabalhei em uma nova versão do e-commerce. Usamos React e Redux para controle de estado global,
+          emotion-js para estilização da interface do usuário e Node.js para criar um BFF nativo.`,
         skills: ["Webpack", "Git", "Redux.js", "JavaScript", "Controle de versão", "API REST", "react"],
       },
       {
         key: "leroy",
-        role: "Frontend Developer",
+        role: "JuniorFrontend Developer",
         company: "Leroy Merlin Brasil",
         employmentType: "Full-time",
         period: "Jan 2017 - Nov 2018",
-        location: "Av Alexandre Dumas",
-        summary:
-          "My first job with frontend developer, building schedule system and invoices of clients. Technology used react, redux, atomic css. REST for all requests.",
+        summary: `Meu primeiro como desenvolvedor frontend, construindo sistema de agendamento e faturas de clientes.
+          Nós usamos para constuir esses sistemas react, redux e atomic css.`,
         skills: ["Webpack", "Git", "Redux.js", "JavaScript", "Controle de versão", "API REST", "react"],
       },
     ],
@@ -156,16 +171,10 @@ export default function ExperienceTabs() {
       <div className={styles.exp_panel} role="tabpanel">
         <div className={styles.exp_header}>
           <div className={styles.exp_title}>
-            <h3 className={styles.exp_role}>{activeExperience.role}</h3>
+            <h3 className={styles.exp_role}>{activeExperience.role}/{activeExperience.employmentType}/{activeExperience.period}</h3>
             <p className={styles.exp_company}>
               {activeExperience.company}
-              {activeExperience.employmentType ? ` · ${activeExperience.employmentType}` : ""}
             </p>
-          </div>
-
-          <div className={styles.exp_meta}>
-            <p className={styles.exp_period}>{activeExperience.period}</p>
-            {activeExperience.location ? <p className={styles.exp_location}>{activeExperience.location}</p> : null}
           </div>
         </div>
 
