@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 
 import { JSX } from "react";
 import Footer from "../components/footer";
@@ -98,7 +97,7 @@ export default function RootLayout({
           content="hbk7VP_BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A"
         />
         <meta name="google-adsense-account" content="ca-pub-4370754805788508" />
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4370754805788508"
           crossOrigin="anonymous"
