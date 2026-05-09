@@ -3,6 +3,7 @@ import { Inter, Outfit, Fira_Code } from "next/font/google";
 import { JSX } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import Breadcrumb from "../components/breadcrumb";
 import {
   WebsiteStructuredData,
   PersonStructuredData,
@@ -98,12 +99,6 @@ export default function RootLayout({
           name="google-site-verification"
           content="hbk7VP_BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A"
         />
-        <meta name="google-adsense-account" content="ca-pub-4370754805788508" />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4370754805788508"
-          crossOrigin="anonymous"
-        />
         <WebsiteStructuredData
           url="https://mayconalves.com"
           name="Maycon Alves - Engenheiro de Software"
@@ -134,7 +129,10 @@ export default function RootLayout({
           <header>
             <Navbar />
           </header>
-          <main id="main-content">{children}</main>
+          <main id="main-content">
+            <Breadcrumb />
+            {children}
+          </main>
           <footer>
             <Footer />
           </footer>

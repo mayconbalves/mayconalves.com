@@ -33,6 +33,7 @@
   }
 
   @media (min-width: 1200px) {
+
     .sidebarLeft,
     .sidebarRight {
       display: block;
@@ -196,10 +197,8 @@
         word-wrap: break-word;
         background-attachment: local;
         background-color: #fdfdfd;
-        background-image: linear-gradient(
-          transparent 50%,
-          rgba(69, 142, 209, 0.04) 0
-        );
+        background-image: linear-gradient(transparent 50%,
+            rgba(69, 142, 209, 0.04) 0);
         background-origin: content-box;
         background-size: 3em 3em;
         border-left: 10px solid #358ccb;
@@ -242,6 +241,7 @@
 }
 
 [data-theme="futuristic"] .main .container {
+
   p,
   h1,
   h2,

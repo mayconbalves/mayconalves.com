@@ -8,7 +8,6 @@ type Posts = {
   date: string;
   description: string;
   readingTime: number;
-  image: string;
 };
 
 type CardProps = {
@@ -19,23 +18,27 @@ const Card = ({ posts }: CardProps) => {
   return (
     <div className={styles.postsGrid}>
       {posts.map(
-        ({ slug, title, date, description, readingTime }: Posts): JSX.Element => (
-          <Link href={`/blog/${slug}`} key={slug} className={styles.cardLink} aria-label={`Ler artigo: ${title}`}>
-            <article className={styles.postCard}>
-              <div className={styles.cardMeta}>
-                <time dateTime={date} className={styles.date}>{date}</time>
-                <span className={styles.readingTime}>{readingTime} min</span>
-              </div>
-              
-              <h3 className={styles.cardTitle}>{title}</h3>
-              <p className={styles.cardDescription}>{description}</p>
-              
-              <div className={styles.cardFooter}>
-                <span className={styles.readMore}>Ler artigo →</span>
-              </div>
-            </article>
-          </Link>
-        ),
+        ({ slug, title, date, description, readingTime }: Posts): JSX.Element => {
+          return (
+            <Link href={`/blog/${slug}`} key={slug} className={styles.cardLink} aria-label={`Ler artigo: ${title}`}>
+              <article className={styles.postCard}>
+                <div className={styles.cardContent}>
+                  <div className={styles.cardMeta}>
+                    <time dateTime={date} className={styles.date}>{date}</time>
+                    <span className={styles.readingTime}>{readingTime} min</span>
+                  </div>
+                  
+                  <h3 className={styles.cardTitle}>{title}</h3>
+                  <p className={styles.cardDescription}>{description}</p>
+                  
+                  <div className={styles.cardFooter}>
+                    <span className={styles.readMore}>Ler artigo →</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          );
+        }
       )}
     </div>
   );

@@ -7,7 +7,7 @@ tags: [closure, javascript]
 
 > Nunca deixe ninguém te dizer que não pode fazer alguma coisa. Se você tem um sonho tem que correr atrás dele. As pessoas não conseguem vencer e dizem que você também não vai vencer. Se você quer uma coisa corre atrás. **À Procura da Felicidade**.
 
-[![closure](/images/closure-in-js.webp)]
+![clousure](/images/clousure-in-js.webp)
 
 Segundo o site Mozila uma closure é:
 

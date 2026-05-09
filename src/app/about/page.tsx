@@ -3,10 +3,25 @@ import styles from "./about.module.css";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-export const metadata = {
-  title: "Sobre | Maycon Alves",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sobre",
   description:
     "Conheça mais sobre Maycon Alves, Desenvolvedor Front-end Sênior desde 2017, especialista em React, Microfrontends e Ecossistema Web.",
+  openGraph: {
+    title: "Sobre | Maycon Alves",
+    description: "Conheça mais sobre Maycon Alves, Desenvolvedor Front-end Sênior desde 2017, especialista em React, Microfrontends e Ecossistema Web.",
+    url: "https://mayconalves.com/about",
+    type: "profile",
+  },
+  twitter: {
+    title: "Sobre | Maycon Alves",
+    description: "Conheça mais sobre Maycon Alves, Desenvolvedor Front-end Sênior desde 2017, especialista em React, Microfrontends e Ecossistema Web.",
+  },
+  alternates: {
+    canonical: "https://mayconalves.com/about",
+  },
 };
 
 export default function About(): JSX.Element {
@@ -15,7 +30,7 @@ export default function About(): JSX.Element {
       <div className={styles.container}>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1 className={styles.title}>Sobre Mim</h1>
+            <h1 className={styles.title}>{`<Sobre Mim />`}</h1>
             <p className={styles.subtitle}>Desenvolvedor Front-end Sênior</p>
             <p className={styles.intro}>
               Sou desenvolvedor front-end desde <strong>2017</strong>. Tenho um foco constante em arquitetura, performance web e práticas de desenvolvimento escaláveis. Especialista no ecossistema <strong>React</strong>, com vivência na criação de <strong>micro-frontends</strong>, Design Systems e aplicações de alta complexidade.
@@ -24,24 +39,24 @@ export default function About(): JSX.Element {
         </section>
 
         <section className={styles.skillsSection}>
-          <h2 className={styles.sectionTitle}>Arsenal Técnico</h2>
-          
+          <h2 className={styles.sectionTitle}>{`<Main Stack />`}</h2>
+
           <div className={styles.skillsGrid}>
             <div className={styles.skillCard}>
               <h3>Ecossistema React</h3>
               <p>React, Next.js, Redux, Zustand, Apollo Client, React Query, React Native</p>
             </div>
-            
+
             <div className={styles.skillCard}>
               <h3>Linguagens</h3>
               <p>JavaScript (ES6+), TypeScript, HTML5, CSS3, GraphQL</p>
             </div>
-            
+
             <div className={styles.skillCard}>
               <h3>Estilização & UI</h3>
               <p>Styled Components, Sass, CSS Modules, Tailwind CSS, Atomic CSS</p>
             </div>
-            
+
             <div className={styles.skillCard}>
               <h3>Ferramentas & Arquitetura</h3>
               <p>Micro-frontends (Module Federation), Jest, RTL, Webpack, Vite, Git, CI/CD</p>
@@ -53,7 +68,7 @@ export default function About(): JSX.Element {
           <h2 className={styles.sectionTitle}>Trajetória Profissional</h2>
 
           <div className={styles.timeline}>
-            
+
             <div className={styles.timelineItem}>
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
@@ -173,7 +188,7 @@ export default function About(): JSX.Element {
           <div className={styles.contactCard}>
             <h2 className={styles.contactTitle}>Vamos conversar?</h2>
             <p>Seja para discutir arquitetura front-end, novos desafios profissionais ou apenas fazer networking.</p>
-            
+
             <div className={styles.socialLinks}>
               <a href="https://www.linkedin.com/in/mayconbalves/" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
                 <FaLinkedin /> LinkedIn
@@ -181,7 +196,7 @@ export default function About(): JSX.Element {
               <a href="https://github.com/mayconbalves" target="_blank" rel="noopener noreferrer" className={styles.linkButton}>
                 <FaGithub /> GitHub
               </a>
-              <a href="mailto:mayconbalves@gmail.com" className={styles.linkButton}>
+              <a href="mailto:mayconbalves1@gmail.com" className={styles.linkButton}>
                 <FaEnvelope /> Email
               </a>
             </div>

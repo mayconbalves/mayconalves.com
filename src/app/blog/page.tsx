@@ -1,8 +1,6 @@
 import { JSX } from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getAllPosts } from "../../../lib/posts";
-import AdBanner from "../../components/adsense";
 import Card from "../../components/card";
 import { BreadcrumbStructuredData } from "../../components/structured-data";
 import styles from "./blog.module.css";
@@ -49,24 +47,17 @@ export default async function Blog(): Promise<JSX.Element> {
         ]}
       />
       <div className={styles.main}>
-        {/* Breadcrumb navegacional */}
-        <nav aria-label="Breadcrumb" className={styles.breadcrumb}>
-          <ol>
-            <li>
-              <Link href="/">Início</Link>
-            </li>
-            <li aria-current="page">Blog</li>
-          </ol>
-        </nav>
+        <header className={styles.header}>
+          <div className={styles.headerContent}>
+            <h1>Meu Blog</h1>
+            <p>Artigos sobre engenharia de software, front-end e tecnologias web.</p>
+          </div>
+        </header>
         <div className={styles.slider}>
           <div className={styles.container}>
             <Card posts={posts} />
           </div>
         </div>
-        {/* Seção de anúncio isolada do conteúdo principal */}
-        <section className={styles.adSection} aria-label="Publicidade">
-          <AdBanner dataAdSlot="8282304065" dataAdFormat="auto" />
-        </section>
       </div>
     </>
   );

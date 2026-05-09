@@ -22,6 +22,7 @@
   animation: fadeInUp 0.4s ease forwards;
   opacity: 0;
   outline: none;
+  height: 100%;
 }
 
 .cardLink:nth-child(1) { animation-delay: 0.05s; }
@@ -34,18 +35,32 @@
 .postCard {
   background: var(--surface-bg);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 1.75rem;
+  border-radius: 16px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+/* Glow gradient effect at the top */
+.postCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, var(--accent), var(--accent-glow));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
 }
 
 /* Subtle glow effect on hover */
-.postCard::before {
+.postCard::after {
   content: '';
   position: absolute;
   top: 0;
@@ -61,10 +76,10 @@
 
 .cardLink:hover .postCard,
 .cardLink:focus-visible .postCard {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
   border-color: var(--border-hover);
   background: var(--surface-bg-hover);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .cardLink:hover .postCard::before,
@@ -72,16 +87,25 @@
   opacity: 1;
 }
 
-.postCard > * {
+.cardLink:hover .postCard::after,
+.cardLink:focus-visible .postCard::after {
+  opacity: 0.5;
+}
+
+.cardContent {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .cardMeta {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
   font-family: var(--font-mono);
 }
 
@@ -96,19 +120,19 @@
   font-size: 0.75rem;
   color: var(--accent);
   background: var(--accent-glow);
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-weight: 600;
 }
 
 .cardTitle {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
-  line-height: 1.4;
+  margin-bottom: 1rem;
+  line-height: 1.3;
   display: -webkit-box;
-  line-clamp: 2;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-family: var(--font-heading);
@@ -120,7 +144,7 @@
 }
 
 .cardDescription {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.6;
   display: -webkit-box;
@@ -138,13 +162,16 @@
 
 .readMore {
   color: var(--text-muted);
-  font-weight: 500;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: all 0.2s ease;
   font-family: var(--font-sans);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .cardLink:hover .readMore {
-  color: var(--text-primary);
-  transform: translateX(4px);
+  color: var(--accent);
+  transform: translateX(6px);
 }

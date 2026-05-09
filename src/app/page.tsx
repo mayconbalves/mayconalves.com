@@ -3,6 +3,21 @@ import { JSX } from "react";
 import { getAllPosts } from "../../lib/posts";
 import Card from "../components/card";
 import styles from "./page.module.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Início",
+  description: "Portfólio e Blog de Maycon Alves, Engenheiro de Software Sênior especializado em React, Next.js e ecossistema front-end moderno.",
+  openGraph: {
+    title: "Maycon Alves - Engenheiro de Software Sênior",
+    description: "Portfólio e Blog de Maycon Alves, Engenheiro de Software Sênior especializado em React, Next.js e ecossistema front-end moderno.",
+    url: "https://mayconalves.com/",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://mayconalves.com/",
+  },
+};
 
 export default async function Home(): Promise<JSX.Element> {
   const posts = await getAllPosts();
@@ -16,17 +31,17 @@ export default async function Home(): Promise<JSX.Element> {
           <div className={styles.hero_section}>
             <div className={styles.hero_badge}>
               <span className={styles.status_dot}></span>
-              Engenheiro de Software Sênior
+              Desenvolvedor front-end
             </div>
-            
+
             <h1 className={styles.hero_title}>
-              Criando experiências digitais com <span>React</span>
+              Maycon Alves
             </h1>
-            
+
             <p className={styles.hero_subtitle}>
               Olá, eu sou o Maycon Alves. Desenvolvedor front-end focado no ecossistema moderno. Escrevo sobre interfaces escaláveis, performance, usabilidade e tudo o que permeia o desenvolvimento web profissional.
             </p>
-            
+
             <div className={styles.hero_links}>
               <Link href="/blog" className={styles.primary_button}>
                 Ler Artigos <span aria-hidden="true">→</span>
