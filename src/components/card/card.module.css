@@ -1,8 +1,7 @@
-/* Animação de entrada */
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;
@@ -10,582 +9,142 @@
   }
 }
 
+.postsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
 .cardLink {
   text-decoration: none;
-  color: inherit;
   display: block;
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 100%;
-  animation: fadeInUp 0.6s ease forwards;
+  animation: fadeInUp 0.4s ease forwards;
   opacity: 0;
-  cursor: pointer;
+  outline: none;
 }
 
-/* Delay progressivo para cada card */
-.cardLink:nth-child(1) {
-  animation-delay: 0.1s;
-}
+.cardLink:nth-child(1) { animation-delay: 0.05s; }
+.cardLink:nth-child(2) { animation-delay: 0.1s; }
+.cardLink:nth-child(3) { animation-delay: 0.15s; }
+.cardLink:nth-child(4) { animation-delay: 0.2s; }
+.cardLink:nth-child(5) { animation-delay: 0.25s; }
+.cardLink:nth-child(6) { animation-delay: 0.3s; }
 
-.cardLink:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.cardLink:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.cardLink:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.cardLink:hover {
-  transform: none;
-}
-
-/* ===== CARD TIPO 1: ORNATE VERTICAL ===== */
-.vintage-card {
-  width: 320px;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3),
-    inset 0 0 0 1px rgba(139, 115, 85, 0.3);
-  overflow: hidden;
-  position: relative;
-  height: 420px;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #000;
-
-  &:hover {
-    border-radius: 0px;
-    box-shadow: -10px 10px 10px 0px #000;
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-  }
-}
-
-
-.vintage-card.ornate .card-border {
-  margin: 15px;
-  padding: 20px;
-  border-radius: 4px;
+.postCard {
+  background: var(--surface-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
   height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-}
-
-.vintage-card.ornate .card-title {
-  font-size: 22px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 10px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-  flex-shrink: 0;
-  /* Limita título a 3 linhas */
-  display: -webkit-box;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-height: 66px; /* 3 linhas * 22px */
-}
-
-.vintage-card.ornate .card-subtitle {
-  font-size: 14px;
-  color: #000;
-  text-align: center;
-  margin-bottom: 15px;
-  font-style: italic;
-  letter-spacing: 2px;
-  flex-shrink: 0;
-}
-
-.vintage-card.ornate .card-divider {
-  height: 1px;
-  background: linear-gradient(
-    to right,
-    transparent,
-    #000 20%,
-    #000 80%,
-    transparent
-  );
-  margin: 15px 0;
-  flex-shrink: 0;
-}
-
-.vintage-card.ornate .card-content {
-  color: #000;
-  font-size: 15px;
-  line-height: 1.6;
-  text-align: justify;
-  flex: 1;
-  overflow: hidden;
-  display: -webkit-box;
-  line-clamp: 5;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-}
-
-/* ===== TEMA FUTURISTA - Estilo Moderno ===== */
-[data-theme="futuristic"] .vintage-card.ornate {
-  background: rgba(24, 24, 27, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(167, 139, 250, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4),
-              inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  transform-style: preserve-3d;
-  perspective: 1000px;
 }
 
-/* Efeito de gradiente animado na borda */
-[data-theme="futuristic"] .vintage-card.ornate::before {
-  content: "";
+/* Subtle glow effect on hover */
+.postCard::before {
+  content: '';
   position: absolute;
-  inset: -2px;
-  background: linear-gradient(
-    45deg,
-    #a78bfa,
-    #ec4899,
-    #8b5cf6,
-    #06b6d4,
-    #a78bfa
-  );
-  background-size: 300% 300%;
-  border-radius: 16px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, var(--accent-glow), transparent 60%);
   opacity: 0;
   transition: opacity 0.4s ease;
-  animation: gradientRotate 4s ease infinite;
-  z-index: -1;
-}
-
-@keyframes gradientRotate {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-/* Overlay escuro para criar contraste com o gradiente */
-[data-theme="futuristic"] .vintage-card.ornate::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: rgba(24, 24, 27, 0.95);
-  backdrop-filter: blur(12px);
-  border-radius: 15px;
+  pointer-events: none;
   z-index: 0;
 }
 
-[data-theme="futuristic"] .vintage-card.ornate .card-border {
-  border: none;
-  background: transparent;
-  margin: 20px;
-  padding: 20px;
+.cardLink:hover .postCard,
+.cardLink:focus-visible .postCard {
+  transform: translateY(-4px);
+  border-color: var(--border-hover);
+  background: var(--surface-bg-hover);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.cardLink:hover .postCard::before,
+.cardLink:focus-visible .postCard::before {
+  opacity: 1;
+}
+
+.postCard > * {
   position: relative;
   z-index: 1;
 }
 
-[data-theme="futuristic"] .vintage-card.ornate .ornament {
-  display: none;
-}
-
-[data-theme="futuristic"] .vintage-card.ornate .card-title {
-  color: #fafafa;
-  text-shadow: none;
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-clip: unset;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  transition: text-shadow 0.3s ease;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.ornate .card-title {
-  text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
-}
-
-[data-theme="futuristic"] .vintage-card.ornate .card-subtitle {
-  color: #a1a1aa;
-  text-shadow: none;
-  font-style: normal;
-  letter-spacing: normal;
-  font-size: 13px;
-}
-
-[data-theme="futuristic"] .vintage-card.ornate .card-divider {
-  background: #27272a;
-  box-shadow: none;
-  height: 1px;
-}
-
-[data-theme="futuristic"] .vintage-card.ornate .card-content {
-  color: #d4d4d8;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-[data-theme="futuristic"] .vintage-card.ornate .corner-ornament {
-  display: none;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.ornate {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(167, 139, 250, 0.3),
-              0 0 80px rgba(167, 139, 250, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border-color: rgba(167, 139, 250, 0.4);
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.ornate::before {
-  opacity: 1;
-}
-
-/* Efeito de brilho interno no hover */
-[data-theme="futuristic"] .cardLink:hover .vintage-card.ornate::after {
-  box-shadow: inset 0 0 40px rgba(167, 139, 250, 0.1);
-}
-
-/* ===== RESPONSIVIDADE ORNATE CARD (MOBILE) ===== */
-@media (max-width: 768px) {
-  .vintage-card.ornate {
-    width: 100%;
-    max-width: 320px;
-    height: 400px;
-  }
-
-  .vintage-card.ornate .card-border {
-    margin: 12px;
-    padding: 15px;
-  }
-
-  .vintage-card.ornate .card-title {
-    font-size: 20px;
-    margin-bottom: 8px;
-    min-height: 60px;
-  }
-
-  .vintage-card.ornate .card-subtitle {
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
-
-  .vintage-card.ornate .card-content {
-    font-size: 14px;
-    line-height: 1.5;
-    line-clamp: 4;
-  }
-
-  .vintage-card.ornate .ornament {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-
-  .corner-ornament {
-    width: 30px;
-    height: 30px;
-  }
-
-  .corner-ornament.top-left {
-    top: 15px;
-    left: 15px;
-  }
-
-  .corner-ornament.top-right {
-    top: 15px;
-    right: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .vintage-card.ornate {
-    max-width: 100%;
-    height: 380px;
-  }
-
-  .vintage-card.ornate .card-border {
-    margin: 10px;
-    padding: 12px;
-  }
-
-  .vintage-card.ornate .card-title {
-    font-size: 18px;
-    min-height: 54px;
-  }
-
-  .vintage-card.ornate .card-subtitle {
-    font-size: 11px;
-  }
-
-  .vintage-card.ornate .card-content {
-    font-size: 13px;
-    line-clamp: 3;
-  }
-}
-
-/* ===== CARD TIPO 2: RUSTIC HORIZONTAL (SIMPLIFICADO) ===== */
-.horizontalWrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  justify-content: center;
-  align-items: stretch;
-  margin-top: 2rem;
-}
-
-.vintage-card.rustic {
+.cardMeta {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  background: #e8dcc8;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  border: 6px solid #4a3a2a;
-  border-radius: 8px;
-  padding: 1.5rem;
-  height: 100%;
-  min-height: 280px;
-  box-sizing: border-box;
-  position: relative;
-  transition: transform 0.3s ease;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  font-family: var(--font-mono);
 }
 
-.vintage-card.rustic:hover {
-  transform: translateY(-4px);
+.date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
-.vintage-card.rustic .badge {
-  display: inline-block;
-  background: #8b4513;
-  color: #fff;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
+.readingTime {
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: var(--accent-glow);
+  padding: 0.2rem 0.6rem;
   border-radius: 4px;
-  margin-bottom: 10px;
+  font-weight: 500;
 }
 
-.vintage-card.rustic .card-title {
-  font-size: 1.6rem;
-  color: #2c2416;
-  font-weight: bold;
-  line-height: 1.2;
+.cardTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
+  line-height: 1.4;
   display: -webkit-box;
   line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  font-family: var(--font-heading);
+  transition: color 0.2s ease;
 }
 
-.vintage-card.rustic .card-description {
-  color: #4a3a2a;
+.cardLink:hover .cardTitle {
+  color: var(--accent);
+}
+
+.cardDescription {
   font-size: 1rem;
+  color: var(--text-secondary);
   line-height: 1.6;
-  flex-grow: 1;
   display: -webkit-box;
-  line-clamp: 4;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
+  flex-grow: 1;
 }
 
-.vintage-card.rustic .bottom-info {
-  border-top: 1px dashed #9e8a6f;
-  padding-top: 1rem;
-  margin-top: 1rem;
+.cardFooter {
+  margin-top: 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.vintage-card.rustic .year {
-  font-size: 1rem;
-  color: #8b4513;
-  font-weight: bold;
-  font-family: "Courier New", monospace;
+.readMore {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
 }
 
-.vintage-card.rustic .signature {
-  font-size: 1rem;
-  color: #6b5d4a;
-  font-style: italic;
-  font-family: "Brush Script MT", cursive;
-}
-
-/* ===== TEMA FUTURISTA - RUSTIC (Estilo Moderno) ===== */
-[data-theme="futuristic"] .vintage-card.rustic {
-  background: rgba(24, 24, 27, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(167, 139, 250, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4),
-              inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
-/* Gradiente animado na borda dos cards rustic */
-[data-theme="futuristic"] .vintage-card.rustic::before {
-  content: "";
-  position: absolute;
-  inset: -2px;
-  background: linear-gradient(
-    135deg,
-    #a78bfa,
-    #ec4899,
-    #8b5cf6,
-    #06b6d4,
-    #a78bfa
-  );
-  background-size: 300% 300%;
-  border-radius: 16px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  animation: gradientRotate 4s ease infinite;
-  z-index: -1;
-}
-
-/* Overlay para contraste */
-[data-theme="futuristic"] .vintage-card.rustic::after {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: rgba(24, 24, 27, 0.95);
-  backdrop-filter: blur(12px);
-  border-radius: 15px;
-  z-index: 0;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .right-side {
-  position: relative;
-  z-index: 1;
-}
-
-/* Animação shimmer */
-@keyframes shimmer {
-  0% {
-    background-position: -200% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .badge {
-  background: linear-gradient(135deg, #a78bfa, #8b5cf6);
-  color: #09090b;
-  box-shadow: 0 2px 8px rgba(167, 139, 250, 0.3);
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .badge::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
-  transition: left 0.5s ease;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.rustic .badge::before {
-  left: 100%;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .card-title {
-  color: #fafafa;
-  text-shadow: none;
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: unset;
-  background-clip: unset;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-  position: relative;
-  z-index: 1;
-  transition: text-shadow 0.3s ease;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.rustic .card-title {
-  text-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .card-description {
-  color: #d4d4d8;
-  font-size: 0.95rem;
-  position: relative;
-  z-index: 1;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .bottom-info {
-  border-top: 1px solid rgba(39, 39, 42, 0.5);
-  position: relative;
-  z-index: 1;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .year {
-  color: #a1a1aa;
-}
-
-[data-theme="futuristic"] .vintage-card.rustic .signature {
-  color: #a1a1aa;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.rustic {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(167, 139, 250, 0.3),
-              0 0 80px rgba(167, 139, 250, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  border-color: rgba(167, 139, 250, 0.4);
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.rustic::before {
-  opacity: 1;
-}
-
-[data-theme="futuristic"] .cardLink:hover .vintage-card.rustic::after {
-  box-shadow: inset 0 0 40px rgba(167, 139, 250, 0.1);
-}
-
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 768px) {
-  .horizontalWrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .vintage-card.rustic {
-    padding: 1rem;
-    min-height: 260px;
-  }
-
-  .vintage-card.rustic .card-title {
-    font-size: 1.4rem;
-  }
-
-  .vintage-card.rustic .card-description {
-    font-size: 0.95rem;
-    line-clamp: 3;
-  }
+.cardLink:hover .readMore {
+  color: var(--text-primary);
+  transform: translateX(4px);
 }

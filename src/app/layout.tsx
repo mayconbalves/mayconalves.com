@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-
+import { Inter, Outfit, Fira_Code } from "next/font/google";
 import { JSX } from "react";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
@@ -10,25 +10,27 @@ import {
 import { ThemeProvider } from "../contexts/ThemeContext";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
+const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://mayconalves.com"),
   title: {
-    default: "Maycon Alves - Desenvolvedor Front-end",
+    default: "Maycon Alves - Engenheiro de Software",
     template: "%s | Maycon Alves",
   },
   description:
-    "Blog sobre desenvolvimento web, JavaScript, React, Next.js e tecnologias front-end. Compartilhando conhecimento e experiências.",
+    "Blog sobre engenharia de software, React, Next.js, segurança e tecnologias web.",
   keywords: [
     "desenvolvimento web",
     "front-end",
-    "javascript",
+    "engenharia de software",
     "react",
     "nextjs",
     "typescript",
     "blog tech",
     "Maycon Alves",
-    "blog",
-    "desenvolvedor front-end",
   ],
   authors: [{ name: "Maycon Alves", url: "https://mayconalves.com" }],
   creator: "Maycon Alves",
@@ -43,22 +45,22 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "https://mayconalves.com",
     siteName: "Maycon Alves",
-    title: "Maycon Alves - Desenvolvedor Front-end",
+    title: "Maycon Alves - Engenheiro de Software",
     description:
-      "Blog sobre desenvolvimento web, JavaScript, React, Next.js e tecnologias front-end.",
+      "Blog sobre engenharia de software, React, Next.js e ecossistema web.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Maycon Alves - Desenvolvedor Front-end",
+        alt: "Maycon Alves - Engenheiro de Software",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Maycon Alves - Desenvolvedor Front-end",
-    description: "Blog sobre desenvolvimento web e tecnologias front-end.",
+    title: "Maycon Alves - Engenheiro de Software",
+    description: "Blog sobre engenharia de software, React, Next.js e ecossistema web.",
     creator: "@Mayconbalves",
     images: ["/og-image.png"],
   },
@@ -90,7 +92,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>): JSX.Element {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}>
       <head>
         <meta
           name="google-site-verification"
@@ -104,8 +106,8 @@ export default function RootLayout({
         />
         <WebsiteStructuredData
           url="https://mayconalves.com"
-          name="Maycon Alves - Desenvolvedor Front-end"
-          description="Blog sobre desenvolvimento web, JavaScript, React, Next.js e tecnologias front-end. Compartilhando conhecimento e experiências."
+          name="Maycon Alves - Engenheiro de Software"
+          description="Blog sobre engenharia de software, React, Next.js e ecossistema web."
           author={{
             name: "Maycon Alves",
             url: "https://mayconalves.com",
@@ -114,8 +116,8 @@ export default function RootLayout({
         <PersonStructuredData
           name="Maycon Alves"
           url="https://mayconalves.com"
-          jobTitle="Desenvolvedor Front-end"
-          description="Desenvolvedor Front-end especializado em JavaScript, React e Next.js. Compartilho conhecimento sobre desenvolvimento web através de artigos e tutoriais."
+          jobTitle="Engenheiro de Software"
+          description="Engenheiro de Software especializado no ecossistema Web."
           sameAs={[
             "https://github.com/mayconbalves",
             "https://www.linkedin.com/in/mayconbalves/",

@@ -2,55 +2,61 @@ import Link from "next/link";
 import { JSX } from "react";
 import { getAllPosts } from "../../lib/posts";
 import Card from "../components/card";
-import ExperienceTabs from "./ExperienceTabs";
-import TechnologiesTabs from "./TechnologiesTabs";
 import styles from "./page.module.css";
 
 export default async function Home(): Promise<JSX.Element> {
   const posts = await getAllPosts();
-  const featuredPosts = posts.slice(0, 3);
+  // Display more posts on the homepage if we removed the tabs
+  const featuredPosts = posts.slice(0, 6);
+
   return (
     <div className={styles.main}>
-      <section>
-        <div className={styles.slider}>
-          <div className={styles.container}>
-            <div className={styles.container_title}>
-              <div>
-                <h1>Olá,</h1>
-                <p>
-                  Seja bem-vindo ao meu blog. Eu sou <span>Maycon Alves.</span>{" "}
-                  Trabalho como desenvolvedor web há 10 anos de experiência.
-                </p>
-                <p>
-                  Estudante de analise e desenvolvimento de sistemas, ciências da
-                  computação e atualmente cursando uma pós em engenharia de IA.
-                  Com experiência em desenvolvimento de aplicações web, apps usando React Native, automação
-                  de processos de deploy (CI/CD). Tenho estudado bastante mais sobre backend (nodejs e php) e também
-                  sobre cybersecurity (team blue e team red). Tenho habilidades sólidas em
-                  diversas tecnologias modernas, incluindo JavaScript com React e
-                  Next.js, TypeScript, Redux, GraphQL, Node.js, entre outras.
-                </p>
-              </div>
+      <section className={styles.hero_wrapper}>
+        <div className={styles.container}>
+          <div className={styles.hero_section}>
+            <div className={styles.hero_badge}>
+              <span className={styles.status_dot}></span>
+              Engenheiro de Software Sênior
+            </div>
+            
+            <h1 className={styles.hero_title}>
+              Criando experiências digitais com <span>React</span>
+            </h1>
+            
+            <p className={styles.hero_subtitle}>
+              Olá, eu sou o Maycon Alves. Desenvolvedor front-end focado no ecossistema moderno. Escrevo sobre interfaces escaláveis, performance, usabilidade e tudo o que permeia o desenvolvimento web profissional.
+            </p>
+            
+            <div className={styles.hero_links}>
+              <Link href="/blog" className={styles.primary_button}>
+                Ler Artigos <span aria-hidden="true">→</span>
+              </Link>
+              <a href="https://github.com/mayconbalves" target="_blank" rel="noopener noreferrer" className={styles.secondary_button}>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <h2>Tecnologias</h2>
-              <TechnologiesTabs />
-
-              <h2>Experiência Profissional</h2>
-              <ExperienceTabs />
+      <section className={styles.blog_wrapper}>
+        <div className={styles.container}>
+          <div className={styles.container_blog}>
+            <div className={styles.blog_header}>
+              <h2 className={styles.section_heading}>Últimos Artigos</h2>
+              <Link href="/blog" className={styles.view_all_link} aria-label="Ver todos os artigos do blog">
+                Ver todos
+              </Link>
             </div>
 
-            <div className={styles.container_blog}>
-              <h2 className={styles.container_blog_title}>Últimos posts</h2>
+            <Card posts={featuredPosts} />
+          </div>
 
-              <Card posts={featuredPosts} />
-            </div>
-
-            <div className={styles.container_copyright}>
-              <p>
-                © 2025 Maycon Alves -{" "}
-                <Link href="/polices">Políticas de Privacidade</Link>
-              </p>
-            </div>
+          <div className={styles.container_copyright}>
+            <p>
+              © {new Date().getFullYear()} Maycon Alves - Construído com Next.js.{" "}
+              <Link href="/polices">Políticas de Privacidade</Link>
+            </p>
           </div>
         </div>
       </section>
