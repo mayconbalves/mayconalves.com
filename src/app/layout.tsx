@@ -16,7 +16,7 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: 
 const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mayconalves.com"),
+  metadataBase: new URL("https://www.mayconalves.com"),
   title: {
     default: "Maycon Alves - Engenheiro de Software",
     template: "%s | Maycon Alves",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "blog tech",
     "Maycon Alves",
   ],
-  authors: [{ name: "Maycon Alves", url: "https://mayconalves.com" }],
+  authors: [{ name: "Maycon Alves", url: "https://www.mayconalves.com" }],
   creator: "Maycon Alves",
   publisher: "Maycon Alves",
   formatDetection: {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://mayconalves.com",
+    url: "https://www.mayconalves.com",
     siteName: "Maycon Alves",
     title: "Maycon Alves - Engenheiro de Software",
     description:
@@ -100,17 +100,17 @@ export default function RootLayout({
           content="hbk7VP_BKrBH9u1JzhN5tCbycPHSSr1yutuXkNyJZ7A"
         />
         <WebsiteStructuredData
-          url="https://mayconalves.com"
+          url="https://www.mayconalves.com"
           name="Maycon Alves - Engenheiro de Software"
           description="Blog sobre engenharia de software, React, Next.js e ecossistema web."
           author={{
             name: "Maycon Alves",
-            url: "https://mayconalves.com",
+            url: "https://www.mayconalves.com",
           }}
         />
         <PersonStructuredData
           name="Maycon Alves"
-          url="https://mayconalves.com"
+          url="https://www.mayconalves.com"
           jobTitle="Engenheiro de Software"
           description="Engenheiro de Software especializado no ecossistema Web."
           sameAs={[

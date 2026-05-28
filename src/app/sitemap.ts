@@ -23,8 +23,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       };
     });
 
-    const BASE_URL = "https://mayconalves.com";
-    const routes = ["", "/blog", "/polices"].map((route) => ({
+    const BASE_URL = "https://www.mayconalves.com";
+    const routes = ["", "/blog", "/about"].map((route) => ({
       url: `${BASE_URL}${route}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
@@ -38,16 +38,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Retorna sitemap básico em caso de erro
     return [
       {
-        url: "https://mayconalves.com",
+        url: "https://www.mayconalves.com",
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
         priority: 1,
       },
       {
-        url: "https://mayconalves.com/blog",
+        url: "https://www.mayconalves.com/blog",
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
         priority: 0.9,
+      },
+      {
+        url: "https://www.mayconalves.com/about",
+        lastModified: new Date(),
+        changeFrequency: "yearly" as const,
+        priority: 0.8,
       },
     ];
   }
