@@ -1,6 +1,6 @@
 ---
-title: Primeiros passos com git parte 02
-description: Integração com o Github. Começando a entender as como tudo funciona.
+title: "Primeiros passos com git parte 02"
+description: "Integração com o Github. Começando a entender as como tudo funciona."
 date: 2019-06-27
 tags: [git, github]
 ---

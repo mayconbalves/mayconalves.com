@@ -1,6 +1,6 @@
 ---
-title: Automatizando e padronizando seus commits
-description: Vamos padronizar nossos commits com commitizen e commitlint
+title: "Automatizando e padronizando seus commits"
+description: "Vamos padronizar nossos commits com commitizen e commitlint"
 date: 2023-01-04
 tags: [git]
 ---

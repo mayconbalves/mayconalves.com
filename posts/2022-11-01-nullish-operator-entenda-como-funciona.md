@@ -1,6 +1,6 @@
 ---
 title: "Nullish operator: entenda como funciona"
-description: Um operador fantástico
+description: "Um operador fantástico"
 date: 2022-11-01
 tags: [js, es2020]
 ---

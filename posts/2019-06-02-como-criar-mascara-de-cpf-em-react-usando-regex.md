@@ -1,6 +1,6 @@
 ---
-title: Como criar máscara de CPF em React usando Regex
-description: Forma simples para criar uma mascara de cpf para seu formulário
+title: "Como criar máscara de CPF em React usando Regex"
+description: "Forma simples para criar uma mascara de cpf para seu formulário"
 date: 2019-06-02
 tags: [react, cpf, regex, javascript]
 ---

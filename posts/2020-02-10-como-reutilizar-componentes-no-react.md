@@ -1,6 +1,6 @@
 ---
-title: Como reutilizar componentes no react.
-description: Aprenda fazer componentes que podem ser usados mais de uma vez.
+title: "Como reutilizar componentes no react."
+description: "Aprenda fazer componentes que podem ser usados mais de uma vez."
 date: 2020-02-10
 tags: [javascript, js, react]
 ---

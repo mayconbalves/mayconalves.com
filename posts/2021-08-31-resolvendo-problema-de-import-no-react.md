@@ -1,6 +1,6 @@
 ---
-title: Resolvendo problema de import no react.
-description: Chega de importar componentes com o path absoluto.
+title: "Resolvendo problema de import no react."
+description: "Chega de importar componentes com o path absoluto."
 date: 2021-08-31
 tags: [javascript, react]
 background: "#5ED3F3"

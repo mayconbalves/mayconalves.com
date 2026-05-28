@@ -1,6 +1,6 @@
 ---
-title: 5 plugins legais para VIM.
-description: Plugins que vão deixar seus dias mais produtivos.
+title: "5 plugins legais para VIM."
+description: "Plugins que vão deixar seus dias mais produtivos."
 date: 2020-02-12
 tags: [vim, bash, plugins]
 ---

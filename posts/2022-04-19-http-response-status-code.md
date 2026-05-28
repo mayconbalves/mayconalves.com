@@ -1,6 +1,6 @@
 ---
-title: HTTP response status code
-description: Os principais status code HTTP que sua aplicação pode receber.
+title: "HTTP response status code"
+description: "Os principais status code HTTP que sua aplicação pode receber."
 date: 2022-04-19
 tags: [http, https, web]
 ---

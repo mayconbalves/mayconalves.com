@@ -1,6 +1,6 @@
 ---
-title: 8 perguntas que vocé precisa entender em javascript.
-description: Perguntas para se preparar para uma entrevista.
+title: "8 perguntas que vocé precisa entender em javascript."
+description: "Perguntas para se preparar para uma entrevista."
 date: 2022-04-12
 tags: [js]
 ---

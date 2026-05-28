@@ -1,6 +1,6 @@
 ---
-title: Como criar variaveis em CSS.
-description: Uma dica para vocês optimizarem o seu css.
+title: "Como criar variaveis em CSS."
+description: "Uma dica para vocês optimizarem o seu css."
 date: 2022-03-29
 tags: [css]
 ---

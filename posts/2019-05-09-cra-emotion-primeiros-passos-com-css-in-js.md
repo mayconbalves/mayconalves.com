@@ -1,6 +1,6 @@
 ---
-title: CRA + emotion primeiros passos com css in js.
-description: De seus primeiros passos com css in js e react.
+title: "CRA + emotion primeiros passos com css in js."
+description: "De seus primeiros passos com css in js e react."
 date: 2019-05-09
 tags: [react, emotionjs]
 ---

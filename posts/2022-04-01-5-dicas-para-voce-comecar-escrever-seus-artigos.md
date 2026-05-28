@@ -1,6 +1,6 @@
 ---
-title: 5 dicas para vocé começar a escrever seus artigos.
-description: Espero que esse artigo possa te ajudar a começar a escrever seus artigos.
+title: "5 dicas para vocé começar a escrever seus artigos."
+description: "Espero que esse artigo possa te ajudar a começar a escrever seus artigos."
 date: 2022-04-01
 tags: [dica]
 ---

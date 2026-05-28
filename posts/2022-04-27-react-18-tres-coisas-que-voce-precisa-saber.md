@@ -1,6 +1,6 @@
 ---
-title: React 18 - Três coisas que você precisa saber
-description: Alguns métodos que vão ajudar no seu dia a dia
+title: "React 18 - Três coisas que você precisa saber"
+description: "Alguns métodos que vão ajudar no seu dia a dia"
 date: 2022-04-27
 tags: [react, js]
 ---

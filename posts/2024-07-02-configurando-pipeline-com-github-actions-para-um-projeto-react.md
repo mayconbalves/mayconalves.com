@@ -1,6 +1,6 @@
 ---
-title: Configurando pipeline com github actions para um projeto react
-description: Configurando ci/cd para um projeto react
+title: "Configurando pipeline com github actions para um projeto react"
+description: "Configurando ci/cd para um projeto react"
 date: 2024-07-02
 tags: [react, github-actions, github, devops]
 ---

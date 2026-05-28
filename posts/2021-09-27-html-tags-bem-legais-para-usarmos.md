@@ -1,6 +1,6 @@
 ---
 title: "HTML: tags bem legais que você talvez não conheça."
-description: Sempre esquecemos que o HTML tem tags legais e é uma parte bem importante do nosso código.
+description: "Sempre esquecemos que o HTML tem tags legais e é uma parte bem importante do nosso código."
 date: 2021-09-27
 tags: [html]
 ---

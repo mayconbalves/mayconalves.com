@@ -1,6 +1,6 @@
 ---
-title: Como evitar switch cases desnecessários.
-description: Vou mostrar uma alternativa legal ao switch case.
+title: "Como evitar switch cases desnecessários."
+description: "Vou mostrar uma alternativa legal ao switch case."
 date: 2022-08-16
 tags: [js, switch-case]
 ---

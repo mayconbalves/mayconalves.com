@@ -1,6 +1,6 @@
 ---
-title: Spreed operator vs rest parameters.
-description: Entenda essa bagaça de vez e comece usar de formaa certa.
+title: "Spreed operator vs rest parameters."
+description: "Entenda essa bagaça de vez e comece usar de formaa certa."
 date: 2020-01-04
 tags: [javascript, js, es2015]
 ---

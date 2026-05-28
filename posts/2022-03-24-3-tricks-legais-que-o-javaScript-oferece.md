@@ -1,6 +1,6 @@
 ---
-title: 3 Tricks legais que o JavaScript oferece.
-description: Bora para algumas coisas que javascript oferece.
+title: "3 Tricks legais que o JavaScript oferece."
+description: "Bora para algumas coisas que javascript oferece."
 date: 2022-03-24
 tags: [javascript]
 ---

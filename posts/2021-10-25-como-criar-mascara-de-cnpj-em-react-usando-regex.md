@@ -1,6 +1,6 @@
 ---
-title: Como criar máscara de CNPJ em react usando Regex
-description: Forma simples para criar uma mascara de cnpj para seu formulário
+title: "Como criar máscara de CNPJ em react usando Regex"
+description: "Forma simples para criar uma mascara de cnpj para seu formulário"
 date: 2021-10-25
 tags: [react, regex, cnpj]
 ---

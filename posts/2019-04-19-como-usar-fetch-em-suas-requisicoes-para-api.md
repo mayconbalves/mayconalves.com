@@ -1,6 +1,6 @@
 ---
-title: Como usar FETCH em suas requisições para API.
-description: Usando FETCH API nativa para buscar nossos recursos
+title: "Como usar FETCH em suas requisições para API."
+description: "Usando FETCH API nativa para buscar nossos recursos"
 date: 2019-04-19
 tags: [dev, javascript]
 ---

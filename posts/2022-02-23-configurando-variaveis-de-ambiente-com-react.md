@@ -1,6 +1,6 @@
 ---
-title: Configurando variáveis de ambiente com React.
-description: Aprenda a configurar suas variáveis de ambiente em projetos React.
+title: "Configurando variáveis de ambiente com React."
+description: "Aprenda a configurar suas variáveis de ambiente em projetos React."
 date: 2022-02-23
 tags: [react, env]
 ---

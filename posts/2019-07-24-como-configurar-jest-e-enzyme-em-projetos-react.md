@@ -1,6 +1,6 @@
 ---
-title: Como configurar enzyme e jest em projetos react.
-description: Configuração para você adicionar testes unitários no seu projeto.
+title: "Como configurar enzyme e jest em projetos react."
+description: "Configuração para você adicionar testes unitários no seu projeto."
 date: 2019-07-24
 tags: [jest, react, setup, enzyme]
 ---

@@ -1,6 +1,6 @@
 ---
-title: Entenda a diferença entre function e arrow function
-description: Vamos entender a diferença entre function e arrow function
+title: "Entenda a diferença entre function e arrow function"
+description: "Vamos entender a diferença entre function e arrow function"
 date: 2023-09-23
 tags: [js]
 ---

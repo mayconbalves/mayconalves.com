@@ -1,6 +1,6 @@
 ---
-title: Palavras-chave que todo dev javascript deveria conhecer.
-description: Dicas para que todo dev javascript possa se beneficiar.
+title: "Palavras-chave que todo dev javascript deveria conhecer."
+description: "Dicas para que todo dev javascript possa se beneficiar."
 date: 2022-08-18
 tags: [javascript, dev]
 ---

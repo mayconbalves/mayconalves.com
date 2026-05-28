@@ -7,10 +7,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Início",
-  description: "Portfólio e Blog de Maycon Alves, Engenheiro de Software Sênior especializado em React, Next.js e ecossistema front-end moderno.",
+  description: "Portfólio e Blog de Maycon Alves, Desenvolvedor front-end focado no ecossistema moderno.",
   openGraph: {
-    title: "Maycon Alves - Engenheiro de Software Sênior",
-    description: "Portfólio e Blog de Maycon Alves, Engenheiro de Software Sênior especializado em React, Next.js e ecossistema front-end moderno.",
+    title: "Maycon Alves - Desenvolvedor front-end",
+    description: "Portfólio e Blog de Maycon Alves, Desenvolvedor front-end focado no ecossistema moderno.",
     url: "https://mayconalves.com/",
     type: "website",
   },

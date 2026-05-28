@@ -1,6 +1,6 @@
 ---
-title: Sites gratuitos para ajudar sua vida como desenvolvedor.
-description: Dicas para facilitar sua vida como desenvolvedor.
+title: "Sites gratuitos para ajudar sua vida como desenvolvedor."
+description: "Dicas para facilitar sua vida como desenvolvedor."
 date: 2021-07-22
 tags: [js, front-end]
 ---

@@ -1,6 +1,6 @@
 ---
-title: Como usar nvm no windows.
-description: Aprenda a configurar o nvm para usar no windows.
+title: "Como usar nvm no windows."
+description: "Aprenda a configurar o nvm para usar no windows."
 date: 2022-02-09
 tags: [javascript, html, css]
 ---

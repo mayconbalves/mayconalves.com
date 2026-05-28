@@ -1,6 +1,6 @@
 ---
-title: Meu caminho para fugir da depressão e doenças psicológicas.
-description: Espero que algum desses habítos possa te ajudar.
+title: "Meu caminho para fugir da depressão e doenças psicológicas."
+description: "Espero que algum desses habítos possa te ajudar."
 date: 2022-08-24
 tags: [cotidiano, psicologia]
 ---

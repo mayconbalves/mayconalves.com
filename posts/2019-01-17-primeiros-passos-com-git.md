@@ -1,7 +1,7 @@
 ---
 date: 2019-01-17
-title: Primeiros Passos com git
-description: Aprenda de forma fácil como usar o git de maneira fácil
+title: "Primeiros Passos com git"
+description: "Aprenda de forma fácil como usar o git de maneira fácil"
 tags: [git]
 ---
 

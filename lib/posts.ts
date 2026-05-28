@@ -43,6 +43,11 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
     const dateObj =
       typeof data.date === "string" ? new Date(data.date) : data.date;
 
+    if (!(dateObj instanceof Date) || isNaN(dateObj.getTime())) {
+      console.warn(`Post ${realSlug} tem uma data inválida:`, data.date);
+      return null;
+    }
+
     // Formata a data para exibição
     const formattedDate = format(dateObj, "dd/MM/yyyy");
 

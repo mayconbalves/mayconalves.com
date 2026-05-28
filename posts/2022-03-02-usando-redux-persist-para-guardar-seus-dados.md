@@ -1,6 +1,6 @@
 ---
-title: Usando redux-persist para guardar seus dados.
-description: Vamos guardar dados usando redux-persist.
+title: "Usando redux-persist para guardar seus dados."
+description: "Vamos guardar dados usando redux-persist."
 date: 2022-03-02
 tags: [react, redux-persist, redux]
 ---

@@ -1,6 +1,6 @@
 ---
-title: Resolvendo problema de CR Prettier Prettier em projetos react.
-description: Um massete simples para resolver o problema de CR Prettier Prettier em projetos react.
+title: "Resolvendo problema de CR Prettier Prettier em projetos react."
+description: "Um massete simples para resolver o problema de CR Prettier Prettier em projetos react."
 date: 2021-09-12
 tags: [javascript, react]
 ---

@@ -1,6 +1,6 @@
 ---
-title: 5 motivos que mostram que seu projeto pode ser uma bomba
-description: evite projetos que possuem esses motivos
+title: "5 motivos que mostram que seu projeto pode ser uma bomba"
+description: "evite projetos que possuem esses motivos"
 date: 2024-02-19
 tags: [scrum, projetos, desenvolvimento]
 ---

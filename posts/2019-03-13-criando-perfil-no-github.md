@@ -1,7 +1,7 @@
 ---
 date: 2019-03-13
-title: Criando um perfíl no github
-description: Crie seu perfíl no github e comoce seu portifólio
+title: "Criando um perfíl no github"
+description: "Crie seu perfíl no github e comoce seu portifólio"
 tags: [git, github]
 ---
 

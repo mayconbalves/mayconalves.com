@@ -1,6 +1,6 @@
 ---
-title: Gerando números aleatórios com Math.random() em JavaScript
-description: Aprenda a gerar números aleatórios com Math.random() em JavaScript
+title: "Gerando números aleatórios com Math.random() em JavaScript"
+description: "Aprenda a gerar números aleatórios com Math.random() em JavaScript"
 date: 2021-11-08
 tags: [js]
 ---

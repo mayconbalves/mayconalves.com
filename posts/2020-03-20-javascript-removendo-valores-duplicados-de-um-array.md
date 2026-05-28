@@ -1,6 +1,6 @@
 ---
-title: Javascript - removendo valores duplicados de um array.
-description: Vamos usar uma forma simples de remover objetos duplicados.
+title: "Javascript - removendo valores duplicados de um array."
+description: "Vamos usar uma forma simples de remover objetos duplicados."
 date: 2020-03-20
 tags: [javascript, es2015, set]
 ---

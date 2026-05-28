@@ -1,6 +1,6 @@
 ---
-title: 5 coisas que você precisa entender sobre Javascript
-description: Algumas explicacões sobre coisas que você precisa entender sobre Javascript.
+title: "5 coisas que você precisa entender sobre Javascript"
+description: "Algumas explicacões sobre coisas que você precisa entender sobre Javascript."
 date: 2022-01-24
 tags: [javascript]
 background: "#D6BA32"

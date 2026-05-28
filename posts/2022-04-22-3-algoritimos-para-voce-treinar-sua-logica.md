@@ -1,6 +1,6 @@
 ---
-title: 3 algoritimos para vocé treinar sua logica.
-description: Treine seu cérebro com esses algoritimos.
+title: "3 algoritimos para vocé treinar sua logica."
+description: "Treine seu cérebro com esses algoritimos."
 date: 2022-04-22
 tags: [algoritimo]
 ---

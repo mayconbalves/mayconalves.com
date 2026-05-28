@@ -1,6 +1,6 @@
 ---
-title: Removendo objetos duplicados de dentro de um array usando Set()
-description: Uma forma simples de remover objetos iguais dentro de um array
+title: "Removendo objetos duplicados de dentro de um array usando Set()"
+description: "Uma forma simples de remover objetos iguais dentro de um array"
 date: 2021-12-21
 tags: [js]
 ---

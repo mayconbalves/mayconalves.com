@@ -1,6 +1,6 @@
 ---
-title: 3 websites de cheat sheet para facilitar sua vida como desenvolvedor.
-description: Uma dia fresquinha para ajudar vocês no dia a dia.
+title: "3 websites de cheat sheet para facilitar sua vida como desenvolvedor."
+description: "Uma dia fresquinha para ajudar vocês no dia a dia."
 date: 2022-02-16
 tags: [cheat-sheet, react, css]
 ---

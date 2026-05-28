@@ -1,6 +1,6 @@
 ---
 title: "HTML: tags para nos ajudar com semântica e acessibilidade"
-description: deixe seu markup mais acessível
+description: "deixe seu markup mais acessível"
 date: 2022-10-18
 tags: [html]
 ---

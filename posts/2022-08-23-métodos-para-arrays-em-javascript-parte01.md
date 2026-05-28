@@ -1,6 +1,6 @@
 ---
-title: Métodos para arrays em javascript - parte 01
-description: Alguns métodos que vão ajudar no seu dia a dia
+title: "Métodos para arrays em javascript - parte 01"
+description: "Alguns métodos que vão ajudar no seu dia a dia"
 date: 2022-08-23
 tags: [js]
 ---

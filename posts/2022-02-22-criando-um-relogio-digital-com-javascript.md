@@ -1,6 +1,6 @@
 ---
-title: Criando um relógio digital com javascript.
-description: Uma forma divertidade para exercitar um pouco de javascript.
+title: "Criando um relógio digital com javascript."
+description: "Uma forma divertidade para exercitar um pouco de javascript."
 date: 2022-02-22
 tags: [javascript, html, css]
 ---

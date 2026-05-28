@@ -1,6 +1,6 @@
 ---
-title: Primeiros passos com VIM
-description: Alguns dicas de como começar a usar VIM
+title: "Primeiros passos com VIM"
+description: "Alguns dicas de como começar a usar VIM"
 date: 2019-01-07
 tags: [vim]
 ---

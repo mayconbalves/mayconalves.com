@@ -1,6 +1,6 @@
 ---
-title: As 5 melhores libs de UI para React ja usei.
-description: Baseado na minha experiência em projetos que já trabalhei e em projetos pessoais.
+title: "As 5 melhores libs de UI para React ja usei."
+description: "Baseado na minha experiência em projetos que já trabalhei e em projetos pessoais."
 date: 2022-08-18
 tags: [react, ui]
 ---

@@ -1,6 +1,6 @@
 ---
-title: Como usar styled-components com typescript.
-description: Uma introdução ao styled-components com typescript.
+title: "Como usar styled-components com typescript."
+description: "Uma introdução ao styled-components com typescript."
 date: 2021-07-27
 tags: [typescript, styled-components]
 ---

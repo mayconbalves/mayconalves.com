@@ -1,6 +1,6 @@
 ---
-title: Primeiros passos com git parte 03
-description: 7 comandos essenciais para quem está aprendendo git
+title: "Primeiros passos com git parte 03"
+description: "7 comandos essenciais para quem está aprendendo git"
 date: 2019-07-09
 tags: [git]
 ---

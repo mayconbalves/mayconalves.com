@@ -1,6 +1,6 @@
 ---
-title: Closure em JavaScript
-description: Aprenda a usar Closure em JavaScript
+title: "Closure em JavaScript"
+description: "Aprenda a usar Closure em JavaScript"
 date: 2024-03-05
 tags: [closure, javascript]
 ---
